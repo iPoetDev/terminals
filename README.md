@@ -335,20 +335,20 @@ Selection functions
 Search functions
 ================
 
-| Key      Function                Description                                                                      |
+| Key      |Function                |Description                                                                      |
 | :---------------------------------------------------------------------------------------------------------------- |
-| ---      --------                -----------                                                                      |
-| F3       CharacterSearch         Read a character and move the cursor to the next occurence of that character     |
-| Shift+F3 CharacterSearchBackward Read a character and move the cursor to the previous occurence of that character |
+| ---      |--------                |-----------                                                                      |
+| F3       |CharacterSearch         |Read a character and move the cursor to the next occurence of that character     |
+| Shift+F3 |CharacterSearchBackward |Read a character and move the cursor to the previous occurence of that character |
 
 User defined functions
 ======================
 
-| Key      Function                Description         |
+| Key      |Function                |Description         |
 | :--------------------------------------------------- |
-| ---      --------                -----------         |
-| Enter    OhMyPoshEnterKeyHandler User defined action |
-| Spacebar OhMyPoshSpaceKeyHandler User defined action |
+| ---      |--------                |-----------         |
+| Enter    |OhMyPoshEnterKeyHandler |User defined action |
+| Spacebar |OhMyPoshSpaceKeyHandler |User defined action |
 
 ##### [Sample](https://github.com/PowerShell/PSReadLine/blob/master/PSReadLine/SamplePSReadLineProfile.ps1?WT.mc_id=-blog-scottha)
 
