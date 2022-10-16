@@ -13,6 +13,10 @@ Import-Module posh-git -Scope Global
 Import-Module oh-my-posh -Scope Global
 Import-Module PSReadLine -Scope Global
 Import-Module npm-upgrade
+Import-Module -Name Terminal-Icons -Scope Global
+
+Set-Alias lst Get-ChildItem
+
 #Import-Module XWrite
 #Import All Commands into Local/Current Session State scope for Scripts/Scriptt Block scope -Scope Local
 
@@ -55,7 +59,7 @@ Start-SshAgent -StartupType "Automatic" -Scope "User" #-Quiet
 # Ensure TLS 12 is mandatory for each Session
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-
+Set-Theme 
 
 # External Customisations
 Set-Location $env:codespace
