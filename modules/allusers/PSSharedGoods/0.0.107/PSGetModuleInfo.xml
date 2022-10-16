@@ -1,0 +1,576 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSSharedGoods</S>
+      <Version N="Version">0.0.107</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Module covering functions that are shared within multiple projects</S>
+      <S N="Author">Przemyslaw Klys</S>
+      <S N="CompanyName">Przemyslaw.Klys</S>
+      <S N="Copyright">(c) 2011 - 2019 Przemyslaw Klys. All rights reserved.</S>
+      <DT N="PublishedDate">2019-11-17T13:32:21+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2019-11-18T22:23:06.0659147+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://github.com/EvotecIT/PSSharedGoods</URI>
+      <URI N="IconUri">https://evotec.xyz/wp-content/uploads/2018/10/PSSharedGoods-Alternative.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Windows</S>
+          <S>MacOS</S>
+          <S>Linux</S>
+          <S>Shared</S>
+          <S>Useful</S>
+          <S>Email</S>
+          <S>Format</S>
+          <S>Azure</S>
+          <S>ActiveDirectory</S>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-WinADUserGroups</S>
+                <S>Find-ADConnectServer</S>
+                <S>Find-ExchangeServer</S>
+                <S>Find-HyperVServer</S>
+                <S>Find-ServerTypes</S>
+                <S>Find-UsersProxyAddressesStatus</S>
+                <S>Get-WinADForestControllers</S>
+                <S>Get-WinADForestOptions</S>
+                <S>Get-WinADOrganizationalUnitData</S>
+                <S>Get-WinADOrganizationalUnitFromDN</S>
+                <S>Get-WinADUsersByDN</S>
+                <S>Get-WinADUsersByOU</S>
+                <S>Get-WinADUserSnapshot</S>
+                <S>Remove-WinADUserGroups</S>
+                <S>Set-WinADGroupSynchronization</S>
+                <S>Set-WinADUserFields</S>
+                <S>Set-WinADUserSettingGAL</S>
+                <S>Set-WinADUserStatus</S>
+                <S>Add-PropertyToList</S>
+                <S>New-UserAdd</S>
+                <S>Set-SpecUser</S>
+                <S>Set-WinAzureADUserField</S>
+                <S>Set-WinAzureADUserLicense</S>
+                <S>Set-WinAzureADUserStatus</S>
+                <S>Get-CimData</S>
+                <S>Get-ComputerApplications</S>
+                <S>Get-ComputerBios</S>
+                <S>Get-ComputerCPU</S>
+                <S>Get-ComputerCulture</S>
+                <S>Get-ComputerDisk</S>
+                <S>Get-ComputerDiskLogical</S>
+                <S>Get-ComputerMissingDrivers</S>
+                <S>Get-ComputerNetwork</S>
+                <S>Get-ComputerOemInformation</S>
+                <S>Get-ComputerOperatingSystem</S>
+                <S>Get-ComputerRDP</S>
+                <S>Get-ComputerServices</S>
+                <S>Get-ComputerSMB</S>
+                <S>Get-ComputerSMBShare</S>
+                <S>Get-ComputerStartup</S>
+                <S>Get-ComputerSystem</S>
+                <S>Get-ComputerTasks</S>
+                <S>Get-ComputerTime</S>
+                <S>Get-ComputerTimeNtp</S>
+                <S>Get-ComputerWindowsFeatures</S>
+                <S>Get-ComputerWindowsUpdates</S>
+                <S>Get-ServerRoles</S>
+                <S>Get-IPAddressInformation</S>
+                <S>Get-MyIpAddress</S>
+                <S>Set-PasswordRemotely</S>
+                <S>Convert-BinaryToHex</S>
+                <S>Convert-BinaryToString</S>
+                <S>Convert-Color</S>
+                <S>Convert-ExchangeEmail</S>
+                <S>Convert-ExchangeItems</S>
+                <S>Convert-ExchangeRecipientDetails</S>
+                <S>Convert-ExchangeSize</S>
+                <S>ConvertFrom-Color</S>
+                <S>Convert-HexToBinary</S>
+                <S>Convert-KeyToKeyValue</S>
+                <S>Convert-Office365License</S>
+                <S>Convert-Size</S>
+                <S>Convert-TimeToDays</S>
+                <S>Convert-ToDateTime</S>
+                <S>Convert-ToTimeSpan</S>
+                <S>Convert-TwoArraysIntoOne</S>
+                <S>Convert-UAC</S>
+                <S>ConvertFrom-DistinguishedName</S>
+                <S>ConvertFrom-ErrorRecord</S>
+                <S>ConvertFrom-HTML</S>
+                <S>ConvertFrom-OperationType</S>
+                <S>ConvertFrom-ScriptBlock</S>
+                <S>ConvertFrom-SID</S>
+                <S>ConvertFrom-X500Address</S>
+                <S>ConvertTo-ImmutableID</S>
+                <S>ConvertTo-OperatingSystem</S>
+                <S>ConvertTo-OrderedDictionary</S>
+                <S>ConvertTo-ScriptBlock</S>
+                <S>Find-DatesCurrentDayMinusDayX</S>
+                <S>Find-DatesCurrentDayMinuxDaysX</S>
+                <S>Find-DatesCurrentHour</S>
+                <S>Find-DatesDayPrevious</S>
+                <S>Find-DatesDayToday</S>
+                <S>Find-DatesMonthCurrent</S>
+                <S>Find-DatesMonthPast</S>
+                <S>Find-DatesPastHour</S>
+                <S>Find-DatesPastWeek</S>
+                <S>Find-DatesQuarterCurrent</S>
+                <S>Find-DatesQuarterLast</S>
+                <S>Set-DnsServerIpAddress</S>
+                <S>Get-HTML</S>
+                <S>Send-Email</S>
+                <S>Set-EmailBody</S>
+                <S>Set-EmailBodyPreparedTable</S>
+                <S>Set-EmailBodyReplacement</S>
+                <S>Set-EmailBodyReplacementTable</S>
+                <S>Set-EmailFormatting</S>
+                <S>Set-EmailHead</S>
+                <S>Set-EmailReportBranding</S>
+                <S>Set-EmailWordReplacements</S>
+                <S>Set-EmailWordReplacementsHash</S>
+                <S>Get-FileInformation</S>
+                <S>Get-FileName</S>
+                <S>Get-FilesInFolder</S>
+                <S>Get-FileSize</S>
+                <S>Get-PathSeparator</S>
+                <S>Get-PathTemporary</S>
+                <S>Get-TemporaryDirectory</S>
+                <S>Remove-FilePermission</S>
+                <S>Set-FileInheritance</S>
+                <S>Set-FilePermission</S>
+                <S>Get-Logger</S>
+                <S>Add-ToArray</S>
+                <S>Add-ToArrayAdvanced</S>
+                <S>Add-ToHashTable</S>
+                <S>Clear-DataInformation</S>
+                <S>Compare-MultipleObjects</S>
+                <S>Compare-ObjectsAdvanced</S>
+                <S>Compare-ObjectProperties</S>
+                <S>Copy-OrderedHashtable</S>
+                <S>Format-AddSpaceToSentence</S>
+                <S>Format-FirstXChars</S>
+                <S>Format-PSTable</S>
+                <S>Format-Stream</S>
+                <S>Format-ToTitleCase</S>
+                <S>Format-TransposeTable</S>
+                <S>Format-View</S>
+                <S>Get-Colors</S>
+                <S>Get-DataInformation</S>
+                <S>Get-HashMaxValue</S>
+                <S>Get-MimeType</S>
+                <S>Get-ObjectCount</S>
+                <S>Get-ObjectData</S>
+                <S>Get-ObjectEnumValues</S>
+                <S>Get-ObjectKeys</S>
+                <S>Get-ObjectProperties</S>
+                <S>Get-ObjectPropertiesAdvanced</S>
+                <S>Get-ObjectTitles</S>
+                <S>Get-ObjectType</S>
+                <S>Get-Types</S>
+                <S>Merge-Array</S>
+                <S>Merge-Objects</S>
+                <S>New-ArrayList</S>
+                <S>New-GenericList</S>
+                <S>Remove-DuplicateObjects</S>
+                <S>Remove-EmptyValues</S>
+                <S>Remove-FromArray</S>
+                <S>Remove-ObjectsExistingInTarget</S>
+                <S>Remove-WhiteSpace</S>
+                <S>Rename-LatinCharacters</S>
+                <S>Rename-UserValuesFromHash</S>
+                <S>Select-Properties</S>
+                <S>Split-Array</S>
+                <S>Split-ArrayEvery</S>
+                <S>Find-MyProgramData</S>
+                <S>Initialize-ModulePortable</S>
+                <S>Start-InternalFunction</S>
+                <S>Start-MyProgram</S>
+                <S>Get-RandomCharacters</S>
+                <S>Get-RandomFileName</S>
+                <S>Get-RandomPassword</S>
+                <S>Get-RandomStringName</S>
+                <S>Get-CommandInfo</S>
+                <S>New-Runspace</S>
+                <S>Start-Runspace</S>
+                <S>Stop-Runspace</S>
+                <S>Get-PSRegistry</S>
+                <S>Get-PSService</S>
+                <S>Set-ServiceRecovery</S>
+                <S>Get-SqlQueryColumnInformation</S>
+                <S>New-SqlQuery</S>
+                <S>New-SqlQueryAlterTable</S>
+                <S>New-SqlQueryCreateTable</S>
+                <S>New-SqlTableMapping</S>
+                <S>Send-SqlInsert</S>
+                <S>Find-TypesNeeded</S>
+                <S>Get-ModulesAvailability</S>
+                <S>Search-Command</S>
+                <S>Test-AvailabilityCommands</S>
+                <S>Test-ComputerAvailability</S>
+                <S>Test-ComputerPort</S>
+                <S>Test-ConfigurationCredentials</S>
+                <S>Test-ForestConnectivity</S>
+                <S>Test-Key</S>
+                <S>Test-ModuleAvailability</S>
+                <S>Test-WinRM</S>
+                <S>Get-TimeSetttings</S>
+                <S>Get-TimeZoneAdvanced</S>
+                <S>Get-TimeZoneLegacy</S>
+                <S>Measure-Collection</S>
+                <S>Set-TimeSynchronization</S>
+                <S>Start-TimeLog</S>
+                <S>Stop-TimeLog</S>
+                <S>Show-Array</S>
+                <S>Show-DataInVerbose</S>
+                <S>Show-TableVisualization</S>
+                <S>Save-XML</S>
+                <S>Set-XML</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-WinADUserGroups</S>
+                <S>Find-ADConnectServer</S>
+                <S>Find-ExchangeServer</S>
+                <S>Find-HyperVServer</S>
+                <S>Find-ServerTypes</S>
+                <S>Find-UsersProxyAddressesStatus</S>
+                <S>Get-WinADForestControllers</S>
+                <S>Get-WinADForestOptions</S>
+                <S>Get-WinADOrganizationalUnitData</S>
+                <S>Get-WinADOrganizationalUnitFromDN</S>
+                <S>Get-WinADUsersByDN</S>
+                <S>Get-WinADUsersByOU</S>
+                <S>Get-WinADUserSnapshot</S>
+                <S>Remove-WinADUserGroups</S>
+                <S>Set-WinADGroupSynchronization</S>
+                <S>Set-WinADUserFields</S>
+                <S>Set-WinADUserSettingGAL</S>
+                <S>Set-WinADUserStatus</S>
+                <S>Add-PropertyToList</S>
+                <S>New-UserAdd</S>
+                <S>Set-SpecUser</S>
+                <S>Set-WinAzureADUserField</S>
+                <S>Set-WinAzureADUserLicense</S>
+                <S>Set-WinAzureADUserStatus</S>
+                <S>Get-CimData</S>
+                <S>Get-ComputerApplications</S>
+                <S>Get-ComputerBios</S>
+                <S>Get-ComputerCPU</S>
+                <S>Get-ComputerCulture</S>
+                <S>Get-ComputerDisk</S>
+                <S>Get-ComputerDiskLogical</S>
+                <S>Get-ComputerMissingDrivers</S>
+                <S>Get-ComputerNetwork</S>
+                <S>Get-ComputerOemInformation</S>
+                <S>Get-ComputerOperatingSystem</S>
+                <S>Get-ComputerRDP</S>
+                <S>Get-ComputerServices</S>
+                <S>Get-ComputerSMB</S>
+                <S>Get-ComputerSMBShare</S>
+                <S>Get-ComputerStartup</S>
+                <S>Get-ComputerSystem</S>
+                <S>Get-ComputerTasks</S>
+                <S>Get-ComputerTime</S>
+                <S>Get-ComputerTimeNtp</S>
+                <S>Get-ComputerWindowsFeatures</S>
+                <S>Get-ComputerWindowsUpdates</S>
+                <S>Get-ServerRoles</S>
+                <S>Get-IPAddressInformation</S>
+                <S>Get-MyIpAddress</S>
+                <S>Set-PasswordRemotely</S>
+                <S>Convert-BinaryToHex</S>
+                <S>Convert-BinaryToString</S>
+                <S>Convert-Color</S>
+                <S>Convert-ExchangeEmail</S>
+                <S>Convert-ExchangeItems</S>
+                <S>Convert-ExchangeRecipientDetails</S>
+                <S>Convert-ExchangeSize</S>
+                <S>ConvertFrom-Color</S>
+                <S>Convert-HexToBinary</S>
+                <S>Convert-KeyToKeyValue</S>
+                <S>Convert-Office365License</S>
+                <S>Convert-Size</S>
+                <S>Convert-TimeToDays</S>
+                <S>Convert-ToDateTime</S>
+                <S>Convert-ToTimeSpan</S>
+                <S>Convert-TwoArraysIntoOne</S>
+                <S>Convert-UAC</S>
+                <S>ConvertFrom-DistinguishedName</S>
+                <S>ConvertFrom-ErrorRecord</S>
+                <S>ConvertFrom-HTML</S>
+                <S>ConvertFrom-OperationType</S>
+                <S>ConvertFrom-ScriptBlock</S>
+                <S>ConvertFrom-SID</S>
+                <S>ConvertFrom-X500Address</S>
+                <S>ConvertTo-ImmutableID</S>
+                <S>ConvertTo-OperatingSystem</S>
+                <S>ConvertTo-OrderedDictionary</S>
+                <S>ConvertTo-ScriptBlock</S>
+                <S>Find-DatesCurrentDayMinusDayX</S>
+                <S>Find-DatesCurrentDayMinuxDaysX</S>
+                <S>Find-DatesCurrentHour</S>
+                <S>Find-DatesDayPrevious</S>
+                <S>Find-DatesDayToday</S>
+                <S>Find-DatesMonthCurrent</S>
+                <S>Find-DatesMonthPast</S>
+                <S>Find-DatesPastHour</S>
+                <S>Find-DatesPastWeek</S>
+                <S>Find-DatesQuarterCurrent</S>
+                <S>Find-DatesQuarterLast</S>
+                <S>Set-DnsServerIpAddress</S>
+                <S>Get-HTML</S>
+                <S>Send-Email</S>
+                <S>Set-EmailBody</S>
+                <S>Set-EmailBodyPreparedTable</S>
+                <S>Set-EmailBodyReplacement</S>
+                <S>Set-EmailBodyReplacementTable</S>
+                <S>Set-EmailFormatting</S>
+                <S>Set-EmailHead</S>
+                <S>Set-EmailReportBranding</S>
+                <S>Set-EmailWordReplacements</S>
+                <S>Set-EmailWordReplacementsHash</S>
+                <S>Get-FileInformation</S>
+                <S>Get-FileName</S>
+                <S>Get-FilesInFolder</S>
+                <S>Get-FileSize</S>
+                <S>Get-PathSeparator</S>
+                <S>Get-PathTemporary</S>
+                <S>Get-TemporaryDirectory</S>
+                <S>Remove-FilePermission</S>
+                <S>Set-FileInheritance</S>
+                <S>Set-FilePermission</S>
+                <S>Get-Logger</S>
+                <S>Add-ToArray</S>
+                <S>Add-ToArrayAdvanced</S>
+                <S>Add-ToHashTable</S>
+                <S>Clear-DataInformation</S>
+                <S>Compare-MultipleObjects</S>
+                <S>Compare-ObjectsAdvanced</S>
+                <S>Compare-ObjectProperties</S>
+                <S>Copy-OrderedHashtable</S>
+                <S>Format-AddSpaceToSentence</S>
+                <S>Format-FirstXChars</S>
+                <S>Format-PSTable</S>
+                <S>Format-Stream</S>
+                <S>Format-ToTitleCase</S>
+                <S>Format-TransposeTable</S>
+                <S>Format-View</S>
+                <S>Get-Colors</S>
+                <S>Get-DataInformation</S>
+                <S>Get-HashMaxValue</S>
+                <S>Get-MimeType</S>
+                <S>Get-ObjectCount</S>
+                <S>Get-ObjectData</S>
+                <S>Get-ObjectEnumValues</S>
+                <S>Get-ObjectKeys</S>
+                <S>Get-ObjectProperties</S>
+                <S>Get-ObjectPropertiesAdvanced</S>
+                <S>Get-ObjectTitles</S>
+                <S>Get-ObjectType</S>
+                <S>Get-Types</S>
+                <S>Merge-Array</S>
+                <S>Merge-Objects</S>
+                <S>New-ArrayList</S>
+                <S>New-GenericList</S>
+                <S>Remove-DuplicateObjects</S>
+                <S>Remove-EmptyValues</S>
+                <S>Remove-FromArray</S>
+                <S>Remove-ObjectsExistingInTarget</S>
+                <S>Remove-WhiteSpace</S>
+                <S>Rename-LatinCharacters</S>
+                <S>Rename-UserValuesFromHash</S>
+                <S>Select-Properties</S>
+                <S>Split-Array</S>
+                <S>Split-ArrayEvery</S>
+                <S>Find-MyProgramData</S>
+                <S>Initialize-ModulePortable</S>
+                <S>Start-InternalFunction</S>
+                <S>Start-MyProgram</S>
+                <S>Get-RandomCharacters</S>
+                <S>Get-RandomFileName</S>
+                <S>Get-RandomPassword</S>
+                <S>Get-RandomStringName</S>
+                <S>Get-CommandInfo</S>
+                <S>New-Runspace</S>
+                <S>Start-Runspace</S>
+                <S>Stop-Runspace</S>
+                <S>Get-PSRegistry</S>
+                <S>Get-PSService</S>
+                <S>Set-ServiceRecovery</S>
+                <S>Get-SqlQueryColumnInformation</S>
+                <S>New-SqlQuery</S>
+                <S>New-SqlQueryAlterTable</S>
+                <S>New-SqlQueryCreateTable</S>
+                <S>New-SqlTableMapping</S>
+                <S>Send-SqlInsert</S>
+                <S>Find-TypesNeeded</S>
+                <S>Get-ModulesAvailability</S>
+                <S>Search-Command</S>
+                <S>Test-AvailabilityCommands</S>
+                <S>Test-ComputerAvailability</S>
+                <S>Test-ComputerPort</S>
+                <S>Test-ConfigurationCredentials</S>
+                <S>Test-ForestConnectivity</S>
+                <S>Test-Key</S>
+                <S>Test-ModuleAvailability</S>
+                <S>Test-WinRM</S>
+                <S>Get-TimeSetttings</S>
+                <S>Get-TimeZoneAdvanced</S>
+                <S>Get-TimeZoneLegacy</S>
+                <S>Measure-Collection</S>
+                <S>Set-TimeSynchronization</S>
+                <S>Start-TimeLog</S>
+                <S>Stop-TimeLog</S>
+                <S>Show-Array</S>
+                <S>Show-DataInVerbose</S>
+                <S>Show-TableVisualization</S>
+                <S>Save-XML</S>
+                <S>Set-XML</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">PSWriteColor</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">0.86.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:PSWriteColor/0.86.0</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="10">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Connectimo</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">0.0.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Connectimo/0.0.3</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="11">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2011 - 2019 Przemyslaw Klys. All rights reserved.</S>
+          <S N="description">Module covering functions that are shared within multiple projects</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">210</S>
+          <S N="downloadCount">43493</S>
+          <S N="packageSize">73728</S>
+          <S N="published">17/11/2019 13:32:21 +00:00</S>
+          <S N="created">17/11/2019 13:32:21 +00:00</S>
+          <S N="lastUpdated">18/11/2019 22:21:22 +00:00</S>
+          <S N="tags">Windows MacOS Linux Shared Useful Email Format Azure ActiveDirectory PSModule PSEdition_Desktop PSEdition_Core PSFunction_Add-WinADUserGroups PSCommand_Add-WinADUserGroups PSFunction_Find-ADConnectServer PSCommand_Find-ADConnectServer PSFunction_Find-ExchangeServer PSCommand_Find-ExchangeServer PSFunction_Find-HyperVServer PSCommand_Find-HyperVServer PSFunction_Find-ServerTypes PSCommand_Find-ServerTypes PSFunction_Find-UsersProxyAddressesStatus PSCommand_Find-UsersProxyAddressesStatus PSFunction_Get-WinADForestControllers PSCommand_Get-WinADForestControllers PSFunction_Get-WinADForestOptions PSCommand_Get-WinADForestOptions PSFunction_Get-WinADOrganizationalUnitData PSCommand_Get-WinADOrganizationalUnitData PSFunction_Get-WinADOrganizationalUnitFromDN PSCommand_Get-WinADOrganizationalUnitFromDN PSFunction_Get-WinADUsersByDN PSCommand_Get-WinADUsersByDN PSFunction_Get-WinADUsersByOU PSCommand_Get-WinADUsersByOU PSFunction_Get-WinADUserSnapshot PSCommand_Get-WinADUserSnapshot PSFunction_Remove-WinADUserGroups PSCommand_Remove-WinADUserGroups PSFunction_Set-WinADGroupSynchronization PSCommand_Set-WinADGroupSynchronization PSFunction_Set-WinADUserFields PSCommand_Set-WinADUserFields PSFunction_Set-WinADUserSettingGAL PSCommand_Set-WinADUserSettingGAL PSFunction_Set-WinADUserStatus PSCommand_Set-WinADUserStatus PSFunction_Add-PropertyToList PSCommand_Add-PropertyToList PSFunction_New-UserAdd PSCommand_New-UserAdd PSFunction_Set-SpecUser PSCommand_Set-SpecUser PSFunction_Set-WinAzureADUserField PSCommand_Set-WinAzureADUserField PSFunction_Set-WinAzureADUserLicense PSCommand_Set-WinAzureADUserLicense PSFunction_Set-WinAzureADUserStatus PSCommand_Set-WinAzureADUserStatus PSFunction_Get-CimData PSCommand_Get-CimData PSFunction_Get-ComputerApplications PSCommand_Get-ComputerApplications PSFunction_Get-ComputerBios PSCommand_Get-ComputerBios PSFunction_Get-ComputerCPU PSCommand_Get-ComputerCPU PSFunction_Get-ComputerCulture PSCommand_Get-ComputerCulture PSFunction_Get-ComputerDisk PSCommand_Get-ComputerDisk PSFunction_Get-ComputerDiskLogical PSCommand_Get-ComputerDiskLogical PSFunction_Get-ComputerMissingDrivers PSCommand_Get-ComputerMissingDrivers PSFunction_Get-ComputerNetwork PSCommand_Get-ComputerNetwork PSFunction_Get-ComputerOemInformation PSCommand_Get-ComputerOemInformation PSFunction_Get-ComputerOperatingSystem PSCommand_Get-ComputerOperatingSystem PSFunction_Get-ComputerRDP PSCommand_Get-ComputerRDP PSFunction_Get-ComputerServices PSCommand_Get-ComputerServices PSFunction_Get-ComputerSMB PSCommand_Get-ComputerSMB PSFunction_Get-ComputerSMBShare PSCommand_Get-ComputerSMBShare PSFunction_Get-ComputerStartup PSCommand_Get-ComputerStartup PSFunction_Get-ComputerSystem PSCommand_Get-ComputerSystem PSFunction_Get-ComputerTasks PSCommand_Get-ComputerTasks PSFunction_Get-ComputerTime PSCommand_Get-ComputerTime PSFunction_Get-ComputerTimeNtp PSCommand_Get-ComputerTimeNtp PSFunction_Get-ComputerWindowsFeatures PSCommand_Get-ComputerWindowsFeatures PSFunction_Get-ComputerWindowsUpdates PSCommand_Get-ComputerWindowsUpdates PSFunction_Get-ServerRoles PSCommand_Get-ServerRoles PSFunction_Get-IPAddressInformation PSCommand_Get-IPAddressInformation PSFunction_Get-MyIpAddress PSCommand_Get-MyIpAddress PSFunction_Set-PasswordRemotely PSCommand_Set-PasswordRemotely PSFunction_Convert-BinaryToHex PSCommand_Convert-BinaryToHex PSFunction_Convert-BinaryToString PSCommand_Convert-BinaryToString PSFunction_Convert-Color PSCommand_Convert-Color PSFunction_Convert-ExchangeEmail PSCommand_Convert-ExchangeEmail PSFunction_Convert-ExchangeItems PSCommand_Convert-ExchangeItems PSFunction_Convert-ExchangeRecipientDetails PSCommand_Convert-ExchangeRecipientDetails PSFunction_Convert-ExchangeSize PSCommand_Convert-ExchangeSize PSFunction_ConvertFrom-Color PSCommand_ConvertFrom-Color PSFunction_Convert-HexToBinary PSCommand_Convert-HexToBinary PSFunction_Convert-KeyToKeyValue PSCommand_Convert-KeyToKeyValue PSFunction_Convert-Office365License PSCommand_Convert-Office365License PSFunction_Convert-Size PSCommand_Convert-Size PSFunction_Convert-TimeToDays PSCommand_Convert-TimeToDays PSFunction_Convert-ToDateTime PSCommand_Convert-ToDateTime PSFunction_Convert-ToTimeSpan PSCommand_Convert-ToTimeSpan PSFunction_Convert-TwoArraysIntoOne PSCommand_Convert-TwoArraysIntoOne PSFunction_Convert-UAC PSCommand_Convert-UAC PSFunction_ConvertFrom-DistinguishedName PSCommand_ConvertFrom-DistinguishedName PSFunction_ConvertFrom-ErrorRecord PSCommand_ConvertFrom-ErrorRecord PSFunction_ConvertFrom-HTML PSCommand_ConvertFrom-HTML PSFunction_ConvertFrom-OperationType PSCommand_ConvertFrom-OperationType PSFunction_ConvertFrom-ScriptBlock PSCommand_ConvertFrom-ScriptBlock PSFunction_ConvertFrom-SID PSCommand_ConvertFrom-SID PSFunction_ConvertFrom-X500Address PSCommand_ConvertFrom-X500Address PSFunction_ConvertTo-ImmutableID PSCommand_ConvertTo-ImmutableID PSFunction_ConvertTo-OperatingSystem PSCommand_ConvertTo-OperatingSystem PSFunction_ConvertTo-OrderedDictionary PSCommand_ConvertTo-OrderedDictionary PSFunction_ConvertTo-ScriptBlock PSCommand_ConvertTo-ScriptBlock PSFunction_Find-DatesCurrentDayMinusDayX PSCommand_Find-DatesCurrentDayMinusDayX PSFunction_Find-DatesCurrentDayMinuxDaysX PSCommand_Find-DatesCurrentDayMinuxDaysX PSFunction_Find-DatesCurrentHour PSCommand_Find-DatesCurrentHour PSFunction_Find-DatesDayPrevious PSCommand_Find-DatesDayPrevious PSFunction_Find-DatesDayToday PSCommand_Find-DatesDayToday PSFunction_Find-DatesMonthCurrent PSCommand_Find-DatesMonthCurrent PSFunction_Find-DatesMonthPast PSCommand_Find-DatesMonthPast PSFunction_Find-DatesPastHour PSCommand_Find-DatesPastHour PSFunction_Find-DatesPastWeek PSCommand_Find-DatesPastWeek PSFunction_Find-DatesQuarterCurrent PSCommand_Find-DatesQuarterCurrent PSFunction_Find-DatesQuarterLast PSCommand_Find-DatesQuarterLast PSFunction_Set-DnsServerIpAddress PSCommand_Set-DnsServerIpAddress PSFunction_Get-HTML PSCommand_Get-HTML PSFunction_Send-Email PSCommand_Send-Email PSFunction_Set-EmailBody PSCommand_Set-EmailBody PSFunction_Set-EmailBodyPreparedTable PSCommand_Set-EmailBodyPreparedTable PSFunction_Set-EmailBodyReplacement PSCommand_Set-EmailBodyReplacement PSFunction_Set-EmailBodyReplacementTable PSCommand_Set-EmailBodyReplacementTable PSFunction_Set-EmailFormatting PSCommand_Set-EmailFormatting PSFunction_Set-EmailHead PSCommand_Set-EmailHead PSFunction_Set-EmailReportBranding PSCommand_Set-EmailReportBranding PSFunction_Set-EmailWordReplacements PSCommand_Set-EmailWordReplacements PSFunction_Set-EmailWordReplacementsHash PSCommand_Set-EmailWordReplacementsHash PSFunction_Get-FileInformation PSCommand_Get-FileInformation PSFunction_Get-FileName PSCommand_Get-FileName PSFunction_Get-FilesInFolder PSCommand_Get-FilesInFolder PSFunction_Get-FileSize PSCommand_Get-FileSize PSFunction_Get-PathSeparator PSCommand_Get-PathSeparator PSFunction_Get-PathTemporary PSCommand_Get-PathTemporary PSFunction_Get-TemporaryDirectory PSCommand_Get-TemporaryDirectory PSFunction_Remove-FilePermission PSCommand_Remove-FilePermission PSFunction_Set-FileInheritance PSCommand_Set-FileInheritance PSFunction_Set-FilePermission PSCommand_Set-FilePermission PSFunction_Get-Logger PSCommand_Get-Logger PSFunction_Add-ToArray PSCommand_Add-ToArray PSFunction_Add-ToArrayAdvanced PSCommand_Add-ToArrayAdvanced PSFunction_Add-ToHashTable PSCommand_Add-ToHashTable PSFunction_Clear-DataInformation PSCommand_Clear-DataInformation PSFunction_Compare-MultipleObjects PSCommand_Compare-MultipleObjects PSFunction_Compare-ObjectsAdvanced PSCommand_Compare-ObjectsAdvanced PSFunction_Compare-ObjectProperties PSCommand_Compare-ObjectProperties PSFunction_Copy-OrderedHashtable PSCommand_Copy-OrderedHashtable PSFunction_Format-AddSpaceToSentence PSCommand_Format-AddSpaceToSentence PSFunction_Format-FirstXChars PSCommand_Format-FirstXChars PSFunction_Format-PSTable PSCommand_Format-PSTable PSFunction_Format-Stream PSCommand_Format-Stream PSFunction_Format-ToTitleCase PSCommand_Format-ToTitleCase PSFunction_Format-TransposeTable PSCommand_Format-TransposeTable PSFunction_Format-View PSCommand_Format-View PSFunction_Get-Colors PSCommand_Get-Colors PSFunction_Get-DataInformation PSCommand_Get-DataInformation PSFunction_Get-HashMaxValue PSCommand_Get-HashMaxValue PSFunction_Get-MimeType PSCommand_Get-MimeType PSFunction_Get-ObjectCount PSCommand_Get-ObjectCount PSFunction_Get-ObjectData PSCommand_Get-ObjectData PSFunction_Get-ObjectEnumValues PSCommand_Get-ObjectEnumValues PSFunction_Get-ObjectKeys PSCommand_Get-ObjectKeys PSFunction_Get-ObjectProperties PSCommand_Get-ObjectProperties PSFunction_Get-ObjectPropertiesAdvanced PSCommand_Get-ObjectPropertiesAdvanced PSFunction_Get-ObjectTitles PSCommand_Get-ObjectTitles PSFunction_Get-ObjectType PSCommand_Get-ObjectType PSFunction_Get-Types PSCommand_Get-Types PSFunction_Merge-Array PSCommand_Merge-Array PSFunction_Merge-Objects PSCommand_Merge-Objects PSFunction_New-ArrayList PSCommand_New-ArrayList PSFunction_New-GenericList PSCommand_New-GenericList PSFunction_Remove-DuplicateObjects PSCommand_Remove-DuplicateObjects PSFunction_Remove-EmptyValues PSCommand_Remove-EmptyValues PSFunction_Remove-FromArray PSCommand_Remove-FromArray PSFunction_Remove-ObjectsExistingInTarget PSCommand_Remove-ObjectsExistingInTarget PSFunction_Remove-WhiteSpace PSCommand_Remove-WhiteSpace PSFunction_Rename-LatinCharacters PSCommand_Rename-LatinCharacters PSFunction_Rename-UserValuesFromHash PSCommand_Rename-UserValuesFromHash PSFunction_Select-Properties PSCommand_Select-Properties PSFunction_Split-Array PSCommand_Split-Array PSFunction_Split-ArrayEvery PSCommand_Split-ArrayEvery PSFunction_Find-MyProgramData PSCommand_Find-MyProgramData PSFunction_Initialize-ModulePortable PSCommand_Initialize-ModulePortable PSFunction_Start-InternalFunction PSCommand_Start-InternalFunction PSFunction_Start-MyProgram PSCommand_Start-MyProgram PSFunction_Get-RandomCharacters PSCommand_Get-RandomCharacters PSFunction_Get-RandomFileName PSCommand_Get-RandomFileName PSFunction_Get-RandomPassword PSCommand_Get-RandomPassword PSFunction_Get-RandomStringName PSCommand_Get-RandomStringName PSFunction_Get-CommandInfo PSCommand_Get-CommandInfo PSFunction_New-Runspace PSCommand_New-Runspace PSFunction_Start-Runspace PSCommand_Start-Runspace PSFunction_Stop-Runspace PSCommand_Stop-Runspace PSFunction_Get-PSRegistry PSCommand_Get-PSRegistry PSFunction_Get-PSService PSCommand_Get-PSService PSFunction_Set-ServiceRecovery PSCommand_Set-ServiceRecovery PSFunction_Get-SqlQueryColumnInformation PSCommand_Get-SqlQueryColumnInformation PSFunction_New-SqlQuery PSCommand_New-SqlQuery PSFunction_New-SqlQueryAlterTable PSCommand_New-SqlQueryAlterTable PSFunction_New-SqlQueryCreateTable PSCommand_New-SqlQueryCreateTable PSFunction_New-SqlTableMapping PSCommand_New-SqlTableMapping PSFunction_Send-SqlInsert PSCommand_Send-SqlInsert PSFunction_Find-TypesNeeded PSCommand_Find-TypesNeeded PSFunction_Get-ModulesAvailability PSCommand_Get-ModulesAvailability PSFunction_Search-Command PSCommand_Search-Command PSFunction_Test-AvailabilityCommands PSCommand_Test-AvailabilityCommands PSFunction_Test-ComputerAvailability PSCommand_Test-ComputerAvailability PSFunction_Test-ComputerPort PSCommand_Test-ComputerPort PSFunction_Test-ConfigurationCredentials PSCommand_Test-ConfigurationCredentials PSFunction_Test-ForestConnectivity PSCommand_Test-ForestConnectivity PSFunction_Test-Key PSCommand_Test-Key PSFunction_Test-ModuleAvailability PSCommand_Test-ModuleAvailability PSFunction_Test-WinRM PSCommand_Test-WinRM PSFunction_Get-TimeSetttings PSCommand_Get-TimeSetttings PSFunction_Get-TimeZoneAdvanced PSCommand_Get-TimeZoneAdvanced PSFunction_Get-TimeZoneLegacy PSCommand_Get-TimeZoneLegacy PSFunction_Measure-Collection PSCommand_Measure-Collection PSFunction_Set-TimeSynchronization PSCommand_Set-TimeSynchronization PSFunction_Start-TimeLog PSCommand_Start-TimeLog PSFunction_Stop-TimeLog PSCommand_Stop-TimeLog PSFunction_Show-Array PSCommand_Show-Array PSFunction_Show-DataInVerbose PSCommand_Show-DataInVerbose PSFunction_Show-TableVisualization PSCommand_Show-TableVisualization PSFunction_Save-XML PSCommand_Save-XML PSFunction_Set-XML PSCommand_Set-XML PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2019-11-18T22:21:22Z</S>
+          <S N="NormalizedVersion">0.0.107</S>
+          <S N="Authors">Przemyslaw Klys</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSSharedGoods.nuspec|PSSharedGoods.psd1|PSSharedGoods.psm1</S>
+          <S N="GUID">ee272aa8-baaa-4edf-9f45-b6d6f7d844fe</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Evotec</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\charl\Documents\PowerShell\Modules\PSSharedGoods\0.0.107</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -1,0 +1,142 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">xEnvironmentVariables</S>
+      <Version N="Version">0.1.5</Version>
+      <S N="Type">Module</S>
+      <S N="Description">This module was designed with the intention of making it easier to handle operations pertaining to Environment Variables.</S>
+      <S N="Author">Originally by @GNQG adapted by @rbleattler</S>
+      <S N="CompanyName">Rbleattler</S>
+      <S N="Copyright">(c) Robert Bleattler.</S>
+      <DT N="PublishedDate">2019-11-16T22:06:04+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2019-11-18T22:23:56.6857164+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/rbleattler/xEnvironmentVariables/blob/master/LICENSE.txt</URI>
+      <URI N="ProjectUri">https://github.com/rbleattler/xEnvironmentVariables</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>environment</S>
+          <S>envvar</S>
+          <S>env</S>
+          <S>path</S>
+          <S>windows</S>
+          <S>registry</S>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-EnvironmentVariable</S>
+                <S>Set-EnvironmentVariable</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-EnvironmentVariable</S>
+                <S>Set-EnvironmentVariable</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Version N="PowerShellGetFormatVersion">2.0</Version>
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Robert Bleattler.</S>
+          <S N="description">This module was designed with the intention of making it easier to handle operations pertaining to Environment Variables.</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">3</S>
+          <S N="downloadCount">11</S>
+          <S N="packageSize">18275</S>
+          <S N="published">16/11/2019 22:06:04 +00:00</S>
+          <S N="created">16/11/2019 22:06:04 +00:00</S>
+          <S N="lastUpdated">18/11/2019 09:41:18 +00:00</S>
+          <S N="tags">environment envvar env path windows registry PowerShellGetFormatVersion_2.0 PSModule PSEdition_Core PSEdition_Desktop PSFunction_Get-EnvironmentVariable PSCommand_Get-EnvironmentVariable PSFunction_Set-EnvironmentVariable PSCommand_Set-EnvironmentVariable PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2019-11-18T09:41:18Z</S>
+          <S N="NormalizedVersion">0.1.5</S>
+          <S N="Authors">Originally by @GNQG adapted by @rbleattler</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">xEnvironmentVariables.nuspec|LICENSE.txt|README.md|xEnvironmentVariables.psd1|xEnvironmentVariables.psm1|en-US\about_x005F_xEnvironmentVariables.help.txt|Private\Convert-KeyValuePair.ps1|Private\Format-HashTable.ps1|Private\Get-EnvironmentPath.ps1|Private\New-EnvironmentVariableObject.ps1|Private\Update-EnvironmentVariableSettings.ps1|Public\Get-EnvironmentVariable.ps1|Public\Get-EnvironmentVariables.ps1|Public\Set-EnvironmentVariable.ps1|test\xEnvironmentVariables.Tests.ps1</S>
+          <S N="GUID">48004ebf-fec1-48ae-9430-aba9ffead502</S>
+          <S N="PowerShellVersion">5.1</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\charl\Documents\PowerShell\Modules\xEnvironmentVariables\0.1.5</S>
+    </MS>
+  </Obj>
+</Objs>

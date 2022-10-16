@@ -1,0 +1,163 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">WinSSH</S>
+      <Version N="Version">0.9.8</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Install OpenSSH-Win64, optionally install ssh-agent and sshd Services. Also includes functions to help configure sshd_config, fix permissions, and check keys. GitHub: https://github.com/pldmgg/WinSSH</S>
+      <S N="Author">pldmgg</S>
+      <S N="CompanyName">pldmgg</S>
+      <S N="Copyright">(c) 2018 pldmgg. All rights reserved.</S>
+      <DT N="PublishedDate">2019-07-02T20:18:45+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-25T02:03:51.8955836+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">http://www.apache.org/licenses/LICENSE-2.0</URI>
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-PublicKeyToRemoteHost</S>
+                <S>Check-Cert</S>
+                <S>Extract-SSHPrivateKeysFromRegistry</S>
+                <S>Fix-SSHPermissions</S>
+                <S>Generate-AuthorizedPrincipalsFile</S>
+                <S>Generate-SSHUserDirFileInfo</S>
+                <S>Get-PublicKeyAuthInstructions</S>
+                <S>Get-SSHClientAuthSanity</S>
+                <S>Get-SSHFileInfo</S>
+                <S>Install-SSHAgentService</S>
+                <S>Install-WinSSH</S>
+                <S>New-SSHDServer</S>
+                <S>New-SSHKey</S>
+                <S>Set-DefaultShell</S>
+                <S>Uninstall-WinSSH</S>
+                <S>Validate-SSHPrivateKey</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-PublicKeyToRemoteHost</S>
+                <S>Check-Cert</S>
+                <S>Extract-SSHPrivateKeysFromRegistry</S>
+                <S>Fix-SSHPermissions</S>
+                <S>Generate-AuthorizedPrincipalsFile</S>
+                <S>Generate-SSHUserDirFileInfo</S>
+                <S>Get-PublicKeyAuthInstructions</S>
+                <S>Get-SSHClientAuthSanity</S>
+                <S>Get-SSHFileInfo</S>
+                <S>Install-SSHAgentService</S>
+                <S>Install-WinSSH</S>
+                <S>New-SSHDServer</S>
+                <S>New-SSHKey</S>
+                <S>Set-DefaultShell</S>
+                <S>Uninstall-WinSSH</S>
+                <S>Validate-SSHPrivateKey</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2018 pldmgg. All rights reserved.</S>
+          <S N="description">Install OpenSSH-Win64, optionally install ssh-agent and sshd Services. Also includes functions to help configure sshd_config, fix permissions, and check keys. GitHub: https://github.com/pldmgg/WinSSH</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1958</S>
+          <S N="downloadCount">2859</S>
+          <S N="packageSize">126157</S>
+          <S N="published">02/07/2019 20:18:45 +01:00</S>
+          <S N="created">02/07/2019 20:18:45 +01:00</S>
+          <S N="lastUpdated">24/09/2022 02:14:28 +01:00</S>
+          <S N="tags">PSModule PSFunction_Add-PublicKeyToRemoteHost PSCommand_Add-PublicKeyToRemoteHost PSFunction_Check-Cert PSCommand_Check-Cert PSFunction_Extract-SSHPrivateKeysFromRegistry PSCommand_Extract-SSHPrivateKeysFromRegistry PSFunction_Fix-SSHPermissions PSCommand_Fix-SSHPermissions PSFunction_Generate-AuthorizedPrincipalsFile PSCommand_Generate-AuthorizedPrincipalsFile PSFunction_Generate-SSHUserDirFileInfo PSCommand_Generate-SSHUserDirFileInfo PSFunction_Get-PublicKeyAuthInstructions PSCommand_Get-PublicKeyAuthInstructions PSFunction_Get-SSHClientAuthSanity PSCommand_Get-SSHClientAuthSanity PSFunction_Get-SSHFileInfo PSCommand_Get-SSHFileInfo PSFunction_Install-SSHAgentService PSCommand_Install-SSHAgentService PSFunction_Install-WinSSH PSCommand_Install-WinSSH PSFunction_New-SSHDServer PSCommand_New-SSHDServer PSFunction_New-SSHKey PSCommand_New-SSHKey PSFunction_Set-DefaultShell PSCommand_Set-DefaultShell PSFunction_Uninstall-WinSSH PSCommand_Uninstall-WinSSH PSFunction_Validate-SSHPrivateKey PSCommand_Validate-SSHPrivateKey PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-24T02:14:28Z</S>
+          <S N="NormalizedVersion">0.9.8</S>
+          <S N="Authors">pldmgg</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">WinSSH.nuspec|module.requirements.psd1|VariableLibrary.ps1|WinSSH.psd1|WinSSH.psm1|Await\Await.psd1|Await\Await.psm1|Await\Await.Tests.ps1|Await\AwaitDriver.cs|Await\PSGetModuleInfo.xml|Await\README.md|Private\AddWinRMTrustLocalHost.ps1|Private\ConfigureGlobalKnownHosts.ps1|Private\GetComputerObjectsInLDAP.ps1|Private\GetCurrentUser.ps1|Private\GetDomainController.ps1|Private\GetDomainName.ps1|Private\GetElevation.ps1|Private\GetGroupObjectsInLDAP.ps1|Private\GetModuleDependencies.ps1|Private\GetNativePath.ps1|Private\GetUserObjectsInLDAP.ps1|Private\InvokeModuleDependencies.ps1|Private\InvokePSCompatibility.ps1|Private\ManualPSGalleryModuleInstall.ps1|Private\NewUniqueString.ps1|Private\PauseForWarning.ps1|Private\ResolveHost.ps1|Private\TestIsValidIPAddress.ps1|Private\TestLDAP.ps1|Private\TestPort.ps1|Private\UnzipFile.ps1|Public\Add-PublicKeyToRemoteHost.ps1|Public\Check-Cert.ps1|Public\Extract-SSHPrivateKeyFromRegistry.ps1|Public\Fix-SSHPermissions.ps1|Public\Generate-AuthorizedPrincipalsFile.ps1|Public\Generate-SSHUserDirFileInfo.ps1|Public\Get-PublicKeyAuthInstructions.ps1|Public\Get-SSHClientAuthSanity.ps1|Public\Get-SSHFileInfo.ps1|Public\Install-SSHAgentService.ps1|Public\Install-WinSSH.ps1|Public\New-SSHDServer.ps1|Public\New-SSHKey.ps1|Public\Set-DefaultShell.ps1|Public\Uninstall-WinSSH.ps1|Public\Validate-SSHPrivateKey.ps1</S>
+          <S N="GUID">0c88f23b-e98c-44f1-8382-e9be51d7dd1e</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">pldmgg</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\WinSSH\0.9.8</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -1,0 +1,254 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Catesta</S>
+      <Version N="Version">1.2.3</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Catesta is a PowerShell module project generator. It uses templates to rapidly scaffold test and build integration for a variety of CI/CD platforms.</S>
+      <S N="Author">Jake Morrison</S>
+      <S N="CompanyName">jakewmorrison</S>
+      <S N="Copyright">(c) Jake Morrison. All rights reserved.</S>
+      <DT N="PublishedDate">2022-09-25T03:35:58+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-25T22:07:32.1221488+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://github.com/techthoughts2/Catesta</URI>
+      <URI N="IconUri">https://github.com/techthoughts2/Catesta/raw/main/media/CatestaIcon.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Actions</S>
+          <S>AppVeyor</S>
+          <S>AWS</S>
+          <S>AWS-CodeBuild</S>
+          <S>Azure</S>
+          <S>Azure-DevOps</S>
+          <S>CICD</S>
+          <S>CodeBuild</S>
+          <S>Cross-Platform</S>
+          <S>CrossPlatform</S>
+          <S>GitHub</S>
+          <S>GitHub-Actions</S>
+          <S>Extension</S>
+          <S>Linux</S>
+          <S>MacOS</S>
+          <S>Module</S>
+          <S>Modules</S>
+          <S>MultiCloud</S>
+          <S>Plaster</S>
+          <S>PowerShell</S>
+          <S>Project</S>
+          <S>pwsh</S>
+          <S>Scaffold</S>
+          <S>Secret</S>
+          <S>SecretVault</S>
+          <S>Secrets</S>
+          <S>Template</S>
+          <S>Vault</S>
+          <S>Windows</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-PowerShellProject</S>
+                <S>New-VaultProject</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-PowerShellProject</S>
+                <S>New-VaultProject</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/techthoughts2/Catesta/blob/main/.github/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Plaster</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.1.3</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Plaster/1.1.3</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="10">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Pester</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">4.10.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Pester/4.10.1</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="11">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">InvokeBuild</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">5.8.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:InvokeBuild/5.8.0</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="12">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">PSScriptAnalyzer</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.19.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:PSScriptAnalyzer/1.19.1</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="13">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">platyPS</S>
+              </En>
+              <En>
+                <S N="Key">RequiredVersion</S>
+                <S N="Value">0.12.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:platyPS/[0.12.0]</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="14">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Jake Morrison. All rights reserved.</S>
+          <S N="description">Catesta is a PowerShell module project generator. It uses templates to rapidly scaffold test and build integration for a variety of CI/CD platforms.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/techthoughts2/Catesta/blob/main/.github/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1</S>
+          <S N="downloadCount">984</S>
+          <S N="packageSize">116272</S>
+          <S N="published">25/09/2022 03:35:58 +01:00</S>
+          <S N="created">25/09/2022 03:35:58 +01:00</S>
+          <S N="lastUpdated">25/09/2022 09:34:33 +01:00</S>
+          <S N="tags">Actions AppVeyor AWS AWS-CodeBuild Azure Azure-DevOps CICD CodeBuild Cross-Platform CrossPlatform GitHub GitHub-Actions Extension Linux MacOS Module Modules MultiCloud Plaster PowerShell Project pwsh Scaffold Secret SecretVault Secrets Template Vault Windows PSModule PSFunction_New-PowerShellProject PSCommand_New-PowerShellProject PSFunction_New-VaultProject PSCommand_New-VaultProject PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-25T09:34:33Z</S>
+          <S N="NormalizedVersion">1.2.3</S>
+          <S N="Authors">Jake Morrison</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Catesta.nuspec|Catesta.psd1|Catesta.psm1|en-US\Catesta-help.xml|Resources\AppVeyor\actions_bootstrap.ps1|Resources\AppVeyor\appveyor.yml|Resources\AppVeyor\plasterManifest.xml|Resources\AWS\buildspec_powershell_windows.yml|Resources\AWS\buildspec_pwsh_linux.yml|Resources\AWS\buildspec_pwsh_windows.yml|Resources\AWS\configure_aws_credential.ps1|Resources\AWS\install_modules.ps1|Resources\AWS\plasterManifest.xml|Resources\Azure\actions_bootstrap.ps1|Resources\Azure\azure-pipelines.yml|Resources\Azure\plasterManifest.xml|Resources\GitHubActions\actions_bootstrap.ps1|Resources\GitHubActions\plasterManifest.xml|Resources\GitHubFiles\agitignore|Resources\GitHubFiles\APACHELICENSE|Resources\GitHubFiles\CHANGELOG.md|Resources\GitHubFiles\CODE_OF_CONDUCT.md|Resources\GitHubFiles\CONTRIBUTING.md|Resources\GitHubFiles\GNULICENSE|Resources\GitHubFiles\ISCLICENSE|Resources\GitHubFiles\MITLICENSE|Resources\GitHubFiles\PULL_REQUEST_TEMPLATE.md|Resources\Vanilla\plasterManifest.xml|Resources\AppVeyor\Vault\plasterManifest.xml|Resources\AWS\CloudFormation\PowerShellCodeBuildCC.yml|Resources\AWS\CloudFormation\PowerShellCodeBuildGit.yml|Resources\AWS\CloudFormation\S3BucketsForPowerShellDevelopment.yml|Resources\AWS\Vault\plasterManifest.xml|Resources\Azure\Vault\plasterManifest.xml|Resources\Editor\VSCode\extensions.json|Resources\Editor\VSCode\settings.json|Resources\Editor\VSCode\tasks.json|Resources\GitHubActions\Vault\plasterManifest.xml|Resources\GitHubActions\workflows\wf_Linux.yml|Resources\GitHubActions\workflows\wf_MacOS.yml|Resources\GitHubActions\workflows\wf_Windows.yml|Resources\GitHubActions\workflows\wf_Windows_Core.yml|Resources\GitHubFiles\ISSUE_TEMPLATE\bug-report.md|Resources\GitHubFiles\ISSUE_TEMPLATE\feature_request.md|Resources\Module\src\PSModule.build.ps1|Resources\Module\src\PSModule.Settings.ps1|Resources\Module\src\PSScriptAnalyzerSettings.psd1|Resources\Vanilla\Vault\plasterManifest.xml|Resources\Vault\src\PSScriptAnalyzerSettings.psd1|Resources\Vault\src\PSVault.build.ps1|Resources\Vault\src\PSVault.Settings.ps1|Resources\Module\src\Module\Imports.ps1|Resources\Module\src\Module\Module.psm1|Resources\Vault\src\PSVault\PSVault.psm1|Resources\Module\src\Module\Private\Get-Day.ps1|Resources\Module\src\Module\Public\Get-HelloWorld.ps1|Resources\Vault\src\PSVault\PSVault.Extension\PSVault.Extension.psd1|Resources\Vault\src\PSVault\PSVault.Extension\PSVault.Extension.psm1|Resources\Module\src\Tests\v4\Infrastructure\SampleInfraTest.Tests.ps1|Resources\Module\src\Tests\v4\Unit\ExportedFunctions.Tests.ps1|Resources\Module\src\Tests\v4\Unit\PSModule-Module.Tests.ps1|Resources\Module\src\Tests\v5\Infrastructure\SampleInfraTest.Tests.ps1|Resources\Module\src\Tests\v5\Unit\ExportedFunctions.Tests.ps1|Resources\Module\src\Tests\v5\Unit\PSModule-Module.Tests.ps1|Resources\Vault\src\Tests\v4\Unit\ExportedFunctions.Tests.ps1|Resources\Vault\src\Tests\v4\Unit\Module-Function.Tests.ps1|Resources\Vault\src\Tests\v4\Unit\PSVault-Module.Tests.ps1|Resources\Vault\src\Tests\v5\Unit\ExportedFunctions.Tests.ps1|Resources\Vault\src\Tests\v5\Unit\Module-Function.Tests.ps1|Resources\Vault\src\Tests\v5\Unit\PSVault-Module.Tests.ps1|Resources\Module\src\Tests\v4\Unit\Private\Private-Function.Tests.ps1|Resources\Module\src\Tests\v4\Unit\Public\Public-Function.Tests.ps1|Resources\Module\src\Tests\v5\Unit\Private\Private-Function.Tests.ps1|Resources\Module\src\Tests\v5\Unit\Public\Public-Function.Tests.ps1</S>
+          <S N="GUID">6796b193-9013-468a-b022-837749af2d06</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">TechThoughts</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\Catesta\1.2.3</S>
+    </MS>
+  </Obj>
+</Objs>

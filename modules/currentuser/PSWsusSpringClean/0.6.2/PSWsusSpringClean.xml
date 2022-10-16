@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PSWsusSpringClean>
+    <Architectures>
+        <Architecture name="arm64" regex="ARM64" />
+        <Architecture name="ia64" regex="IA64|Itanium" />
+        <Architecture name="x64" regex="x64|64-Bit|AMD64" />
+    </Architectures>
+
+    <!--
+        These country codes differ from their official name to maximise
+        compatibility for historical reasons and/or popular convention:
+
+        Code    In-use              Official
+        BN      Brunei              Brunei Darussalam
+        GB      United Kingdom      United Kingdom of Great Britain and
+                                    Northern Ireland
+        IR      Iran                Iran (Islamic Republic of)
+        KR      South Korea         Korea, Republic of
+        LA      Laos                Lao People's Democratic Republic
+        RU      Russia              Russian Federation
+        TW      Taiwan              Taiwan, Province of China
+        US      United States       United States of America
+        VN      Vietnam             Viet Nam
+    -->
+    <Languages>
+        <Language code="af-ZA" name="Afrikaans" region="South Africa" />
+        <Language code="am-ET" name="Amharic" region="Ethiopia" />
+        <Language code="ar-EG" name="Arabic" region="Egypt" />
+        <Language code="ar-SA" name="Arabic" region="Saudi Arabia" />
+        <Language code="as-IN" name="Assamese" region="India" />
+        <Language code="az-Latn-AZ" name="Azerbaijani (Latin)" region="Azerbaijan" />
+        <Language code="be-BY" name="Belarusian" region="Belarus" />
+        <Language code="bg-BG" name="Bulgarian" region="Bulgaria" />
+        <Language code="bn-BD" name="Bengali" region="Bangladesh" />
+        <Language code="bn-IN" name="Bengali" region="India" />
+        <Language code="bs-Cyrl-BA" name="Bosnian (Cyrillic)" region="Bosnia and Herzegovina" />
+        <Language code="bs-Latn-BA" name="Bosnian (Latin)" region="Bosnia and Herzegovina" />
+        <Language code="ca-ES" name="Catalan" region="Spain" />
+        <Language code="ca-ES-valencia" name="Valencian" region="Spain" />
+        <Language code="chr-Cher-US" name="Cherokee" region="United States" />
+        <Language code="cs-CZ" name="Czech" region="Czechia" />
+        <Language code="cy-GB" name="Welsh" region="United Kingdom" />
+        <Language code="da-DK" name="Danish" region="Denmark" />
+        <Language code="de-AT" name="German" region="Austria" />
+        <Language code="de-CH" name="German" region="Switzerland" />
+        <Language code="de-DE" name="German" region="Germany" />
+        <Language code="el-GR" name="Greek" region="Greece" />
+        <Language code="en-AU" name="English" region="Australia" />
+        <Language code="en-CA" name="English" region="Canada" />
+        <Language code="en-GB" name="English" region="United Kingdom" />
+        <Language code="en-IE" name="English" region="Ireland" />
+        <Language code="en-IN" name="English" region="India" />
+        <Language code="en-US" name="English" region="United States" />
+        <Language code="es-ES" name="Spanish" region="Spain" />
+        <Language code="es-MX" name="Spanish" region="Mexico" />
+        <Language code="et-EE" name="Estonian" region="Estonia" />
+        <Language code="eu-ES" name="Basque" region="Spain" />
+        <Language code="fa-IR" name="Persian" region="Iran" />
+        <Language code="fi-FI" name="Finnish" region="Finland" />
+        <Language code="fil-PH" name="Filipino" region="Philippines" />
+        <Language code="fr-CA" name="French" region="Canada" />
+        <Language code="fr-CH" name="French" region="Switzerland" />
+        <Language code="fr-FR" name="French" region="France" />
+        <Language code="ga-IE" name="Irish" region="Ireland" />
+        <Language code="gd-GB" name="Scottish Gaelic" region="United Kingdom" />
+        <Language code="gl-ES" name="Galician" region="Spain" />
+        <Language code="gu-IN" name="Gujarati" region="India" />
+        <Language code="ha-Latn-NG" name="Hausa (Latin)" region="Nigeria" />
+        <Language code="he-IL" name="Hebrew" region="Israel" />
+        <Language code="hi-IN" name="Hindi" region="India" />
+        <Language code="hr-HR" name="Croatian" region="Croatia" />
+        <Language code="hu-HU" name="Hungarian" region="Hungary" />
+        <Language code="hy-AM" name="Armenian" region="Armenia" />
+        <Language code="id-ID" name="Indonesian" region="Indonesia" />
+        <Language code="ig-NG" name="Igbo" region="Nigeria" />
+        <Language code="is-IS" name="Icelandic" region="Iceland" />
+        <Language code="it-IT" name="Italian" region="Italy" />
+        <Language code="ja-JP" name="Japanese" region="Japan" />
+        <Language code="ka-GE" name="Georgian" region="Georgia" />
+        <Language code="kk-KZ" name="Kazakh" region="Kazakhstan" />
+        <Language code="km-KH" name="Khmer" region="Cambodia" />
+        <Language code="kn-IN" name="Kannada" region="India" />
+        <Language code="ko-KR" name="Korean" region="South Korea" />
+        <Language code="kok-IN" name="Konkani" region="India" />
+        <Language code="ku-Arab-IQ" name="Central Kurdish" region="Iraq" />
+        <Language code="ky-KG" name="Kyrgyz" region="Kyrgyzstan" />
+        <Language code="lb-LT" name="Luxembourgish" region="Lithuania" />
+        <Language code="lb-LU" name="Luxembourgish" region="Luxembourg" />
+        <Language code="lo-LA" name="Lao" region="Laos" />
+        <Language code="lt-LT" name="Lithuanian" region="Lithuania" />
+        <Language code="lv-LV" name="Latvian" region="Latvia" />
+        <Language code="mi-NZ" name="Maori" region="New Zealand" />
+        <Language code="mk-MK" name="Macedonian" region="North Macedonia" />
+        <Language code="ml-IN" name="Malayalam" region="India" />
+        <Language code="mn-MN" name="Mongolian" region="Mongolia" />
+        <Language code="mr-IN" name="Marathi" region="India" />
+        <Language code="ms-BN" name="Malay" region="Brunei" />
+        <Language code="ms-MY" name="Malay" region="Malaysia" />
+        <Language code="mt-MT" name="Maltese" region="Malta" />
+        <Language code="nb-NO" name="Bokmål" region="Norway" />
+        <Language code="ne-NP" name="Nepali" region="Nepal" />
+        <Language code="nl-BE" name="Dutch" region="Belgium" />
+        <Language code="nl-NL" name="Dutch" region="Netherlands" />
+        <Language code="nn-NO" name="Nynorsk" region="Norway" />
+        <Language code="nso-ZA" name="Northern Sotho" region="South Africa" />
+        <Language code="or-IN" name="Odia" region="India" />
+        <Language code="pa-Arab-PK" name="Punjabi (Arabic)" region="Pakistan" />
+        <Language code="pa-IN" name="Punjabi" region="India" />
+        <Language code="pl-PL" name="Polish" region="Poland" />
+        <Language code="prs-AF" name="Dari" region="Afghanistan" />
+        <Language code="ps-AF" name="Pashto" region="Afghanistan" />
+        <Language code="pt-BR" name="Portuguese" region="Brazil" />
+        <Language code="pt-PT" name="Portuguese" region="Portugal" />
+        <!-- Technically spelled wrong but consistent with WSUS -->
+        <Language code="quc-Latn-GT" name="K'iche'" region="Guatemala" />
+        <!-- Technically spelled wrong but consistent with WSUS -->
+        <Language code="qut-GT" name="K'iche'" region="Guatemala" />
+        <Language code="quz-PE" name="Quechua" region="Peru" />
+        <Language code="rm-CH" name="Romansh" region="Switzerland" />
+        <Language code="ro-RO" name="Romanian" region="Romania" />
+        <Language code="ru-RU" name="Russian" region="Russia" />
+        <Language code="rw-RW" name="Kinyarwanda" region="Rwanda" />
+        <Language code="sd-Arab-PK" name="Sindhi (Arabic)" region="Pakistan" />
+        <Language code="si-LK" name="Sinhala" region="Sri Lanka" />
+        <Language code="sk-SK" name="Slovak" region="Slovakia" />
+        <Language code="sl-SI" name="Slovenian" region="Slovenia" />
+        <Language code="sq-AL" name="Albanian" region="Albania" />
+        <Language code="sr-Cyrl-BA" name="Serbian (Cyrillic)" region="Bosnia and Herzegovina" />
+        <Language code="sr-Cyrl-RS" name="Serbian (Cyrillic)" region="Serbia" />
+        <Language code="sr-Latn-RS" name="Serbian (Latin)" region="Serbia" />
+        <Language code="sv-SE" name="Swedish" region="Sweden" />
+        <Language code="sw-KE" name="Swahili" region="Kenya" />
+        <Language code="ta-IN" name="Tamil" region="India" />
+        <Language code="te-IN" name="Telugu" region="India" />
+        <Language code="tg-Cyrl-TJ" name="Tajik (Cyrillic)" region="Tajikistan" />
+        <Language code="th-TH" name="Thai" region="Thailand" />
+        <Language code="ti-ET" name="Tigrinya" region="Ethiopia" />
+        <Language code="tk-TM" name="Turkmen" region="Turkmenistan" />
+        <Language code="tn-ZA" name="Tswana" region="South Africa" />
+        <Language code="tr-TR" name="Turkish" region="Turkey" />
+        <Language code="tt-RU" name="Tatar" region="Russia" />
+        <Language code="ug-CN" name="Uyghur" region="China" />
+        <Language code="uk-UA" name="Ukrainian" region="Ukraine" />
+        <Language code="ur-PK" name="Urdu" region="Pakistan" />
+        <Language code="uz-Latn-UZ" name="Uzbek (Latin)" region="Uzbekistan" />
+        <Language code="vi-VN" name="Vietnamese" region="Vietnam" />
+        <Language code="wo-SN" name="Wolof" region="Senegal" />
+        <Language code="xh-ZA" name="Xhosa" region="South Africa" />
+        <Language code="yo-NG" name="Yoruba" region="Nigeria" />
+        <Language code="zh-CN" name="Chinese (Simplified)" region="China" />
+        <Language code="zh-HK" name="Chinese (Traditional)" region="Hong Kong" />
+        <Language code="zh-TW" name="Chinese (Traditional)" region="Taiwan" />
+        <Language code="zu-ZA" name="Zulu" region="South Africa" />
+    </Languages>
+</PSWsusSpringClean>

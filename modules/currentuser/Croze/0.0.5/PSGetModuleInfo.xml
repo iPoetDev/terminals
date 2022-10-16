@@ -1,0 +1,157 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Croze</S>
+      <Version N="Version">0.0.5</Version>
+      <S N="Type">Module</S>
+      <S N="Description">A PowerShell Crescendo wrapper for Homebrew</S>
+      <S N="Author">Ethan Bergstrom</S>
+      <S N="CompanyName">ethanbergstrom</S>
+      <S N="Copyright">2022</S>
+      <DT N="PublishedDate">2022-09-03T19:21:36+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-16T10:16:38.9309301+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/ethanbergstrom/Croze/blob/main/LICENSE.txt</URI>
+      <URI N="ProjectUri">https://github.com/ethanbergstrom/Croze</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Crescendo</S>
+          <S>Homebrew</S>
+          <S>Brew</S>
+          <S>PSEdition_Core</S>
+          <S>MacOS</S>
+          <S>Linux</S>
+          <S>CrescendoBuilt</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-HomebrewTap</S>
+                <S>Register-HomebrewTap</S>
+                <S>Unregister-HomebrewTap</S>
+                <S>Install-HomebrewPackage</S>
+                <S>Get-HomebrewPackage</S>
+                <S>Find-HomebrewPackage</S>
+                <S>Update-HomebrewPackage</S>
+                <S>Uninstall-HomebrewPackage</S>
+                <S>Get-HomebrewPackageInfo</S>
+                <S>Get-HomebrewTapInfo</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-HomebrewTap</S>
+                <S>Register-HomebrewTap</S>
+                <S>Unregister-HomebrewTap</S>
+                <S>Install-HomebrewPackage</S>
+                <S>Get-HomebrewPackage</S>
+                <S>Find-HomebrewPackage</S>
+                <S>Update-HomebrewPackage</S>
+                <S>Uninstall-HomebrewPackage</S>
+                <S>Get-HomebrewPackageInfo</S>
+                <S>Get-HomebrewTapInfo</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">2022</S>
+          <S N="description">A PowerShell Crescendo wrapper for Homebrew</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">96</S>
+          <S N="downloadCount">336</S>
+          <S N="packageSize">5394</S>
+          <S N="published">03/09/2022 19:21:36 +01:00</S>
+          <S N="created">03/09/2022 19:21:36 +01:00</S>
+          <S N="lastUpdated">16/09/2022 04:03:46 +01:00</S>
+          <S N="tags">Crescendo Homebrew Brew PSEdition_Core MacOS Linux CrescendoBuilt PSModule PSFunction_Get-HomebrewTap PSCommand_Get-HomebrewTap PSFunction_Register-HomebrewTap PSCommand_Register-HomebrewTap PSFunction_Unregister-HomebrewTap PSCommand_Unregister-HomebrewTap PSFunction_Install-HomebrewPackage PSCommand_Install-HomebrewPackage PSFunction_Get-HomebrewPackage PSCommand_Get-HomebrewPackage PSFunction_Find-HomebrewPackage PSCommand_Find-HomebrewPackage PSFunction_Update-HomebrewPackage PSCommand_Update-HomebrewPackage PSFunction_Uninstall-HomebrewPackage PSCommand_Uninstall-HomebrewPackage PSFunction_Get-HomebrewPackageInfo PSCommand_Get-HomebrewPackageInfo PSFunction_Get-HomebrewTapInfo PSCommand_Get-HomebrewTapInfo PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-16T04:03:46Z</S>
+          <S N="NormalizedVersion">0.0.5</S>
+          <S N="Authors">Ethan Bergstrom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Croze.nuspec|Croze.psd1|Croze.psm1</S>
+          <S N="GUID">46caec03-e808-4fa2-b464-14677bb60c52</S>
+          <S N="PowerShellVersion">7.0</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\Croze\0.0.5</S>
+    </MS>
+  </Obj>
+</Objs>

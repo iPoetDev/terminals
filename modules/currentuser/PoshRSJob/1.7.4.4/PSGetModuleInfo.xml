@@ -1,0 +1,152 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PoshRSJob</S>
+      <Version N="Version">1.7.4.4</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Module designed to use PowerShell runspaces to create jobs that allow throttling and quicker execution of commands</S>
+      <S N="Author">Boe Prox</S>
+      <S N="CompanyName">boe.prox</S>
+      <S N="Copyright">(c) 2014 Boe Prox. All rights reserved.</S>
+      <DT N="PublishedDate">2018-02-24T21:43:52+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-25T21:42:07.3147326+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://opensource.org/licenses/MIT</URI>
+      <URI N="ProjectUri">https://github.com/proxb/PoshRSJob</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PoshRSJob</S>
+          <S>Runspace</S>
+          <S>RunspacePool</S>
+          <S>Linux</S>
+          <S>PowerShellCore</S>
+          <S>RSJob</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-RSJob</S>
+                <S>Receive-RSJob</S>
+                <S>Remove-RSJob</S>
+                <S>Start-RSJob</S>
+                <S>Stop-RSJob</S>
+                <S>Wait-RSJob</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-RSJob</S>
+                <S>Receive-RSJob</S>
+                <S>Remove-RSJob</S>
+                <S>Start-RSJob</S>
+                <S>Stop-RSJob</S>
+                <S>Wait-RSJob</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">---------_x000D__x000A_|1.7.4.4|_x000D__x000A_---------_x000D__x000A_* #175 Save and restore $env:PSModulePath until we find why it's being clobbered on PS Core_x000D__x000A__x000D__x000A_---------_x000D__x000A_|1.7.4.3|_x000D__x000A_---------_x000D__x000A_* #48 Moved garbage collection in runspacepool cleanup_x000D__x000A_* #48 Removed unnecessary Close() on runspacepool as Dispose() already in use_x000D__x000A_* #157 (Start-RSJob - be able to import private functions)_x000D__x000A_* #174 (Minor variable declaration)_x000D__x000A_* Variables will now always use local scope in runspace by default; not global which prevents incorrect data being presented if a variable is created and not cleaned up in each runspace._x000D__x000A__x000D__x000A_Full release notes can be found at: https://github.com/proxb/PoshRSJob/blob/master/ReleaseNotes.md</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="summary">Provides an alternative to PSjobs with greater performance and less overhead to run commands in the background, freeing up the console and allowing throttling on the jobs.</S>
+          <S N="copyright">(c) 2014 Boe Prox. All rights reserved.</S>
+          <S N="description">Module designed to use PowerShell runspaces to create jobs that allow throttling and quicker execution of commands</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">---------_x000D__x000A_|1.7.4.4|_x000D__x000A_---------_x000D__x000A_* #175 Save and restore $env:PSModulePath until we find why it's being clobbered on PS Core_x000D__x000A__x000D__x000A_---------_x000D__x000A_|1.7.4.3|_x000D__x000A_---------_x000D__x000A_* #48 Moved garbage collection in runspacepool cleanup_x000D__x000A_* #48 Removed unnecessary Close() on runspacepool as Dispose() already in use_x000D__x000A_* #157 (Start-RSJob - be able to import private functions)_x000D__x000A_* #174 (Minor variable declaration)_x000D__x000A_* Variables will now always use local scope in runspace by default; not global which prevents incorrect data being presented if a variable is created and not cleaned up in each runspace._x000D__x000A__x000D__x000A_Full release notes can be found at: https://github.com/proxb/PoshRSJob/blob/master/ReleaseNotes.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">491966</S>
+          <S N="downloadCount">506013</S>
+          <S N="packageSize">33462</S>
+          <S N="published">24/02/2018 21:43:52 +00:00</S>
+          <S N="created">24/02/2018 21:43:52 +00:00</S>
+          <S N="lastEdited">01/03/2018 14:45:11 +00:00</S>
+          <S N="lastUpdated">25/09/2022 20:41:57 +01:00</S>
+          <S N="tags">PoshRSJob Runspace RunspacePool Linux PowerShellCore RSJob PSModule PSFunction_Get-RSJob PSCommand_Get-RSJob PSFunction_Receive-RSJob PSCommand_Receive-RSJob PSFunction_Remove-RSJob PSCommand_Remove-RSJob PSFunction_Start-RSJob PSCommand_Start-RSJob PSFunction_Stop-RSJob PSCommand_Stop-RSJob PSFunction_Wait-RSJob PSCommand_Wait-RSJob PSIncludes_Function</S>
+          <S N="title">PoshRSJob</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-25T20:41:57Z</S>
+          <S N="NormalizedVersion">1.7.4.4</S>
+          <S N="Authors">Boe Prox</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PoshRSJob.nuspec|PoshRSJob.psd1|PoshRSJob.psm1|en-US\about_PoshRSJob.help.txt|Private\ConvertScript.ps1|Private\ConvertScriptBlockV2.ps1|Private\FindFunction.ps1|Private\GetFunctionByFile.ps1|Private\GetFunctionDefinitionByFunction.ps1|Private\GetParamVariable.ps1|Private\GetUsingVariables.ps1|Private\GetUsingVariablesV2.ps1|Private\Increment.ps1|Private\RegisterScriptScopeFunction.ps1|Private\SetIsReceived.ps1|Private\WriteStream.ps1|Public\Get-RSJob.ps1|Public\Receive-RSJob.ps1|Public\Remove-RSJob.ps1|Public\Start-RSJob.ps1|Public\Stop-RSJob.ps1|Public\Wait-RSJob.ps1|Scripts\TabExpansion.ps1|TypeData\PoshRSJob.Format.ps1xml|TypeData\PoshRSJob.Types.ps1xml</S>
+          <S N="GUID">9b17fb0f-e939-4a5c-b194-3f2247452972</S>
+          <S N="CompanyName">NA</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\PoshRSJob\1.7.4.4</S>
+    </MS>
+  </Obj>
+</Objs>

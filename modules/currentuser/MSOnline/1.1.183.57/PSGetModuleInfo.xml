@@ -1,0 +1,324 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">MSOnline</S>
+      <Version N="Version">1.1.183.57</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Microsoft Azure Active Directory Module for Windows PowerShell</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">AzureADPowerShell</S>
+      <S N="Copyright">c Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2019-11-08T22:32:00+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2020-02-21T15:03:04.0354095+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MsolDevice</S>
+                <S>Remove-MsolDevice</S>
+                <S>Enable-MsolDevice</S>
+                <S>Disable-MsolDevice</S>
+                <S>Get-MsolDeviceRegistrationServicePolicy</S>
+                <S>Set-MsolDeviceRegistrationServicePolicy</S>
+                <S>New-MsolServicePrincipalAddresses</S>
+                <S>New-MsolLicenseOptions</S>
+                <S>Connect-MsolService</S>
+                <S>New-MsolAdministrativeUnit</S>
+                <S>Get-MsolAdministrativeUnit</S>
+                <S>Set-MsolAdministrativeUnit</S>
+                <S>Remove-MsolAdministrativeUnit</S>
+                <S>Add-MsolAdministrativeUnitMember</S>
+                <S>Remove-MsolAdministrativeUnitMember</S>
+                <S>Get-MsolAdministrativeUnitMember</S>
+                <S>Get-MsolCompanyInformation</S>
+                <S>Get-MsolSubscription</S>
+                <S>Get-MsolAccountSku</S>
+                <S>Get-MsolPartnerInformation</S>
+                <S>Set-MsolPartnerInformation</S>
+                <S>Set-MsolCompanyContactInformation</S>
+                <S>Set-MsolCompanySecurityComplianceContactInformation</S>
+                <S>Set-MsolDirSyncEnabled</S>
+                <S>Set-MsolDirSyncConfiguration</S>
+                <S>Get-MsolDirSyncConfiguration</S>
+                <S>Set-MsolDirSyncFeature</S>
+                <S>Get-MsolDirSyncFeatures</S>
+                <S>Set-MsolCompanySettings</S>
+                <S>Get-MsolPartnerContract</S>
+                <S>Get-MsolPasswordPolicy</S>
+                <S>Set-MsolPasswordPolicy</S>
+                <S>Get-MsolDirSyncProvisioningError</S>
+                <S>Get-MsolHasObjectsWithDirSyncProvisioningErrors</S>
+                <S>Set-MsolCompanyMultiNationalEnabled</S>
+                <S>Set-MsolCompanyAllowedDataLocation</S>
+                <S>Get-MsolCompanyAllowedDataLocation</S>
+                <S>Remove-MsolContact</S>
+                <S>Get-MsolContact</S>
+                <S>Redo-MsolProvisionContact</S>
+                <S>New-MsolDomain</S>
+                <S>Confirm-MsolDomain</S>
+                <S>Confirm-MsolEmailVerifiedDomain</S>
+                <S>Remove-MsolDomain</S>
+                <S>Set-MsolDomain</S>
+                <S>Set-MsolDomainAuthentication</S>
+                <S>Get-MsolDomainFederationSettings</S>
+                <S>Set-MsolDomainFederationSettings</S>
+                <S>Get-MsolDomain</S>
+                <S>Get-MsolDomainVerificationDns</S>
+                <S>New-MsolGroup</S>
+                <S>New-MsolWellKnownGroup</S>
+                <S>Remove-MsolGroup</S>
+                <S>Set-MsolGroup</S>
+                <S>Get-MsolGroup</S>
+                <S>Add-MsolGroupMember</S>
+                <S>Remove-MsolGroupMember</S>
+                <S>Get-MsolGroupMember</S>
+                <S>Redo-MsolProvisionGroup</S>
+                <S>Get-MsolRole</S>
+                <S>Get-MsolUserRole</S>
+                <S>Add-MsolRoleMember</S>
+                <S>Remove-MsolRoleMember</S>
+                <S>Get-MsolRoleMember</S>
+                <S>Add-MsolForeignGroupToRole</S>
+                <S>Remove-MsolForeignGroupFromRole</S>
+                <S>Add-MsolScopedRoleMember</S>
+                <S>Remove-MsolScopedRoleMember</S>
+                <S>Get-MsolScopedRoleMember</S>
+                <S>New-MsolServicePrincipal</S>
+                <S>New-MsolServicePrincipalCredential</S>
+                <S>Remove-MsolServicePrincipal</S>
+                <S>Get-MsolServicePrincipal</S>
+                <S>Remove-MsolServicePrincipalCredential</S>
+                <S>Set-MsolServicePrincipal</S>
+                <S>Get-MsolServicePrincipalCredential</S>
+                <S>New-MsolUser</S>
+                <S>Remove-MsolUser</S>
+                <S>Set-MsolUser</S>
+                <S>Set-MsolUserPrincipalName</S>
+                <S>Set-MsolUserPassword</S>
+                <S>Get-MsolUser</S>
+                <S>Get-MsolUserByStrongAuthentication</S>
+                <S>Set-MsolUserLicense</S>
+                <S>Redo-MsolProvisionUser</S>
+                <S>Convert-MsolFederatedUser</S>
+                <S>Restore-MsolUser</S>
+                <S>Reset-MsolStrongAuthenticationMethodByUpn</S>
+                <S>Remove-MsolApplicationPassword</S>
+                <S>Set-MsolADFSContext</S>
+                <S>Get-MsolFederationProperty</S>
+                <S>Convert-MsolDomainToStandard</S>
+                <S>Convert-MsolDomainToFederated</S>
+                <S>New-MsolFederatedDomain</S>
+                <S>Update-MsolFederatedDomain</S>
+                <S>Remove-MsolFederatedDomain</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-MsolDevice</S>
+                <S>Remove-MsolDevice</S>
+                <S>Enable-MsolDevice</S>
+                <S>Disable-MsolDevice</S>
+                <S>Get-MsolDeviceRegistrationServicePolicy</S>
+                <S>Set-MsolDeviceRegistrationServicePolicy</S>
+                <S>New-MsolServicePrincipalAddresses</S>
+                <S>New-MsolLicenseOptions</S>
+                <S>Connect-MsolService</S>
+                <S>New-MsolAdministrativeUnit</S>
+                <S>Get-MsolAdministrativeUnit</S>
+                <S>Set-MsolAdministrativeUnit</S>
+                <S>Remove-MsolAdministrativeUnit</S>
+                <S>Add-MsolAdministrativeUnitMember</S>
+                <S>Remove-MsolAdministrativeUnitMember</S>
+                <S>Get-MsolAdministrativeUnitMember</S>
+                <S>Get-MsolCompanyInformation</S>
+                <S>Get-MsolSubscription</S>
+                <S>Get-MsolAccountSku</S>
+                <S>Get-MsolPartnerInformation</S>
+                <S>Set-MsolPartnerInformation</S>
+                <S>Set-MsolCompanyContactInformation</S>
+                <S>Set-MsolCompanySecurityComplianceContactInformation</S>
+                <S>Set-MsolDirSyncEnabled</S>
+                <S>Set-MsolDirSyncConfiguration</S>
+                <S>Get-MsolDirSyncConfiguration</S>
+                <S>Set-MsolDirSyncFeature</S>
+                <S>Get-MsolDirSyncFeatures</S>
+                <S>Set-MsolCompanySettings</S>
+                <S>Get-MsolPartnerContract</S>
+                <S>Get-MsolPasswordPolicy</S>
+                <S>Set-MsolPasswordPolicy</S>
+                <S>Get-MsolDirSyncProvisioningError</S>
+                <S>Get-MsolHasObjectsWithDirSyncProvisioningErrors</S>
+                <S>Set-MsolCompanyMultiNationalEnabled</S>
+                <S>Set-MsolCompanyAllowedDataLocation</S>
+                <S>Get-MsolCompanyAllowedDataLocation</S>
+                <S>Remove-MsolContact</S>
+                <S>Get-MsolContact</S>
+                <S>Redo-MsolProvisionContact</S>
+                <S>New-MsolDomain</S>
+                <S>Confirm-MsolDomain</S>
+                <S>Confirm-MsolEmailVerifiedDomain</S>
+                <S>Remove-MsolDomain</S>
+                <S>Set-MsolDomain</S>
+                <S>Set-MsolDomainAuthentication</S>
+                <S>Get-MsolDomainFederationSettings</S>
+                <S>Set-MsolDomainFederationSettings</S>
+                <S>Get-MsolDomain</S>
+                <S>Get-MsolDomainVerificationDns</S>
+                <S>New-MsolGroup</S>
+                <S>New-MsolWellKnownGroup</S>
+                <S>Remove-MsolGroup</S>
+                <S>Set-MsolGroup</S>
+                <S>Get-MsolGroup</S>
+                <S>Add-MsolGroupMember</S>
+                <S>Remove-MsolGroupMember</S>
+                <S>Get-MsolGroupMember</S>
+                <S>Redo-MsolProvisionGroup</S>
+                <S>Get-MsolRole</S>
+                <S>Get-MsolUserRole</S>
+                <S>Add-MsolRoleMember</S>
+                <S>Remove-MsolRoleMember</S>
+                <S>Get-MsolRoleMember</S>
+                <S>Add-MsolForeignGroupToRole</S>
+                <S>Remove-MsolForeignGroupFromRole</S>
+                <S>Add-MsolScopedRoleMember</S>
+                <S>Remove-MsolScopedRoleMember</S>
+                <S>Get-MsolScopedRoleMember</S>
+                <S>New-MsolServicePrincipal</S>
+                <S>New-MsolServicePrincipalCredential</S>
+                <S>Remove-MsolServicePrincipal</S>
+                <S>Get-MsolServicePrincipal</S>
+                <S>Remove-MsolServicePrincipalCredential</S>
+                <S>Set-MsolServicePrincipal</S>
+                <S>Get-MsolServicePrincipalCredential</S>
+                <S>New-MsolUser</S>
+                <S>Remove-MsolUser</S>
+                <S>Set-MsolUser</S>
+                <S>Set-MsolUserPrincipalName</S>
+                <S>Set-MsolUserPassword</S>
+                <S>Get-MsolUser</S>
+                <S>Get-MsolUserByStrongAuthentication</S>
+                <S>Set-MsolUserLicense</S>
+                <S>Redo-MsolProvisionUser</S>
+                <S>Convert-MsolFederatedUser</S>
+                <S>Restore-MsolUser</S>
+                <S>Reset-MsolStrongAuthenticationMethodByUpn</S>
+                <S>Remove-MsolApplicationPassword</S>
+                <S>Set-MsolADFSContext</S>
+                <S>Get-MsolFederationProperty</S>
+                <S>Convert-MsolDomainToStandard</S>
+                <S>Convert-MsolDomainToFederated</S>
+                <S>New-MsolFederatedDomain</S>
+                <S>Update-MsolFederatedDomain</S>
+                <S>Remove-MsolFederatedDomain</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">c Microsoft Corporation. All rights reserved.</S>
+          <S N="description">Microsoft Azure Active Directory Module for Windows PowerShell</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">347162</S>
+          <S N="downloadCount">1802555</S>
+          <S N="packageSize">8000864</S>
+          <S N="published">08/11/2019 22:32:00 +00:00</S>
+          <S N="created">08/11/2019 22:32:00 +00:00</S>
+          <S N="lastUpdated">21/02/2020 15:01:16 +00:00</S>
+          <S N="tags">PSModule</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2020-02-21T15:01:16Z</S>
+          <S N="NormalizedVersion">1.1.183.57</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">MSOnline.nuspec|AdministrationConfig.wixproj|constants.wxi|localps.reg|Microsoft.Azure.ActiveDirectory.Client.Framework.dll|Microsoft.Azure.ActiveDirectory.Client.Framework.pdb|Microsoft.Azure.ActiveDirectory.GraphClient.dll|Microsoft.Data.Edm.dll|Microsoft.Data.Edm.resources.dll|Microsoft.Data.Edm.xml|Microsoft.Data.OData.dll|Microsoft.Data.OData.resources.dll|Microsoft.Data.OData.xml|Microsoft.Data.Services.Client.dll|Microsoft.Data.Services.Client.resources.dll|Microsoft.Data.Services.Client.xml|Microsoft.IdentityModel.Clients.ActiveDirectory.dll|Microsoft.IdentityModel.Clients.ActiveDirectory.pdb|Microsoft.IdentityModel.Clients.ActiveDirectory.xml|Microsoft.Online.Administration.Automation.PSModule.dll|Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|Microsoft.Online.Administration.Automation.PSModule.pdb|Microsoft.Online.Administration.Automation.PSModule.Resources.dll|Microsoft.Online.Administration.Automation.PSModule.Resources.pdb|Microsoft.Online.Identity.Federation.PowerShell.dll|Microsoft.Online.Identity.Federation.Powershell.dll-help.xml|Microsoft.Online.Identity.Federation.PowerShell.pdb|Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|MSOnline.Format.ps1xml|MSOnline.psd1|MSOnlineExtended.psd1|Newtonsoft.Json.dll|Newtonsoft.Json.xml|RestSharp.dll|RestSharp.xml|System.IdentityModel.Tokens.Jwt.dll|System.IdentityModel.Tokens.Jwt.pdb|System.IdentityModel.Tokens.Jwt.xml|System.Management.Automation.dll|System.Spatial.dll|System.Spatial.resources.dll|System.Spatial.xml|de\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|de\Microsoft.Online.Identity.Federation.PowerShell.dll|de\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|de\Microsoft.Online.Identity.Federation.PowerShell.pdb|de\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|de\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|de\MSOnline.Format.ps1xml|de\MSOnline.psd1|de\MSOnlineExtended.psd1|es\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|es\Microsoft.Online.Identity.Federation.PowerShell.dll|es\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|es\Microsoft.Online.Identity.Federation.PowerShell.pdb|es\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|es\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|es\MSOnline.Format.ps1xml|es\MSOnline.psd1|es\MSOnlineExtended.psd1|fr\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|fr\Microsoft.Online.Identity.Federation.PowerShell.dll|fr\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|fr\Microsoft.Online.Identity.Federation.PowerShell.pdb|fr\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|fr\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|fr\MSOnline.Format.ps1xml|fr\MSOnline.psd1|fr\MSOnlineExtended.psd1|InstallerHelpFiles\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.dll|InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.pdb|InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|InstallerHelpFiles\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|InstallerHelpFiles\MSOnline.Format.ps1xml|InstallerHelpFiles\MSOnline.psd1|InstallerHelpFiles\MSOnlineExtended.psd1|it\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|it\Microsoft.Online.Identity.Federation.PowerShell.dll|it\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|it\Microsoft.Online.Identity.Federation.PowerShell.pdb|it\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|it\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|it\MSOnline.Format.ps1xml|it\MSOnline.psd1|it\MSOnlineExtended.psd1|ja\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|ja\Microsoft.Online.Identity.Federation.PowerShell.dll|ja\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|ja\Microsoft.Online.Identity.Federation.PowerShell.pdb|ja\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|ja\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|ja\MSOnline.Format.ps1xml|ja\MSOnline.psd1|ja\MSOnlineExtended.psd1|ko\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|ko\Microsoft.Online.Identity.Federation.PowerShell.dll|ko\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|ko\Microsoft.Online.Identity.Federation.PowerShell.pdb|ko\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|ko\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|ko\MSOnline.Format.ps1xml|ko\MSOnline.psd1|ko\MSOnlineExtended.psd1|ru\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|ru\Microsoft.Online.Identity.Federation.PowerShell.dll|ru\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|ru\Microsoft.Online.Identity.Federation.PowerShell.pdb|ru\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|ru\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|ru\MSOnline.Format.ps1xml|ru\MSOnline.psd1|ru\MSOnlineExtended.psd1|zh-hans\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|zh-hans\Microsoft.Online.Identity.Federation.PowerShell.dll|zh-hans\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|zh-hans\Microsoft.Online.Identity.Federation.PowerShell.pdb|zh-hans\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|zh-hans\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|zh-hans\MSOnline.Format.ps1xml|zh-hans\MSOnline.psd1|zh-hans\MSOnlineExtended.psd1|zh-hant\Microsoft.Online.Administration.Automation.PSModule.dll-help.xml|zh-hant\Microsoft.Online.Identity.Federation.PowerShell.dll|zh-hant\Microsoft.Online.Identity.Federation.PowerShell.dll-help.xml|zh-hant\Microsoft.Online.Identity.Federation.PowerShell.pdb|zh-hant\Microsoft.Online.Identity.Federation.PowerShell.Strings.dll|zh-hant\Microsoft.Online.Identity.Federation.PowerShell.Strings.pdb|zh-hant\MSOnline.Format.ps1xml|zh-hant\MSOnline.psd1|zh-hant\MSOnlineExtended.psd1</S>
+          <S N="Cmdlets">Get-MsolDevice Remove-MsolDevice Enable-MsolDevice Disable-MsolDevice Get-MsolDeviceRegistrationServicePolicy Set-MsolDeviceRegistrationServicePolicy New-MsolServicePrincipalAddresses New-MsolLicenseOptions Connect-MsolService New-MsolAdministrativeUnit Get-MsolAdministrativeUnit Set-MsolAdministrativeUnit Remove-MsolAdministrativeUnit Add-MsolAdministrativeUnitMember Remove-MsolAdministrativeUnitMember Get-MsolAdministrativeUnitMember Get-MsolCompanyInformation Get-MsolSubscription Get-MsolAccountSku Get-MsolPartnerInformation Set-MsolPartnerInformation Set-MsolCompanyContactInformation Set-MsolCompanySecurityComplianceContactInformation Set-MsolDirSyncEnabled Set-MsolDirSyncConfiguration Get-MsolDirSyncConfiguration Set-MsolDirSyncFeature Get-MsolDirSyncFeatures Set-MsolCompanySettings Get-MsolPartnerContract Get-MsolPasswordPolicy Set-MsolPasswordPolicy Get-MsolDirSyncProvisioningError Get-MsolHasObjectsWithDirSyncProvisioningErrors Set-MsolCompanyMultiNationalEnabled Set-MsolCompanyAllowedDataLocation Get-MsolCompanyAllowedDataLocation Remove-MsolContact Get-MsolContact Redo-MsolProvisionContact New-MsolDomain Confirm-MsolDomain Confirm-MsolEmailVerifiedDomain Remove-MsolDomain Set-MsolDomain Set-MsolDomainAuthentication Get-MsolDomainFederationSettings Set-MsolDomainFederationSettings Get-MsolDomain Get-MsolDomainVerificationDns New-MsolGroup New-MsolWellKnownGroup Remove-MsolGroup Set-MsolGroup Get-MsolGroup Add-MsolGroupMember Remove-MsolGroupMember Get-MsolGroupMember Redo-MsolProvisionGroup Get-MsolRole Get-MsolUserRole Add-MsolRoleMember Remove-MsolRoleMember Get-MsolRoleMember Add-MsolForeignGroupToRole Remove-MsolForeignGroupFromRole Add-MsolScopedRoleMember Remove-MsolScopedRoleMember Get-MsolScopedRoleMember New-MsolServicePrincipal New-MsolServicePrincipalCredential Remove-MsolServicePrincipal Get-MsolServicePrincipal Remove-MsolServicePrincipalCredential Set-MsolServicePrincipal Get-MsolServicePrincipalCredential New-MsolUser Remove-MsolUser Set-MsolUser Set-MsolUserPrincipalName Set-MsolUserPassword Get-MsolUser Get-MsolUserByStrongAuthentication Set-MsolUserLicense Redo-MsolProvisionUser Convert-MsolFederatedUser Restore-MsolUser Reset-MsolStrongAuthenticationMethodByUpn Remove-MsolApplicationPassword Set-MsolADFSContext Get-MsolFederationProperty Convert-MsolDomainToStandard Convert-MsolDomainToFederated New-MsolFederatedDomain Update-MsolFederatedDomain Remove-MsolFederatedDomain</S>
+          <S N="GUID">d162594e-d7aa-42be-9884-84928d3f7acf</S>
+          <S N="PowerShellVersion">2.0</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\charl\Documents\PowerShell\Modules\MSOnline\1.1.183.57</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -1,0 +1,346 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSProfile</S>
+      <Version N="Version">0.7.2.20211209</Version>
+      <S N="Type">Module</S>
+      <S N="Description">PSProfile is a cross-platform PowerShell module built for profile customization. It uses PoshCode's Configuration module to handle the layered Configuration</S>
+      <S N="Author">Nate Ferrell</S>
+      <S N="CompanyName">nferrell</S>
+      <S N="Copyright">(c) 2017-2019 Nate Ferrell. All rights reserved.</S>
+      <DT N="PublishedDate">2021-12-09T17:47:53+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-26T20:21:48.4641232+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://raw.githubusercontent.com/scrthq/PSProfile/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/scrthq/PSProfile</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Profile</S>
+          <S>Productivity</S>
+          <S>Shell</S>
+          <S>Prompt</S>
+          <S>Customization</S>
+          <S>Git</S>
+          <S>Windows</S>
+          <S>Mac</S>
+          <S>Linux</S>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-PSProfileCommandAlias</S>
+                <S>Add-PSProfileConfigurationPath</S>
+                <S>Add-PSProfileInitScript</S>
+                <S>Add-PSProfileModuleToImport</S>
+                <S>Add-PSProfileModuleToInstall</S>
+                <S>Add-PSProfilePathAlias</S>
+                <S>Add-PSProfilePlugin</S>
+                <S>Add-PSProfilePluginPath</S>
+                <S>Add-PSProfileProjectPath</S>
+                <S>Add-PSProfilePrompt</S>
+                <S>Add-PSProfileScriptPath</S>
+                <S>Add-PSProfileSecret</S>
+                <S>Add-PSProfileSymbolicLink</S>
+                <S>Add-PSProfileToProfile</S>
+                <S>Add-PSProfileVariable</S>
+                <S>Confirm-ScriptIsValid</S>
+                <S>Copy-Parameters</S>
+                <S>Disable-PSProfileInitScript</S>
+                <S>Edit-PSProfileInitScript</S>
+                <S>Edit-PSProfilePrompt</S>
+                <S>Enable-PSProfileInitScript</S>
+                <S>Enter-CleanEnvironment</S>
+                <S>Export-PSProfileConfiguration</S>
+                <S>Format-Syntax</S>
+                <S>Get-Definition</S>
+                <S>Get-Gist</S>
+                <S>Get-LastCommandDuration</S>
+                <S>Get-LongPath</S>
+                <S>Get-MyCreds</S>
+                <S>Get-PathAlias</S>
+                <S>Get-PSProfileArguments</S>
+                <S>Get-PSProfileCommand</S>
+                <S>Get-PSProfileCommandAlias</S>
+                <S>Get-PSProfileConfigurationPath</S>
+                <S>Get-PSProfileImportedCommand</S>
+                <S>Get-PSProfileInitScript</S>
+                <S>Get-PSProfileLog</S>
+                <S>Get-PSProfileModuleToImport</S>
+                <S>Get-PSProfileModuleToInstall</S>
+                <S>Get-PSProfilePathAlias</S>
+                <S>Get-PSProfilePlugin</S>
+                <S>Get-PSProfilePluginPath</S>
+                <S>Get-PSProfileProjectPath</S>
+                <S>Get-PSProfilePrompt</S>
+                <S>Get-PSProfileScriptPath</S>
+                <S>Get-PSProfileSecret</S>
+                <S>Get-PSProfileSymbolicLink</S>
+                <S>Get-PSProfileVariable</S>
+                <S>Get-PSVersion</S>
+                <S>Import-PSProfile</S>
+                <S>Import-PSProfileConfiguration</S>
+                <S>Install-LatestModule</S>
+                <S>Open-Code</S>
+                <S>Open-Item</S>
+                <S>Pop-Path</S>
+                <S>Push-Path</S>
+                <S>Remove-PSProfileCommandAlias</S>
+                <S>Remove-PSProfileConfigurationPath</S>
+                <S>Remove-PSProfileInitScript</S>
+                <S>Remove-PSProfileModuleToImport</S>
+                <S>Remove-PSProfileModuleToInstall</S>
+                <S>Remove-PSProfilePathAlias</S>
+                <S>Remove-PSProfilePlugin</S>
+                <S>Remove-PSProfilePluginPath</S>
+                <S>Remove-PSProfileProjectPath</S>
+                <S>Remove-PSProfilePrompt</S>
+                <S>Remove-PSProfileScriptPath</S>
+                <S>Remove-PSProfileSecret</S>
+                <S>Remove-PSProfileSymbolicLink</S>
+                <S>Remove-PSProfileVariable</S>
+                <S>Save-PSProfile</S>
+                <S>Start-BuildScript</S>
+                <S>Start-PSProfileConfigurationHelper</S>
+                <S>Switch-PSProfilePrompt</S>
+                <S>Test-IfGit</S>
+                <S>Test-RegEx</S>
+                <S>Update-PSProfileConfig</S>
+                <S>Update-PSProfileRefreshFrequency</S>
+                <S>Update-PSProfileSetting</S>
+                <S>Write-PSProfileLog</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-PSProfileCommandAlias</S>
+                <S>Add-PSProfileConfigurationPath</S>
+                <S>Add-PSProfileInitScript</S>
+                <S>Add-PSProfileModuleToImport</S>
+                <S>Add-PSProfileModuleToInstall</S>
+                <S>Add-PSProfilePathAlias</S>
+                <S>Add-PSProfilePlugin</S>
+                <S>Add-PSProfilePluginPath</S>
+                <S>Add-PSProfileProjectPath</S>
+                <S>Add-PSProfilePrompt</S>
+                <S>Add-PSProfileScriptPath</S>
+                <S>Add-PSProfileSecret</S>
+                <S>Add-PSProfileSymbolicLink</S>
+                <S>Add-PSProfileToProfile</S>
+                <S>Add-PSProfileVariable</S>
+                <S>Confirm-ScriptIsValid</S>
+                <S>Copy-Parameters</S>
+                <S>Disable-PSProfileInitScript</S>
+                <S>Edit-PSProfileInitScript</S>
+                <S>Edit-PSProfilePrompt</S>
+                <S>Enable-PSProfileInitScript</S>
+                <S>Enter-CleanEnvironment</S>
+                <S>Export-PSProfileConfiguration</S>
+                <S>Format-Syntax</S>
+                <S>Get-Definition</S>
+                <S>Get-Gist</S>
+                <S>Get-LastCommandDuration</S>
+                <S>Get-LongPath</S>
+                <S>Get-MyCreds</S>
+                <S>Get-PathAlias</S>
+                <S>Get-PSProfileArguments</S>
+                <S>Get-PSProfileCommand</S>
+                <S>Get-PSProfileCommandAlias</S>
+                <S>Get-PSProfileConfigurationPath</S>
+                <S>Get-PSProfileImportedCommand</S>
+                <S>Get-PSProfileInitScript</S>
+                <S>Get-PSProfileLog</S>
+                <S>Get-PSProfileModuleToImport</S>
+                <S>Get-PSProfileModuleToInstall</S>
+                <S>Get-PSProfilePathAlias</S>
+                <S>Get-PSProfilePlugin</S>
+                <S>Get-PSProfilePluginPath</S>
+                <S>Get-PSProfileProjectPath</S>
+                <S>Get-PSProfilePrompt</S>
+                <S>Get-PSProfileScriptPath</S>
+                <S>Get-PSProfileSecret</S>
+                <S>Get-PSProfileSymbolicLink</S>
+                <S>Get-PSProfileVariable</S>
+                <S>Get-PSVersion</S>
+                <S>Import-PSProfile</S>
+                <S>Import-PSProfileConfiguration</S>
+                <S>Install-LatestModule</S>
+                <S>Open-Code</S>
+                <S>Open-Item</S>
+                <S>Pop-Path</S>
+                <S>Push-Path</S>
+                <S>Remove-PSProfileCommandAlias</S>
+                <S>Remove-PSProfileConfigurationPath</S>
+                <S>Remove-PSProfileInitScript</S>
+                <S>Remove-PSProfileModuleToImport</S>
+                <S>Remove-PSProfileModuleToInstall</S>
+                <S>Remove-PSProfilePathAlias</S>
+                <S>Remove-PSProfilePlugin</S>
+                <S>Remove-PSProfilePluginPath</S>
+                <S>Remove-PSProfileProjectPath</S>
+                <S>Remove-PSProfilePrompt</S>
+                <S>Remove-PSProfileScriptPath</S>
+                <S>Remove-PSProfileSecret</S>
+                <S>Remove-PSProfileSymbolicLink</S>
+                <S>Remove-PSProfileVariable</S>
+                <S>Save-PSProfile</S>
+                <S>Start-BuildScript</S>
+                <S>Start-PSProfileConfigurationHelper</S>
+                <S>Switch-PSProfilePrompt</S>
+                <S>Test-IfGit</S>
+                <S>Test-RegEx</S>
+                <S>Update-PSProfileConfig</S>
+                <S>Update-PSProfileRefreshFrequency</S>
+                <S>Update-PSProfileSetting</S>
+                <S>Write-PSProfileLog</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/scrthq/PSProfile/blob/master/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Configuration</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Configuration</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="10">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">PoshRSJob</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:PoshRSJob</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="11">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">posh-git</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:posh-git</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="12">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2017-2019 Nate Ferrell. All rights reserved.</S>
+          <S N="description">PSProfile is a cross-platform PowerShell module built for profile customization. It uses PoshCode's Configuration module to handle the layered Configuration</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/scrthq/PSProfile/blob/master/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">264</S>
+          <S N="downloadCount">1430</S>
+          <S N="packageSize">65602</S>
+          <S N="published">09/12/2021 17:47:53 +00:00</S>
+          <S N="created">09/12/2021 17:47:53 +00:00</S>
+          <S N="lastUpdated">26/09/2022 13:01:59 +01:00</S>
+          <S N="tags">Profile Productivity Shell Prompt Customization Git Windows Mac Linux PSModule PSEdition_Desktop PSEdition_Core PSFunction_Add-PSProfileCommandAlias PSCommand_Add-PSProfileCommandAlias PSFunction_Add-PSProfileConfigurationPath PSCommand_Add-PSProfileConfigurationPath PSFunction_Add-PSProfileInitScript PSCommand_Add-PSProfileInitScript PSFunction_Add-PSProfileModuleToImport PSCommand_Add-PSProfileModuleToImport PSFunction_Add-PSProfileModuleToInstall PSCommand_Add-PSProfileModuleToInstall PSFunction_Add-PSProfilePathAlias PSCommand_Add-PSProfilePathAlias PSFunction_Add-PSProfilePlugin PSCommand_Add-PSProfilePlugin PSFunction_Add-PSProfilePluginPath PSCommand_Add-PSProfilePluginPath PSFunction_Add-PSProfileProjectPath PSCommand_Add-PSProfileProjectPath PSFunction_Add-PSProfilePrompt PSCommand_Add-PSProfilePrompt PSFunction_Add-PSProfileScriptPath PSCommand_Add-PSProfileScriptPath PSFunction_Add-PSProfileSecret PSCommand_Add-PSProfileSecret PSFunction_Add-PSProfileSymbolicLink PSCommand_Add-PSProfileSymbolicLink PSFunction_Add-PSProfileToProfile PSCommand_Add-PSProfileToProfile PSFunction_Add-PSProfileVariable PSCommand_Add-PSProfileVariable PSFunction_Confirm-ScriptIsValid PSCommand_Confirm-ScriptIsValid PSFunction_Copy-Parameters PSCommand_Copy-Parameters PSFunction_Disable-PSProfileInitScript PSCommand_Disable-PSProfileInitScript PSFunction_Edit-PSProfileInitScript PSCommand_Edit-PSProfileInitScript PSFunction_Edit-PSProfilePrompt PSCommand_Edit-PSProfilePrompt PSFunction_Enable-PSProfileInitScript PSCommand_Enable-PSProfileInitScript PSFunction_Enter-CleanEnvironment PSCommand_Enter-CleanEnvironment PSFunction_Export-PSProfileConfiguration PSCommand_Export-PSProfileConfiguration PSFunction_Format-Syntax PSCommand_Format-Syntax PSFunction_Get-Definition PSCommand_Get-Definition PSFunction_Get-Gist PSCommand_Get-Gist PSFunction_Get-LastCommandDuration PSCommand_Get-LastCommandDuration PSFunction_Get-LongPath PSCommand_Get-LongPath PSFunction_Get-MyCreds PSCommand_Get-MyCreds PSFunction_Get-PathAlias PSCommand_Get-PathAlias PSFunction_Get-PSProfileArguments PSCommand_Get-PSProfileArguments PSFunction_Get-PSProfileCommand PSCommand_Get-PSProfileCommand PSFunction_Get-PSProfileCommandAlias PSCommand_Get-PSProfileCommandAlias PSFunction_Get-PSProfileConfigurationPath PSCommand_Get-PSProfileConfigurationPath PSFunction_Get-PSProfileImportedCommand PSCommand_Get-PSProfileImportedCommand PSFunction_Get-PSProfileInitScript PSCommand_Get-PSProfileInitScript PSFunction_Get-PSProfileLog PSCommand_Get-PSProfileLog PSFunction_Get-PSProfileModuleToImport PSCommand_Get-PSProfileModuleToImport PSFunction_Get-PSProfileModuleToInstall PSCommand_Get-PSProfileModuleToInstall PSFunction_Get-PSProfilePathAlias PSCommand_Get-PSProfilePathAlias PSFunction_Get-PSProfilePlugin PSCommand_Get-PSProfilePlugin PSFunction_Get-PSProfilePluginPath PSCommand_Get-PSProfilePluginPath PSFunction_Get-PSProfileProjectPath PSCommand_Get-PSProfileProjectPath PSFunction_Get-PSProfilePrompt PSCommand_Get-PSProfilePrompt PSFunction_Get-PSProfileScriptPath PSCommand_Get-PSProfileScriptPath PSFunction_Get-PSProfileSecret PSCommand_Get-PSProfileSecret PSFunction_Get-PSProfileSymbolicLink PSCommand_Get-PSProfileSymbolicLink PSFunction_Get-PSProfileVariable PSCommand_Get-PSProfileVariable PSFunction_Get-PSVersion PSCommand_Get-PSVersion PSFunction_Import-PSProfile PSCommand_Import-PSProfile PSFunction_Import-PSProfileConfiguration PSCommand_Import-PSProfileConfiguration PSFunction_Install-LatestModule PSCommand_Install-LatestModule PSFunction_Open-Code PSCommand_Open-Code PSFunction_Open-Item PSCommand_Open-Item PSFunction_Pop-Path PSCommand_Pop-Path PSFunction_Push-Path PSCommand_Push-Path PSFunction_Remove-PSProfileCommandAlias PSCommand_Remove-PSProfileCommandAlias PSFunction_Remove-PSProfileConfigurationPath PSCommand_Remove-PSProfileConfigurationPath PSFunction_Remove-PSProfileInitScript PSCommand_Remove-PSProfileInitScript PSFunction_Remove-PSProfileModuleToImport PSCommand_Remove-PSProfileModuleToImport PSFunction_Remove-PSProfileModuleToInstall PSCommand_Remove-PSProfileModuleToInstall PSFunction_Remove-PSProfilePathAlias PSCommand_Remove-PSProfilePathAlias PSFunction_Remove-PSProfilePlugin PSCommand_Remove-PSProfilePlugin PSFunction_Remove-PSProfilePluginPath PSCommand_Remove-PSProfilePluginPath PSFunction_Remove-PSProfileProjectPath PSCommand_Remove-PSProfileProjectPath PSFunction_Remove-PSProfilePrompt PSCommand_Remove-PSProfilePrompt PSFunction_Remove-PSProfileScriptPath PSCommand_Remove-PSProfileScriptPath PSFunction_Remove-PSProfileSecret PSCommand_Remove-PSProfileSecret PSFunction_Remove-PSProfileSymbolicLink PSCommand_Remove-PSProfileSymbolicLink PSFunction_Remove-PSProfileVariable PSCommand_Remove-PSProfileVariable PSFunction_Save-PSProfile PSCommand_Save-PSProfile PSFunction_Start-BuildScript PSCommand_Start-BuildScript PSFunction_Start-PSProfileConfigurationHelper PSCommand_Start-PSProfileConfigurationHelper PSFunction_Switch-PSProfilePrompt PSCommand_Switch-PSProfilePrompt PSFunction_Test-IfGit PSCommand_Test-IfGit PSFunction_Test-RegEx PSCommand_Test-RegEx PSFunction_Update-PSProfileConfig PSCommand_Update-PSProfileConfig PSFunction_Update-PSProfileRefreshFrequency PSCommand_Update-PSProfileRefreshFrequency PSFunction_Update-PSProfileSetting PSCommand_Update-PSProfileSetting PSFunction_Write-PSProfileLog PSCommand_Write-PSProfileLog PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-26T13:01:59Z</S>
+          <S N="NormalizedVersion">0.7.2.20211209</S>
+          <S N="Authors">Nate Ferrell</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSProfile.nuspec|en-US\about_PSProfile_Plugins.help.txt|PSProfile.psd1|en-US\about_PSProfile_Plugin_Paths.help.txt|PSProfile.psm1|en-US\about_PSProfile_Power_Tools.help.txt|en-US\about_PSProfile.help.txt|en-US\about_PSProfile_Project_Paths.help.txt|en-US\about_PSProfile_Command_Aliases.help.txt|en-US\about_PSProfile_Prompts.help.txt|en-US\about_PSProfile_Configuration.help.txt|en-US\about_PSProfile_Script_Paths.help.txt|en-US\about_PSProfile_Helpers.help.txt|en-US\about_PSProfile_Secrets.help.txt|en-US\about_PSProfile_Init_Scripts.help.txt|en-US\about_PSProfile_Symbolic_Links.help.txt|en-US\about_PSProfile_Meta.help.txt|en-US\about_PSProfile_Variables.help.txt|en-US\about_PSProfile_Modules_to_Import.help.txt|Plugins\PSProfile.ADCompleters.ps1|en-US\about_PSProfile_Modules_to_Install.help.txt|Plugins\PSProfile.GitAliases.ps1|en-US\about_PSProfile_Path_Aliases.help.txt</S>
+          <S N="GUID">93918f5c-12cf-4ef8-a871-04c6c8be4812</S>
+          <S N="PowerShellVersion">5.1.0</S>
+          <S N="CompanyName">SCRT HQ</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\PSProfile\0.7.2.20211209</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -1,0 +1,214 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">DSInternals</S>
+      <Version N="Version">3.6.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">The DSInternals PowerShell Module exposes several internal features of Active Directory. These include offline ntds.dit file manipulation, password auditing, DC recovery from IFM backups and password hash calculation._x000D__x000A__x000D__x000A_DISCLAIMER: Features exposed through this module are not supported by Microsoft and it is therefore not intended to be used in production environments. Improper use might cause irreversible damage to domain controllers or negatively impact domain security.</S>
+      <S N="Author">Michael Grafnetter</S>
+      <S N="CompanyName">MichaelGrafnetter</S>
+      <S N="Copyright">(c) 2015-2019 Michael Grafnetter. All rights reserved.</S>
+      <DT N="PublishedDate">2019-08-10T22:47:15+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2019-11-18T22:23:14.4107394+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/MichaelGrafnetter/DSInternals/blob/master/LICENSE.md</URI>
+      <URI N="ProjectUri">https://github.com/MichaelGrafnetter/DSInternals</URI>
+      <URI N="IconUri">https://www.dsinternals.com/wp-content/uploads/ad.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>ActiveDirectory</S>
+          <S>Security</S>
+          <S>SAM</S>
+          <S>LSA</S>
+          <S>PSModule</S>
+          <S>Windows</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>ConvertTo-NTHash</S>
+                <S>ConvertTo-LMHash</S>
+                <S>Set-SamAccountPasswordHash</S>
+                <S>ConvertFrom-UnicodePassword</S>
+                <S>ConvertTo-UnicodePassword</S>
+                <S>ConvertTo-OrgIdHash</S>
+                <S>ConvertFrom-GPPrefPassword</S>
+                <S>ConvertTo-GPPrefPassword</S>
+                <S>Add-ADDBSidHistory</S>
+                <S>Set-ADDBPrimaryGroup</S>
+                <S>Get-ADDBDomainController</S>
+                <S>Set-ADDBDomainController</S>
+                <S>Get-ADDBSchemaAttribute</S>
+                <S>Remove-ADDBObject</S>
+                <S>Get-ADDBAccount</S>
+                <S>Get-BootKey</S>
+                <S>Get-ADReplAccount</S>
+                <S>ConvertTo-Hex</S>
+                <S>ConvertTo-KerberosKey</S>
+                <S>ConvertFrom-ADManagedPasswordBlob</S>
+                <S>Get-ADDBBackupKey</S>
+                <S>Get-ADReplBackupKey</S>
+                <S>Save-DPAPIBlob</S>
+                <S>Set-ADDBBootKey</S>
+                <S>Test-PasswordQuality</S>
+                <S>Get-ADDBKdsRootKey</S>
+                <S>Get-SamPasswordPolicy</S>
+                <S>Get-ADSIAccount</S>
+                <S>Enable-ADDBAccount</S>
+                <S>Disable-ADDBAccount</S>
+                <S>Get-ADKeyCredential</S>
+                <S>Set-ADDBAccountPassword</S>
+                <S>Set-ADDBAccountPasswordHash</S>
+                <S>Get-LsaPolicyInformation</S>
+                <S>Set-LSAPolicyInformation</S>
+                <S>New-ADDBRestoreFromMediaScript</S>
+                <S>Get-LsaBackupKey</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>ConvertTo-NTHash</S>
+                <S>ConvertTo-LMHash</S>
+                <S>Set-SamAccountPasswordHash</S>
+                <S>ConvertFrom-UnicodePassword</S>
+                <S>ConvertTo-UnicodePassword</S>
+                <S>ConvertTo-OrgIdHash</S>
+                <S>ConvertFrom-GPPrefPassword</S>
+                <S>ConvertTo-GPPrefPassword</S>
+                <S>Add-ADDBSidHistory</S>
+                <S>Set-ADDBPrimaryGroup</S>
+                <S>Get-ADDBDomainController</S>
+                <S>Set-ADDBDomainController</S>
+                <S>Get-ADDBSchemaAttribute</S>
+                <S>Remove-ADDBObject</S>
+                <S>Get-ADDBAccount</S>
+                <S>Get-BootKey</S>
+                <S>Get-ADReplAccount</S>
+                <S>ConvertTo-Hex</S>
+                <S>ConvertTo-KerberosKey</S>
+                <S>ConvertFrom-ADManagedPasswordBlob</S>
+                <S>Get-ADDBBackupKey</S>
+                <S>Get-ADReplBackupKey</S>
+                <S>Save-DPAPIBlob</S>
+                <S>Set-ADDBBootKey</S>
+                <S>Test-PasswordQuality</S>
+                <S>Get-ADDBKdsRootKey</S>
+                <S>Get-SamPasswordPolicy</S>
+                <S>Get-ADSIAccount</S>
+                <S>Enable-ADDBAccount</S>
+                <S>Disable-ADDBAccount</S>
+                <S>Get-ADKeyCredential</S>
+                <S>Set-ADDBAccountPassword</S>
+                <S>Set-ADDBAccountPasswordHash</S>
+                <S>Get-LsaPolicyInformation</S>
+                <S>Set-LSAPolicyInformation</S>
+                <S>New-ADDBRestoreFromMediaScript</S>
+                <S>Get-LsaBackupKey</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">Resolved an issue with decryption of ntds.dit files originating from Windows Server 2016+ DCs that were promoted using IFM.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2015-2019 Michael Grafnetter. All rights reserved.</S>
+          <S N="description">The DSInternals PowerShell Module exposes several internal features of Active Directory. These include offline ntds.dit file manipulation, password auditing, DC recovery from IFM backups and password hash calculation._x000D__x000A__x000D__x000A_DISCLAIMER: Features exposed through this module are not supported by Microsoft and it is therefore not intended to be used in production environments. Improper use might cause irreversible damage to domain controllers or negatively impact domain security.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">Resolved an issue with decryption of ntds.dit files originating from Windows Server 2016+ DCs that were promoted using IFM.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">5400</S>
+          <S N="downloadCount">27184</S>
+          <S N="packageSize">1113174</S>
+          <S N="published">10/08/2019 22:47:15 +01:00</S>
+          <S N="created">10/08/2019 22:47:15 +01:00</S>
+          <S N="lastUpdated">18/11/2019 22:06:22 +00:00</S>
+          <S N="tags">ActiveDirectory Security SAM LSA PSModule Windows PSCmdlet_ConvertTo-NTHash PSCommand_ConvertTo-NTHash PSCmdlet_ConvertTo-LMHash PSCommand_ConvertTo-LMHash PSCmdlet_Set-SamAccountPasswordHash PSCommand_Set-SamAccountPasswordHash PSCmdlet_ConvertFrom-UnicodePassword PSCommand_ConvertFrom-UnicodePassword PSCmdlet_ConvertTo-UnicodePassword PSCommand_ConvertTo-UnicodePassword PSCmdlet_ConvertTo-OrgIdHash PSCommand_ConvertTo-OrgIdHash PSCmdlet_ConvertFrom-GPPrefPassword PSCommand_ConvertFrom-GPPrefPassword PSCmdlet_ConvertTo-GPPrefPassword PSCommand_ConvertTo-GPPrefPassword PSCmdlet_Add-ADDBSidHistory PSCommand_Add-ADDBSidHistory PSCmdlet_Set-ADDBPrimaryGroup PSCommand_Set-ADDBPrimaryGroup PSCmdlet_Get-ADDBDomainController PSCommand_Get-ADDBDomainController PSCmdlet_Set-ADDBDomainController PSCommand_Set-ADDBDomainController PSCmdlet_Get-ADDBSchemaAttribute PSCommand_Get-ADDBSchemaAttribute PSCmdlet_Remove-ADDBObject PSCommand_Remove-ADDBObject PSCmdlet_Get-ADDBAccount PSCommand_Get-ADDBAccount PSCmdlet_Get-BootKey PSCommand_Get-BootKey PSCmdlet_Get-ADReplAccount PSCommand_Get-ADReplAccount PSCmdlet_ConvertTo-Hex PSCommand_ConvertTo-Hex PSCmdlet_ConvertTo-KerberosKey PSCommand_ConvertTo-KerberosKey PSCmdlet_ConvertFrom-ADManagedPasswordBlob PSCommand_ConvertFrom-ADManagedPasswordBlob PSCmdlet_Get-ADDBBackupKey PSCommand_Get-ADDBBackupKey PSCmdlet_Get-ADReplBackupKey PSCommand_Get-ADReplBackupKey PSCmdlet_Save-DPAPIBlob PSCommand_Save-DPAPIBlob PSCmdlet_Set-ADDBBootKey PSCommand_Set-ADDBBootKey PSCmdlet_Test-PasswordQuality PSCommand_Test-PasswordQuality PSCmdlet_Get-ADDBKdsRootKey PSCommand_Get-ADDBKdsRootKey PSCmdlet_Get-SamPasswordPolicy PSCommand_Get-SamPasswordPolicy PSCmdlet_Get-ADSIAccount PSCommand_Get-ADSIAccount PSCmdlet_Enable-ADDBAccount PSCommand_Enable-ADDBAccount PSCmdlet_Disable-ADDBAccount PSCommand_Disable-ADDBAccount PSCmdlet_Get-ADKeyCredential PSCommand_Get-ADKeyCredential PSCmdlet_Set-ADDBAccountPassword PSCommand_Set-ADDBAccountPassword PSCmdlet_Set-ADDBAccountPasswordHash PSCommand_Set-ADDBAccountPasswordHash PSCmdlet_Get-LsaPolicyInformation PSCommand_Get-LsaPolicyInformation PSCmdlet_Set-LSAPolicyInformation PSCommand_Set-LSAPolicyInformation PSCmdlet_New-ADDBRestoreFromMediaScript PSCommand_New-ADDBRestoreFromMediaScript PSCmdlet_Get-LsaBackupKey PSCommand_Get-LsaBackupKey PSIncludes_Cmdlet</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2019-11-18T22:06:22Z</S>
+          <S N="NormalizedVersion">3.6.1</S>
+          <S N="Authors">Michael Grafnetter</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">DSInternals.nuspec|AutoMapper.dll|DSInternals.Bootstrap.psm1|DSInternals.Common.dll|DSInternals.DataStore.dll|DSInternals.DataStore.pdb|DSInternals.PowerShell.dll|DSInternals.psd1|DSInternals.Replication.dll|DSInternals.Replication.Model.dll|DSInternals.SAM.dll|Esent.Interop.dll|Esent.Isam.dll|License.txt|NDceRpc.Microsoft.dll|amd64\DSInternals.Replication.Interop.dll|amd64\msvcp140.dll|amd64\vcruntime140.dll|en-US\about_DSInternals.help.txt|en-US\DSInternals.PowerShell.dll-Help.xml|Views\DSInternals.DSAccount.ExportViews.format.ps1xml|Views\DSInternals.DSAccount.format.ps1xml|Views\DSInternals.Hash.format.ps1xml|Views\DSInternals.KdsRootKey.format.ps1xml|Views\DSInternals.Kerberos.format.ps1xml|Views\DSInternals.KeyCredential.format.ps1xml|Views\DSInternals.LsaPolicyInformation.format.ps1xml|Views\DSInternals.PasswordQualityTestResult.format.ps1xml|Views\DSInternals.RoamedCredential.format.ps1xml|Views\DSInternals.SamDomainPasswordInformation.format.ps1xml|x86\DSInternals.Replication.Interop.dll|x86\msvcp140.dll|x86\vcruntime140.dll</S>
+          <S N="GUID">766b3ad8-eb78-48e6-84bd-61b31d96b53e</S>
+          <S N="PowerShellVersion">3.0</S>
+          <S N="DotNetFrameworkVersion">4.5.1</S>
+          <S N="CLRVersion">4.0.30319.18408</S>
+          <S N="ProcessorArchitecture">None</S>
+          <S N="CompanyName">DSInternals</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\charl\Documents\PowerShell\Modules\DSInternals\3.6.1</S>
+    </MS>
+  </Obj>
+</Objs>

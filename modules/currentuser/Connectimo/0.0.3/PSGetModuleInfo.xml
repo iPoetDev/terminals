@@ -1,0 +1,169 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Connectimo</S>
+      <Version N="Version">0.0.3</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Simple connectivity project</S>
+      <S N="Author">Przemyslaw Klys</S>
+      <S N="CompanyName">Przemyslaw.Klys</S>
+      <S N="Copyright">Evotec (c) 2011-2019. All rights reserved.</S>
+      <DT N="PublishedDate">2019-10-28T21:22:09+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2019-11-18T22:23:02.7285837+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://github.com/EvotecIT/Connectimo</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>windows</S>
+          <S>connect</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Connect-WinAzure</S>
+                <S>Connect-WinAzureAD</S>
+                <S>Connect-WinConnectivity</S>
+                <S>Connect-WinExchange</S>
+                <S>Connect-WinSecurityCompliance</S>
+                <S>Connect-WinService</S>
+                <S>Connect-WinSharePoint</S>
+                <S>Connect-WinSkype</S>
+                <S>Connect-WinTeams</S>
+                <S>Disconnect-WinSkype</S>
+                <S>Disconnect-WinAzure</S>
+                <S>Disconnect-WinAzureAD</S>
+                <S>Disconnect-WinExchange</S>
+                <S>Disconnect-WinSecurityCompliance</S>
+                <S>Disconnect-WinService</S>
+                <S>Disconnect-WinTeams</S>
+                <S>Install-WinConnectity</S>
+                <S>Request-Credentials</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Connect-WinAzure</S>
+                <S>Connect-WinAzureAD</S>
+                <S>Connect-WinConnectivity</S>
+                <S>Connect-WinExchange</S>
+                <S>Connect-WinSecurityCompliance</S>
+                <S>Connect-WinService</S>
+                <S>Connect-WinSharePoint</S>
+                <S>Connect-WinSkype</S>
+                <S>Connect-WinTeams</S>
+                <S>Disconnect-WinSkype</S>
+                <S>Disconnect-WinAzure</S>
+                <S>Disconnect-WinAzureAD</S>
+                <S>Disconnect-WinExchange</S>
+                <S>Disconnect-WinSecurityCompliance</S>
+                <S>Disconnect-WinService</S>
+                <S>Disconnect-WinTeams</S>
+                <S>Install-WinConnectity</S>
+                <S>Request-Credentials</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Evotec (c) 2011-2019. All rights reserved.</S>
+          <S N="description">Simple connectivity project</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">4581</S>
+          <S N="downloadCount">25664</S>
+          <S N="packageSize">10273</S>
+          <S N="published">28/10/2019 21:22:09 +00:00</S>
+          <S N="created">28/10/2019 21:22:09 +00:00</S>
+          <S N="lastUpdated">18/11/2019 22:21:22 +00:00</S>
+          <S N="tags">windows connect PSModule PSFunction_Connect-WinAzure PSCommand_Connect-WinAzure PSFunction_Connect-WinAzureAD PSCommand_Connect-WinAzureAD PSFunction_Connect-WinConnectivity PSCommand_Connect-WinConnectivity PSFunction_Connect-WinExchange PSCommand_Connect-WinExchange PSFunction_Connect-WinSecurityCompliance PSCommand_Connect-WinSecurityCompliance PSFunction_Connect-WinService PSCommand_Connect-WinService PSFunction_Connect-WinSharePoint PSCommand_Connect-WinSharePoint PSFunction_Connect-WinSkype PSCommand_Connect-WinSkype PSFunction_Connect-WinTeams PSCommand_Connect-WinTeams PSFunction_Disconnect-WinSkype PSCommand_Disconnect-WinSkype PSFunction_Disconnect-WinAzure PSCommand_Disconnect-WinAzure PSFunction_Disconnect-WinAzureAD PSCommand_Disconnect-WinAzureAD PSFunction_Disconnect-WinExchange PSCommand_Disconnect-WinExchange PSFunction_Disconnect-WinSecurityCompliance PSCommand_Disconnect-WinSecurityCompliance PSFunction_Disconnect-WinService PSCommand_Disconnect-WinService PSFunction_Disconnect-WinTeams PSCommand_Disconnect-WinTeams PSFunction_Install-WinConnectity PSCommand_Install-WinConnectity PSFunction_Request-Credentials PSCommand_Request-Credentials PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2019-11-18T22:21:22Z</S>
+          <S N="NormalizedVersion">0.0.3</S>
+          <S N="Authors">Przemyslaw Klys</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Connectimo.nuspec|Connectimo.psd1|Connectimo.psm1</S>
+          <S N="GUID">e4f4f8a6-473e-4ba5-8166-480658c11421</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Evotec</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\charl\Documents\PowerShell\Modules\Connectimo\0.0.3</S>
+    </MS>
+  </Obj>
+</Objs>

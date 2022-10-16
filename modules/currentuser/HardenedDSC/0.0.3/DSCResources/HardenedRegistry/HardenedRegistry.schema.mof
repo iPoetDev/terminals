@@ -1,0 +1,7 @@
+[ClassVersion("1.0.0.0"), FriendlyName("HardenedRegistry")]
+class HardenedRegistry : OMI_BaseResource
+{
+    [Required, Description("Key Name")] String Name;
+    [Write, Description("Key Data")] String Data;
+    [Write, Description(""), ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+};

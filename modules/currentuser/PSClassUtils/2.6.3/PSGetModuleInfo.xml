@@ -1,0 +1,165 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSClassUtils</S>
+      <Version N="Version">2.6.3</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Contains a set of utilities to work with Powershell Classes.</S>
+      <S N="Author">Stéphane van Gulick</S>
+      <S N="CompanyName">stephanevg</S>
+      <S N="Copyright">(c) 2018 TAAVAST3. All rights reserved.</S>
+      <DT N="PublishedDate">2019-03-10T20:30:08+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-25T12:17:51.7322546+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://github.com/Stephanevg/PSClassUtils</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Classes</S>
+          <S>helper</S>
+          <S>diagram</S>
+          <S>uml</S>
+          <S>psgraph</S>
+          <S>graphviz</S>
+          <S>class</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-CUClass</S>
+                <S>Get-CUClassConstructor</S>
+                <S>Get-CUClassMethod</S>
+                <S>Get-CUClassProperty</S>
+                <S>Get-CUCommands</S>
+                <S>Get-CUEnum</S>
+                <S>Get-CULoadedClass</S>
+                <S>Get-CURaw</S>
+                <S>Install-CUDiagramPrerequisites</S>
+                <S>Test-IsCustomType</S>
+                <S>Write-CUClassDiagram</S>
+                <S>Write-CUInterfaceImplementation</S>
+                <S>Write-CUPesterTest</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-CUClass</S>
+                <S>Get-CUClassConstructor</S>
+                <S>Get-CUClassMethod</S>
+                <S>Get-CUClassProperty</S>
+                <S>Get-CUCommands</S>
+                <S>Get-CUEnum</S>
+                <S>Get-CULoadedClass</S>
+                <S>Get-CURaw</S>
+                <S>Install-CUDiagramPrerequisites</S>
+                <S>Test-IsCustomType</S>
+                <S>Write-CUClassDiagram</S>
+                <S>Write-CUInterfaceImplementation</S>
+                <S>Write-CUPesterTest</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">2.5.0 - 20190228_x000D__x000A_            Enhanced Write-CUPEsterScripts (Added -PassThru)_x000D__x000A_            Fixed Minor bugs._x000D__x000A__x000D__x000A_        2.4.2 - 20190227_x000D__x000A_            Added Write-CUPesterScripts_x000D__x000A_            Added Get-CUPesterScripts_x000D__x000A__x000D__x000A_        2.3.0 - 20190125_x000D__x000A_            Added possibility to exclude some classes from the Diagram Generation._x000D__x000A_            Write-CuClassDiagram -Exclude_x000D__x000A_        _x000D__x000A_         2.2.5 - 20181213_x000D__x000A_            Added support for -ShowComposition on Wirte-CuClassDiagram_x000D__x000A_            Rewrote base AST parsing and base classes.</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2018 TAAVAST3. All rights reserved.</S>
+          <S N="description">Contains a set of utilities to work with Powershell Classes.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">2.5.0 - 20190228_x000D__x000A_            Enhanced Write-CUPEsterScripts (Added -PassThru)_x000D__x000A_            Fixed Minor bugs._x000D__x000A__x000D__x000A_        2.4.2 - 20190227_x000D__x000A_            Added Write-CUPesterScripts_x000D__x000A_            Added Get-CUPesterScripts_x000D__x000A__x000D__x000A_        2.3.0 - 20190125_x000D__x000A_            Added possibility to exclude some classes from the Diagram Generation._x000D__x000A_            Write-CuClassDiagram -Exclude_x000D__x000A_        _x000D__x000A_         2.2.5 - 20181213_x000D__x000A_            Added support for -ShowComposition on Wirte-CuClassDiagram_x000D__x000A_            Rewrote base AST parsing and base classes.</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1295</S>
+          <S N="downloadCount">1598</S>
+          <S N="packageSize">1854235</S>
+          <S N="published">10/03/2019 20:30:08 +00:00</S>
+          <S N="created">10/03/2019 20:30:08 +00:00</S>
+          <S N="lastUpdated">24/09/2022 15:14:30 +01:00</S>
+          <S N="tags">Classes helper diagram uml psgraph graphviz class PSModule PSFunction_Get-CUClass PSCommand_Get-CUClass PSFunction_Get-CUClassConstructor PSCommand_Get-CUClassConstructor PSFunction_Get-CUClassMethod PSCommand_Get-CUClassMethod PSFunction_Get-CUClassProperty PSCommand_Get-CUClassProperty PSFunction_Get-CUCommands PSCommand_Get-CUCommands PSFunction_Get-CUEnum PSCommand_Get-CUEnum PSFunction_Get-CULoadedClass PSCommand_Get-CULoadedClass PSFunction_Get-CURaw PSCommand_Get-CURaw PSFunction_Install-CUDiagramPrerequisites PSCommand_Install-CUDiagramPrerequisites PSFunction_Test-IsCustomType PSCommand_Test-IsCustomType PSFunction_Write-CUClassDiagram PSCommand_Write-CUClassDiagram PSFunction_Write-CUInterfaceImplementation PSCommand_Write-CUInterfaceImplementation PSFunction_Write-CUPesterTest PSCommand_Write-CUPesterTest PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-24T15:14:30Z</S>
+          <S N="NormalizedVersion">2.6.3</S>
+          <S N="Authors">Stéphane van Gulick</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSClassUtils.nuspec|PSClassUtils.psd1|PSClassUtils.psm1|Examples\02\Inheritance.png|Examples\02\Inheritance.ps1|Examples\04\JeffHicks_StarShipModule.png|Examples\04\JeffHicks_StarShipModule.ps1|Examples\05\BenGelens_CWindowsContainer.png|Examples\05\BenGelens_CWindowsContainer.ps1|Examples\06\PoshBot.png|Examples\06\PoshBot_Diagram.png|Examples\07\aclapp.class.png|Examples\07\aclapp.class.psm1</S>
+          <S N="GUID">c60f1a5b-deb3-44e7-8193-77aaa92ffb42</S>
+          <S N="PowerShellVersion">5.0</S>
+          <S N="CompanyName">District</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\PSClassUtils\2.6.3</S>
+    </MS>
+  </Obj>
+</Objs>

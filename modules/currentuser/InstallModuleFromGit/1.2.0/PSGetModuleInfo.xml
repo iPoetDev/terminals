@@ -1,0 +1,147 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">InstallModuleFromGit</S>
+      <Version N="Version">1.2.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Installs module from Git repository (i.e. GitHub or Azure DevOps aka VSTS)</S>
+      <S N="Author">iricigor@outlook.com</S>
+      <S N="CompanyName">iricigor</S>
+      <Nil N="Copyright" />
+      <DT N="PublishedDate">2021-12-23T15:19:31+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-26T19:19:39.815197+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/iricigor/InstallModuleFromGit/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/iricigor/InstallModuleFromGit</URI>
+      <URI N="IconUri">https://github.com/iricigor/InstallModuleFromGit/raw/master/img/InstallModuleFromGit.logo.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Azure</S>
+          <S>DevOps</S>
+          <S>ADO</S>
+          <S>VSTS</S>
+          <S>GitHub</S>
+          <S>Install-Module</S>
+          <S>git-clone</S>
+          <S>git</S>
+          <S>git-client</S>
+          <S>PowerShellGet</S>
+          <S>Windows</S>
+          <S>Linux</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-GitModule</S>
+                <S>Install-GitModule</S>
+                <S>Update-GitModule</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-GitModule</S>
+                <S>Install-GitModule</S>
+                <S>Update-GitModule</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/iricigor/InstallModuleFromGit/blob/master/ChangeLog.md</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="description">Installs module from Git repository (i.e. GitHub or Azure DevOps aka VSTS)</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/iricigor/InstallModuleFromGit/blob/master/ChangeLog.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">226</S>
+          <S N="downloadCount">1060</S>
+          <S N="packageSize">14124</S>
+          <S N="published">23/12/2021 15:19:31 +00:00</S>
+          <S N="created">23/12/2021 15:19:31 +00:00</S>
+          <S N="lastUpdated">26/09/2022 11:31:59 +01:00</S>
+          <S N="tags">Azure DevOps ADO VSTS GitHub Install-Module git-clone git git-client PowerShellGet Windows Linux PSModule PSFunction_Get-GitModule PSCommand_Get-GitModule PSFunction_Install-GitModule PSCommand_Install-GitModule PSFunction_Update-GitModule PSCommand_Update-GitModule PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-26T11:31:59Z</S>
+          <S N="NormalizedVersion">1.2.0</S>
+          <S N="Authors">iricigor@outlook.com</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">InstallModuleFromGit.nuspec|ChangeLog.md|InstallModuleFromGit.psd1|InstallModuleFromGit.psm1|LICENSE|README.md|Private\ConvertTo-Uri.ps1|Private\Get-InstallPath.ps1|Private\Install-ModuleInfo.ps1|Private\Test-PathWritable.ps1|Private\Test-Prerequisites.ps1|Public\Get-GitModule.ps1|Public\Install-GitModule.ps1|Public\Update-GitModule.ps1</S>
+          <S N="GUID">d6a1577c-e3b5-48f2-a698-f08ab4865a58</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\InstallModuleFromGit\1.2.0</S>
+    </MS>
+  </Obj>
+</Objs>

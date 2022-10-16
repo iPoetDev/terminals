@@ -1,0 +1,121 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">SecretManagement.HcVault.KV2</S>
+      <Version N="Version">0.0.0.3</Version>
+      <S N="Type">Module</S>
+      <S N="Description">SecretManagement extension for Hashicorp Vault KV2 Engine</S>
+      <S N="Author">Erik Whitesides</S>
+      <S N="CompanyName">ewhitesides</S>
+      <Nil N="Copyright" />
+      <DT N="PublishedDate">2022-09-20T15:23:44+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-27T09:41:59.1650489+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://github.com/ewhitesides/SecretManagement.HcVault.KV2</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>SecretManagement</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="7">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="description">SecretManagement extension for Hashicorp Vault KV2 Engine</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">5</S>
+          <S N="downloadCount">12</S>
+          <S N="packageSize">10430</S>
+          <S N="published">20/09/2022 15:23:44 +01:00</S>
+          <S N="created">20/09/2022 15:23:44 +01:00</S>
+          <S N="lastUpdated">23/09/2022 09:39:24 +01:00</S>
+          <S N="tags">SecretManagement PSModule</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-23T09:39:24Z</S>
+          <S N="NormalizedVersion">0.0.0.3</S>
+          <S N="Authors">Erik Whitesides</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">SecretManagement.HcVault.KV2.nuspec|SecretManagement.HcVault.KV2.Extension.psd1|ConvertTo-HashTable.ps1|SecretManagement.HcVault.KV2.Extension.psm1|ConvertTo-ReadOnlyDictionary.ps1|Get-CachedToken.ps1|SecretManagement.HcVault.KV2.psd1|Get-Secret.ps1|Set-CachedToken.ps1|Get-SecretInfo.ps1|Set-Secret.ps1|Get-Token.ps1|Test-SecretVault.ps1|New-SecretInfoObj.ps1|Test-VaultParameters.ps1|Remove-Secret.ps1</S>
+          <S N="GUID">d0cb5f62-eed0-4577-91f2-ae4de5d9fde1</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\SecretManagement.HcVault.KV2\0.0.0.3</S>
+    </MS>
+  </Obj>
+</Objs>

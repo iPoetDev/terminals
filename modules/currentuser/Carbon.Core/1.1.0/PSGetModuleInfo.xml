@@ -1,0 +1,177 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Carbon.Core</S>
+      <Version N="Version">1.1.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Functions that make doing things in PowerShell a little easier. We think these should be part of PowerShell itself. Core functions that are used by other Carbon modules.</S>
+      <S N="Author">WebMD Health Services</S>
+      <S N="CompanyName">webmd-health-services</S>
+      <S N="Copyright">(c) 2021 Aaron Jensen and WebMD Health Services.</S>
+      <DT N="PublishedDate">2022-07-26T22:39:23+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-25T21:12:56.2253999+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">http://www.apache.org/licenses/LICENSE-2.0</URI>
+      <URI N="ProjectUri">https://whsbitbucket.webmd.net/projects/POWERSHELL/repos/Carbon.Core/browse</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Carbon</S>
+          <S>Desktop</S>
+          <S>Core</S>
+          <S>encoding</S>
+          <S>convert</S>
+          <S>convertto</S>
+          <S>text</S>
+          <S>base64</S>
+          <S>invoke</S>
+          <S>os</S>
+          <S>operating</S>
+          <S>system</S>
+          <S>architecture</S>
+          <S>powershell</S>
+          <S>pwsh</S>
+          <S>runas</S>
+          <S>credential</S>
+          <S>x86</S>
+          <S>x64</S>
+          <S>windows</S>
+          <S>linux</S>
+          <S>macos</S>
+          <S>type</S>
+          <S>data</S>
+          <S>update-typedata</S>
+          <S>member</S>
+          <S>add-member</S>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-CTypeData</S>
+                <S>ConvertTo-CBase64</S>
+                <S>Get-CPowerShellPath</S>
+                <S>Invoke-CPowerShell</S>
+                <S>Start-CPowerShellProcess</S>
+                <S>Test-COperatingSystem</S>
+                <S>Test-CPowerShell</S>
+                <S>Test-CTypeDataMember</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-CTypeData</S>
+                <S>ConvertTo-CBase64</S>
+                <S>Get-CPowerShellPath</S>
+                <S>Invoke-CPowerShell</S>
+                <S>Start-CPowerShellProcess</S>
+                <S>Test-COperatingSystem</S>
+                <S>Test-CPowerShell</S>
+                <S>Test-CTypeDataMember</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/webmd-health-services/Carbon.Core/blob/main/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2021 Aaron Jensen and WebMD Health Services.</S>
+          <S N="description">Functions that make doing things in PowerShell a little easier. We think these should be part of PowerShell itself. Core functions that are used by other Carbon modules.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/webmd-health-services/Carbon.Core/blob/main/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">627</S>
+          <S N="downloadCount">3805</S>
+          <S N="packageSize">21946</S>
+          <S N="published">26/07/2022 22:39:23 +01:00</S>
+          <S N="created">26/07/2022 22:39:23 +01:00</S>
+          <S N="lastUpdated">25/09/2022 20:11:57 +01:00</S>
+          <S N="tags">Carbon Desktop Core encoding convert convertto text base64 invoke os operating system architecture powershell pwsh runas credential x86 x64 windows linux macos type data update-typedata member add-member PSModule PSEdition_Desktop PSEdition_Core PSFunction_Add-CTypeData PSCommand_Add-CTypeData PSFunction_ConvertTo-CBase64 PSCommand_ConvertTo-CBase64 PSFunction_Get-CPowerShellPath PSCommand_Get-CPowerShellPath PSFunction_Invoke-CPowerShell PSCommand_Invoke-CPowerShell PSFunction_Start-CPowerShellProcess PSCommand_Start-CPowerShellProcess PSFunction_Test-COperatingSystem PSCommand_Test-COperatingSystem PSFunction_Test-CPowerShell PSCommand_Test-CPowerShell PSFunction_Test-CTypeDataMember PSCommand_Test-CTypeDataMember PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-25T20:11:57Z</S>
+          <S N="NormalizedVersion">1.1.0</S>
+          <S N="Authors">WebMD Health Services</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Carbon.Core.nuspec|Carbon.Core.psd1|LICENSE|Carbon.Core.psm1|NOTICE|CHANGELOG.md|README.md|Import-Carbon.Core.ps1|en-US\about_Carbon.Core.help.txt</S>
+          <S N="GUID">20DA9F42-23C4-4917-8597-DCFD7EE4AD00</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">WebMD Health Services</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\Carbon.Core\1.1.0</S>
+    </MS>
+  </Obj>
+</Objs>

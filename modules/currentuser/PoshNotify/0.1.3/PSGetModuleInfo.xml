@@ -1,0 +1,148 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PoshNotify</S>
+      <Version N="Version">0.1.3</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Cross-platform PowerShell module for generating toast notifications on Linux, macOS, and Windows.</S>
+      <S N="Author">windos;steviecoaster;tylerleonhardt</S>
+      <Obj N="CompanyName" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Windos</S>
+          <S>tyler</S>
+          <S>steviecoaster</S>
+        </LST>
+      </Obj>
+      <S N="Copyright">(c) Windos, steviecoaster &amp; tylerleonhardt. All rights reserved.</S>
+      <DT N="PublishedDate">2020-03-10T20:32:20+00:00</DT>
+      <Obj N="InstalledDate" RefId="2">
+        <DT>2022-09-25T21:24:50.1152028+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="3">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/Windos/PoshNotify/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/Windos/PoshNotify</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/Windos/PoshNotify/master/media/PoshNotify.png</URI>
+      <Obj N="Tags" RefId="4">
+        <TNRef RefId="1" />
+        <LST>
+          <S>pscore</S>
+          <S>notifications</S>
+          <S>Windows</S>
+          <S>macOS</S>
+          <S>Linux</S>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="5">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Send-OSNotification</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Send-OSNotification</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes"># 0.1.3_x000D__x000A__x000D__x000A_* Fix: AppId not being generated on PowerShell 7_x000D__x000A_* Meta: Pipeline images set to latest_x000D__x000A__x000D__x000A_# 0.1.2_x000D__x000A__x000D__x000A_* Added icon to metadata (for the Gallery)_x000D__x000A_* Included link to online version of help</S>
+      <Obj N="Dependencies" RefId="9">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Windos, steviecoaster &amp; tylerleonhardt. All rights reserved.</S>
+          <S N="description">Cross-platform PowerShell module for generating toast notifications on Linux, macOS, and Windows.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes"># 0.1.3_x000D__x000A__x000D__x000A_* Fix: AppId not being generated on PowerShell 7_x000D__x000A_* Meta: Pipeline images set to latest_x000D__x000A__x000D__x000A_# 0.1.2_x000D__x000A__x000D__x000A_* Added icon to metadata (for the Gallery)_x000D__x000A_* Included link to online version of help</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1513</S>
+          <S N="downloadCount">2069</S>
+          <S N="packageSize">10409</S>
+          <S N="published">10/03/2020 20:32:20 +00:00</S>
+          <S N="created">10/03/2020 20:32:20 +00:00</S>
+          <S N="lastUpdated">24/09/2022 18:59:31 +01:00</S>
+          <S N="tags">pscore notifications Windows macOS Linux PSModule PSEdition_Desktop PSEdition_Core PSFunction_Send-OSNotification PSCommand_Send-OSNotification PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-24T18:59:31Z</S>
+          <S N="NormalizedVersion">0.1.3</S>
+          <S N="Authors">windos;steviecoaster;tylerleonhardt</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PoshNotify.nuspec|PoshNotify.psd1|PoshNotify.psm1|README.md|lib\PoshNotify.png|Private\ConvertTo-ParameterString.ps1|Private\Get-WindowsAppId.ps1|Private\Pop-LinuxNotification.ps1|Private\Pop-MacOSNotification.ps1|Private\Pop-WindowsNotification.ps1|Public\Send-OSNotification.ps1</S>
+          <S N="GUID">742f6d08-546a-4598-8155-fab499b3c1c0</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Windos, steviecoaster &amp; tylerleonhardt</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\PoshNotify\0.1.3</S>
+    </MS>
+  </Obj>
+</Objs>

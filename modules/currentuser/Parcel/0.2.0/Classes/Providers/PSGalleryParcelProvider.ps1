@@ -1,0 +1,76 @@
+class PSGalleryParcelProvider : ParcelProvider
+{
+    PSGalleryParcelProvider() : base('PowerShell Gallery', $false, 'PSGallery') {}
+
+    [bool] TestProviderInstalled([hashtable]$_context)
+    {
+        if ((Get-Host).Version.Major -gt '5') {
+            return $true
+        }
+
+        return ($null -ne (Get-PackageProvider -Name NuGet -ListAvailable -ErrorAction Ignore))
+    }
+
+    [scriptblock] GetProviderInstallScriptBlock([hashtable]$_context)
+    {
+        return {
+            Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force | Out-Null
+        }
+    }
+
+    [string] GetPackageInstallScript([ParcelPackage]$_package, [hashtable]$_context)
+    {
+        return "Install-Module -Name $($_package.Name) -Force -AllowClobber -SkipPublisherCheck -ErrorAction Stop"
+    }
+
+    [string] GetPackageUninstallScript([ParcelPackage]$_package, [hashtable]$_context)
+    {
+        return "Uninstall-Module -Name $($_package.Name) -Force -AllVersions -ErrorAction Stop"
+    }
+
+    [string] GetProviderRemoveSourceScript([string]$_name)
+    {
+        return "Unregister-PSRepository -Name $($_name) -ErrorAction Ignore"
+    }
+
+    [string] GetProviderAddSourceScript([string]$_name, [string]$_url)
+    {
+        return "Register-PSRepository -Name $($_name) -SourceLocation $($_url) -PublishLocation $($_url) -ErrorAction Stop"
+    }
+
+    [bool] TestPackageInstalled([ParcelPackage]$_package)
+    {
+        $result = (Get-Module -Name $_package.Name -ListAvailable | Where-Object { $_.Version -ieq $_package.Version })
+        return ($result.Length -gt 0)
+    }
+
+    [bool] TestPackageUninstalled([ParcelPackage]$_package)
+    {
+        $result = (Get-Module -Name $_package.Name -ListAvailable)
+        return ($result.Length -eq 0)
+    }
+
+    [string] GetPackageLatestVersion([ParcelPackage]$_package)
+    {
+        return Invoke-Expression -Command "(Find-Module -Name $($_package.Name) $($this.GetSourceArgument($_package)) -ErrorAction Ignore).Version"
+    }
+
+    [string] GetVersionArgument([ParcelPackage]$_package)
+    {
+        return "-RequiredVersion $($_package.Version)"
+    }
+
+    [string] GetSourceArgument([ParcelPackage]$_package)
+    {
+        $_source = $_package.Source
+        if ([string]::IsNullOrWhiteSpace($_source)) {
+            $_source = @($this.DefaultSource)
+        }
+
+        if ([string]::IsNullOrWhiteSpace($_source[0])) {
+            return [string]::Empty
+        }
+
+        return "-Repository $($_source[0])"
+    }
+}

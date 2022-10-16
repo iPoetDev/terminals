@@ -1,0 +1,180 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">SecretManagement.KeePass</S>
+      <Version N="Version">0.9.2</Version>
+      <S N="Type">Module</S>
+      <S N="Description">A cross-platform Keepass Secret Management vault extension. See the README.MD in the module for more details.</S>
+      <S N="Author">Justin Grote</S>
+      <S N="CompanyName">JustinGrote</S>
+      <S N="Copyright">(c) 2021 Justin Grote. All rights reserved.</S>
+      <DT N="PublishedDate">2021-08-22T16:37:03+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-27T09:34:07.6531483+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://www.github.com/JustinGrote/SecretManagement.KeePass</URI>
+      <URI N="IconUri">https://raw.githubusercontent.com/JustinGrote/SecretManagement.KeePass/main/images/Logo.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>SecretManagement</S>
+          <S>KeePass</S>
+          <S>SecretVault</S>
+          <S>Vault</S>
+          <S>Secret</S>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Register-KeePassSecretVault</S>
+                <S>Unlock-KeePassSecretVault</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Register-KeePassSecretVault</S>
+                <S>Unlock-KeePassSecretVault</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">## [0.9.2] - 2021-08-22_x000A_### Minor Updates and Bug Fixes_x000A_- ⬆️ SecretManagement 1.1.0 Compatibility (#55)  _x000A_    SecretManagement 1.1.0 moves the vault extension into its own runspace and adds a new Unlock-SecretVault mechanism. This adds support for that new operating model._x000A_- _xD83D__xDCE6_ Fix issue with common tests being included in compilation (e277af9)_x000A_- _xD83D__xDCE6_ Wrap Public Function Initialization in SourceInit region (2818d4c)_x000A_- _xD83D__xDC1B_ Tests were being included in build process, causing import errors (ab83ff6)_x000A_- ⬆️ Microsoft.Powershell.SecretManagement 1.0.0 (11d45c7)_x000A_- _xD83D__xDD16_ v0.9.1.3 (75d25c3)_x000A_- _xD83D__xDC1B_ UNC Paths incorrectly translated to PSProvider Paths  (#45)  _x000A_    Fixes #44_x000A__x000A_### Other_x000A_- Update parameter names in README.MD (#51)  _x000A_    * Updated parameter name in README.MD  _x000A_    * Updated 2nd parameter name in README.MD_x000A_- Add Press Github Actions Support (#46)</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Microsoft.Powershell.SecretManagement</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.1.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Microsoft.Powershell.SecretManagement/1.1.0</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="10">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">PSFramework</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.6.205</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:PSFramework/1.6.205</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="11">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2021 Justin Grote. All rights reserved.</S>
+          <S N="description">A cross-platform Keepass Secret Management vault extension. See the README.MD in the module for more details.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">## [0.9.2] - 2021-08-22_x000A_### Minor Updates and Bug Fixes_x000A_- ⬆️ SecretManagement 1.1.0 Compatibility (#55)  _x000A_    SecretManagement 1.1.0 moves the vault extension into its own runspace and adds a new Unlock-SecretVault mechanism. This adds support for that new operating model._x000A_- _xD83D__xDCE6_ Fix issue with common tests being included in compilation (e277af9)_x000A_- _xD83D__xDCE6_ Wrap Public Function Initialization in SourceInit region (2818d4c)_x000A_- _xD83D__xDC1B_ Tests were being included in build process, causing import errors (ab83ff6)_x000A_- ⬆️ Microsoft.Powershell.SecretManagement 1.0.0 (11d45c7)_x000A_- _xD83D__xDD16_ v0.9.1.3 (75d25c3)_x000A_- _xD83D__xDC1B_ UNC Paths incorrectly translated to PSProvider Paths  (#45)  _x000A_    Fixes #44_x000A__x000A_### Other_x000A_- Update parameter names in README.MD (#51)  _x000A_    * Updated parameter name in README.MD  _x000A_    * Updated 2nd parameter name in README.MD_x000A_- Add Press Github Actions Support (#46)</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">False</S>
+          <S N="versionDownloadCount">3963</S>
+          <S N="downloadCount">6459</S>
+          <S N="packageSize">485427</S>
+          <S N="published">22/08/2021 16:37:03 +01:00</S>
+          <S N="created">22/08/2021 16:37:03 +01:00</S>
+          <S N="lastUpdated">27/09/2022 06:57:08 +01:00</S>
+          <S N="tags">SecretManagement KeePass SecretVault Vault Secret PSModule PSEdition_Desktop PSEdition_Core PSFunction_Register-KeePassSecretVault PSCommand_Register-KeePassSecretVault PSFunction_Unlock-KeePassSecretVault PSCommand_Unlock-KeePassSecretVault PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-27T06:57:08Z</S>
+          <S N="NormalizedVersion">0.9.2</S>
+          <S N="Authors">Justin Grote</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">SecretManagement.KeePass.nuspec|PoshKeePass\bin\System.Memory.dll|PoshKeePass\bin\System.Security.Cryptography.ProtectedData.dll|SecretManagement.KeePass.psm1|SecretManagement.KeePass.Extension\Private\GetKeepassParams.ps1|SecretManagement.KeePass.psd1|SecretManagement.KeePass.Extension\Private\VaultError.ps1|PoshKeePass\readme.md|SecretManagement.KeePass.Extension\Private\Unlock-SecureString.ps1|PoshKeePass\PoShKeePass.format.ps1xml|SecretManagement.KeePass.Extension\Private\ConvertTo-ReadOnlyDictionary.ps1|PoshKeePass\PoShKeePass.psd1|SecretManagement.KeePass.Extension\Private\Test-DBChanged.ps1|PoshKeePass\changelog.md|SecretManagement.KeePass.Extension\Private\Test-Verbose.ps1|PoshKeePass\PoShKeePass.psm1|SecretManagement.KeePass.Extension\Public\Unregister-SecretVault.ps1|PoshKeePass\license|SecretManagement.KeePass.Extension\Public\Set-Secret.ps1|SecretManagement.KeePass.Extension\SecretManagement.KeePass.Extension.psm1|SecretManagement.KeePass.Extension\Public\Test-SecretVault.ps1|SecretManagement.KeePass.Extension\SecretManagement.KeePass.Extension.psd1|SecretManagement.KeePass.Extension\Public\Unlock-SecretVault.ps1|PoshKeePass\bin\System.Numerics.Vectors.dll|SecretManagement.KeePass.Extension\Public\Get-SecretInfo.ps1|PoshKeePass\bin\SkiaSharp.dll|SecretManagement.KeePass.Extension\Public\Get-Secret.ps1|PoshKeePass\bin\PTLibRestore.dll|SecretManagement.KeePass.Extension\Public\Connect-KeepassDatabase.ps1|PoshKeePass\bin\System.Buffers.dll|SecretManagement.KeePass.Extension\Public\Remove-Secret.ps1|PoshKeePass\bin\pt.KeePassLibStd.dll|PoshKeePass\bin\System.Runtime.CompilerServices.Unsafe.dll</S>
+          <S N="GUID">14f945da-777e-4f2b-9c79-b59287d19478</S>
+          <S N="PowerShellVersion">5.1</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\SecretManagement.KeePass\0.9.2</S>
+    </MS>
+  </Obj>
+</Objs>

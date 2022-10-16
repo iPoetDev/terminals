@@ -1,0 +1,180 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PowerShellGetCompat</S>
+      <Version N="Version">0.0.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">PowerShellGetCompat is a compatibility module that allows use of PowerShellGet 2.x (and below) cmdlet syntax with PowerShellGet 3.0 (and newer) functionality by making a best effort mapping between the cmdlet interfaces of both versions of the module.</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">alerickson</S>
+      <S N="Copyright">(c) Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2020-07-23T19:51:12+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-26T19:53:12.8129516+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/PowerShell/PowerShellGetCompat/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/PowerShell/PowerShellGetCompat</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PackageManagement</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+          <S>Linux</S>
+          <S>Mac</S>
+          <S>Windows</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Find-CommandProxy</S>
+                <S>Find-DscResourceProxy</S>
+                <S>Find-ModuleProxy</S>
+                <S>Find-RoleCapabilityProxy</S>
+                <S>Find-ScriptProxy</S>
+                <S>Get-InstalledModuleProxy</S>
+                <S>Get-InstalledScriptProxy</S>
+                <S>Get-PSRepositoryProxy</S>
+                <S>Install-ModuleProxy</S>
+                <S>Install-ScriptProxy</S>
+                <S>Publish-ModuleProxy</S>
+                <S>Publish-ScriptProxy</S>
+                <S>Register-PSRepositoryProxy</S>
+                <S>Save-ModuleProxy</S>
+                <S>Save-ScriptProxy</S>
+                <S>Set-PSRepositoryProxy</S>
+                <S>Uninstall-ModuleProxy</S>
+                <S>Uninstall-ScriptProxy</S>
+                <S>Unregister-PSRepositoryProxy</S>
+                <S>Update-ModuleProxy</S>
+                <S>Update-ScriptProxy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Find-CommandProxy</S>
+                <S>Find-DscResourceProxy</S>
+                <S>Find-ModuleProxy</S>
+                <S>Find-RoleCapabilityProxy</S>
+                <S>Find-ScriptProxy</S>
+                <S>Get-InstalledModuleProxy</S>
+                <S>Get-InstalledScriptProxy</S>
+                <S>Get-PSRepositoryProxy</S>
+                <S>Install-ModuleProxy</S>
+                <S>Install-ScriptProxy</S>
+                <S>Publish-ModuleProxy</S>
+                <S>Publish-ScriptProxy</S>
+                <S>Register-PSRepositoryProxy</S>
+                <S>Save-ModuleProxy</S>
+                <S>Save-ScriptProxy</S>
+                <S>Set-PSRepositoryProxy</S>
+                <S>Uninstall-ModuleProxy</S>
+                <S>Uninstall-ScriptProxy</S>
+                <S>Unregister-PSRepositoryProxy</S>
+                <S>Update-ModuleProxy</S>
+                <S>Update-ScriptProxy</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">### 0.0.1_x000D__x000A_* Initial release_x000D__x000A__x000D__x000A_## For full history of release notes see changelog:_x000D__x000A_https://github.com/PowerShell/PowerShellGetCompat/blob/master/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Microsoft Corporation. All rights reserved.</S>
+          <S N="description">PowerShellGetCompat is a compatibility module that allows use of PowerShellGet 2.x (and below) cmdlet syntax with PowerShellGet 3.0 (and newer) functionality by making a best effort mapping between the cmdlet interfaces of both versions of the module.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">### 0.0.1_x000D__x000A_* Initial release_x000D__x000A__x000D__x000A_## For full history of release notes see changelog:_x000D__x000A_https://github.com/PowerShell/PowerShellGetCompat/blob/master/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">388</S>
+          <S N="downloadCount">388</S>
+          <S N="packageSize">25502</S>
+          <S N="published">23/07/2020 19:51:12 +01:00</S>
+          <S N="created">23/07/2020 19:51:12 +01:00</S>
+          <S N="lastUpdated">23/09/2022 06:44:24 +01:00</S>
+          <S N="tags">PackageManagement PSEdition_Desktop PSEdition_Core Linux Mac Windows PSModule PSFunction_Find-CommandProxy PSCommand_Find-CommandProxy PSFunction_Find-DscResourceProxy PSCommand_Find-DscResourceProxy PSFunction_Find-ModuleProxy PSCommand_Find-ModuleProxy PSFunction_Find-RoleCapabilityProxy PSCommand_Find-RoleCapabilityProxy PSFunction_Find-ScriptProxy PSCommand_Find-ScriptProxy PSFunction_Get-InstalledModuleProxy PSCommand_Get-InstalledModuleProxy PSFunction_Get-InstalledScriptProxy PSCommand_Get-InstalledScriptProxy PSFunction_Get-PSRepositoryProxy PSCommand_Get-PSRepositoryProxy PSFunction_Install-ModuleProxy PSCommand_Install-ModuleProxy PSFunction_Install-ScriptProxy PSCommand_Install-ScriptProxy PSFunction_Publish-ModuleProxy PSCommand_Publish-ModuleProxy PSFunction_Publish-ScriptProxy PSCommand_Publish-ScriptProxy PSFunction_Register-PSRepositoryProxy PSCommand_Register-PSRepositoryProxy PSFunction_Save-ModuleProxy PSCommand_Save-ModuleProxy PSFunction_Save-ScriptProxy PSCommand_Save-ScriptProxy PSFunction_Set-PSRepositoryProxy PSCommand_Set-PSRepositoryProxy PSFunction_Uninstall-ModuleProxy PSCommand_Uninstall-ModuleProxy PSFunction_Uninstall-ScriptProxy PSCommand_Uninstall-ScriptProxy PSFunction_Unregister-PSRepositoryProxy PSCommand_Unregister-PSRepositoryProxy PSFunction_Update-ModuleProxy PSCommand_Update-ModuleProxy PSFunction_Update-ScriptProxy PSCommand_Update-ScriptProxy PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-23T06:44:24Z</S>
+          <S N="NormalizedVersion">0.0.1</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PowerShellGetCompat.nuspec|PowerShellGetCompat.psd1|PowerShellGetCompat.psm1</S>
+          <S N="GUID">68ec3ec1-55bf-42f8-9add-d224e5c76548</S>
+          <S N="PowerShellVersion">3.0</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\PowerShellGetCompat\0.0.1</S>
+    </MS>
+  </Obj>
+</Objs>

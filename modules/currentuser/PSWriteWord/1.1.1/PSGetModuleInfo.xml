@@ -1,0 +1,350 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSWriteWord</S>
+      <Version N="Version">1.1.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Simple project to create Microsoft Word in PowerShell without having Office installed.</S>
+      <S N="Author">Przemyslaw Klys</S>
+      <S N="CompanyName">Przemyslaw.Klys</S>
+      <S N="Copyright">(c) 2011-2019 Przemyslaw Klys. All rights reserved.</S>
+      <DT N="PublishedDate">2019-11-18T07:49:19+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2019-11-18T22:22:59.9398572+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/EvotecIT/PSWriteWord/blob/master/License</URI>
+      <URI N="ProjectUri">https://github.com/EvotecIT/PSWriteWord</URI>
+      <URI N="IconUri">https://evotec.xyz/wp-content/uploads/2018/10/PSWriteWord.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>word</S>
+          <S>docx</S>
+          <S>write</S>
+          <S>PSWord</S>
+          <S>office</S>
+          <S>windows</S>
+          <S>doc</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-WordBlock</S>
+                <S>New-WordBlockList</S>
+                <S>New-WordBlockPageBreak</S>
+                <S>New-WordBlockParagraph</S>
+                <S>New-WordBlockTable</S>
+                <S>Add-WordBarChart</S>
+                <S>Add-WordChartSeries</S>
+                <S>Add-WordLineChart</S>
+                <S>Add-WordPieChart</S>
+                <S>Add-WordFooter</S>
+                <S>Add-WordHeader</S>
+                <S>Get-WordFooter</S>
+                <S>Get-WordHeader</S>
+                <S>Add-WordHyperLink</S>
+                <S>Add-WordList</S>
+                <S>Add-WordListItem</S>
+                <S>Convert-ListToHeadings</S>
+                <S>New-WordList</S>
+                <S>New-WordListItem</S>
+                <S>New-WordListItemInternal</S>
+                <S>Set-WordList</S>
+                <S>Get-WordDocument</S>
+                <S>Merge-WordDocument</S>
+                <S>New-WordDocument</S>
+                <S>Save-WordDocument</S>
+                <S>Add-WordCustomProperty</S>
+                <S>Add-WordEquation</S>
+                <S>Add-WordLine</S>
+                <S>Add-WordPageCount</S>
+                <S>Add-WordProtection</S>
+                <S>Add-WordSection</S>
+                <S>Add-WordTabStopPosition</S>
+                <S>Get-WordCustomProperty</S>
+                <S>Get-WordPageSettings</S>
+                <S>Get-WordSection</S>
+                <S>Set-WordMargins</S>
+                <S>Set-WordOrientation</S>
+                <S>Set-WordPageSettings</S>
+                <S>Set-WordPageSize</S>
+                <S>Add-WordPageBreak</S>
+                <S>Add-WordParagraph</S>
+                <S>Add-WordText</S>
+                <S>Get-WordListItemParagraph</S>
+                <S>Get-WordParagraphs</S>
+                <S>Get-WordParagraphForList</S>
+                <S>Remove-WordParagraph</S>
+                <S>Remove-WordText</S>
+                <S>Set-WordParagraph</S>
+                <S>Set-WordText</S>
+                <S>Set-WordTextAlignment</S>
+                <S>Set-WordTextBold</S>
+                <S>Set-WordTextCapsStyle</S>
+                <S>Set-WordTextColor</S>
+                <S>Set-WordTextDirection</S>
+                <S>Set-WordTextFontFamily</S>
+                <S>Set-WordTextFontSize</S>
+                <S>Set-WordTextHeadingType</S>
+                <S>Set-WordTextHidden</S>
+                <S>Set-WordTextHighlight</S>
+                <S>Set-WordTextIndentationFirstLine</S>
+                <S>Set-WordTextIndentationHanging</S>
+                <S>Set-WordTextItalic</S>
+                <S>Set-WordTextKerning</S>
+                <S>Set-WordTextLanguage</S>
+                <S>Set-WordTextMisc</S>
+                <S>Set-WordTextPercentageScale</S>
+                <S>Set-WordTextPosition</S>
+                <S>Set-WordTextScript</S>
+                <S>Set-WordTextShadingType</S>
+                <S>Set-WordTextSpacing</S>
+                <S>Set-WordTextSpacingAfter</S>
+                <S>Set-WordTextSpacingBefore</S>
+                <S>Set-WordTextStrikeThrough</S>
+                <S>Set-WordTextUnderlineColor</S>
+                <S>Set-WordTextUnderlineStyle</S>
+                <S>Add-WordPicture</S>
+                <S>Get-WordPicture</S>
+                <S>Remove-WordPicture</S>
+                <S>Set-WordPicture</S>
+                <S>Add-WordTable</S>
+                <S>Add-WordTableCellValue</S>
+                <S>Add-WordTableColumn</S>
+                <S>Add-WordTableRow</S>
+                <S>Add-WordTableTitle</S>
+                <S>Copy-WordTableRow</S>
+                <S>Get-WordTable</S>
+                <S>Get-WordTableRow</S>
+                <S>New-WordTable</S>
+                <S>New-WordTableBorder</S>
+                <S>Remove-WordTable</S>
+                <S>Remove-WordTableColumn</S>
+                <S>Remove-WordTableRow</S>
+                <S>Set-WordTable</S>
+                <S>Set-WordTableAutoFit</S>
+                <S>Set-WordTableBorder</S>
+                <S>Set-WordTableCell</S>
+                <S>Set-WordTableCellFillColor</S>
+                <S>Set-WordTableCellShadingColor</S>
+                <S>Set-WordTableColumnWidth</S>
+                <S>Set-WordTableColumnWidthByIndex</S>
+                <S>Set-WordTableDesign</S>
+                <S>Set-WordTableDirection</S>
+                <S>Set-WordTablePageBreak</S>
+                <S>Set-WordTableRowMergeCells</S>
+                <S>Add-WordTOC</S>
+                <S>Add-WordTocItem</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>New-WordBlock</S>
+                <S>New-WordBlockList</S>
+                <S>New-WordBlockPageBreak</S>
+                <S>New-WordBlockParagraph</S>
+                <S>New-WordBlockTable</S>
+                <S>Add-WordBarChart</S>
+                <S>Add-WordChartSeries</S>
+                <S>Add-WordLineChart</S>
+                <S>Add-WordPieChart</S>
+                <S>Add-WordFooter</S>
+                <S>Add-WordHeader</S>
+                <S>Get-WordFooter</S>
+                <S>Get-WordHeader</S>
+                <S>Add-WordHyperLink</S>
+                <S>Add-WordList</S>
+                <S>Add-WordListItem</S>
+                <S>Convert-ListToHeadings</S>
+                <S>New-WordList</S>
+                <S>New-WordListItem</S>
+                <S>New-WordListItemInternal</S>
+                <S>Set-WordList</S>
+                <S>Get-WordDocument</S>
+                <S>Merge-WordDocument</S>
+                <S>New-WordDocument</S>
+                <S>Save-WordDocument</S>
+                <S>Add-WordCustomProperty</S>
+                <S>Add-WordEquation</S>
+                <S>Add-WordLine</S>
+                <S>Add-WordPageCount</S>
+                <S>Add-WordProtection</S>
+                <S>Add-WordSection</S>
+                <S>Add-WordTabStopPosition</S>
+                <S>Get-WordCustomProperty</S>
+                <S>Get-WordPageSettings</S>
+                <S>Get-WordSection</S>
+                <S>Set-WordMargins</S>
+                <S>Set-WordOrientation</S>
+                <S>Set-WordPageSettings</S>
+                <S>Set-WordPageSize</S>
+                <S>Add-WordPageBreak</S>
+                <S>Add-WordParagraph</S>
+                <S>Add-WordText</S>
+                <S>Get-WordListItemParagraph</S>
+                <S>Get-WordParagraphs</S>
+                <S>Get-WordParagraphForList</S>
+                <S>Remove-WordParagraph</S>
+                <S>Remove-WordText</S>
+                <S>Set-WordParagraph</S>
+                <S>Set-WordText</S>
+                <S>Set-WordTextAlignment</S>
+                <S>Set-WordTextBold</S>
+                <S>Set-WordTextCapsStyle</S>
+                <S>Set-WordTextColor</S>
+                <S>Set-WordTextDirection</S>
+                <S>Set-WordTextFontFamily</S>
+                <S>Set-WordTextFontSize</S>
+                <S>Set-WordTextHeadingType</S>
+                <S>Set-WordTextHidden</S>
+                <S>Set-WordTextHighlight</S>
+                <S>Set-WordTextIndentationFirstLine</S>
+                <S>Set-WordTextIndentationHanging</S>
+                <S>Set-WordTextItalic</S>
+                <S>Set-WordTextKerning</S>
+                <S>Set-WordTextLanguage</S>
+                <S>Set-WordTextMisc</S>
+                <S>Set-WordTextPercentageScale</S>
+                <S>Set-WordTextPosition</S>
+                <S>Set-WordTextScript</S>
+                <S>Set-WordTextShadingType</S>
+                <S>Set-WordTextSpacing</S>
+                <S>Set-WordTextSpacingAfter</S>
+                <S>Set-WordTextSpacingBefore</S>
+                <S>Set-WordTextStrikeThrough</S>
+                <S>Set-WordTextUnderlineColor</S>
+                <S>Set-WordTextUnderlineStyle</S>
+                <S>Add-WordPicture</S>
+                <S>Get-WordPicture</S>
+                <S>Remove-WordPicture</S>
+                <S>Set-WordPicture</S>
+                <S>Add-WordTable</S>
+                <S>Add-WordTableCellValue</S>
+                <S>Add-WordTableColumn</S>
+                <S>Add-WordTableRow</S>
+                <S>Add-WordTableTitle</S>
+                <S>Copy-WordTableRow</S>
+                <S>Get-WordTable</S>
+                <S>Get-WordTableRow</S>
+                <S>New-WordTable</S>
+                <S>New-WordTableBorder</S>
+                <S>Remove-WordTable</S>
+                <S>Remove-WordTableColumn</S>
+                <S>Remove-WordTableRow</S>
+                <S>Set-WordTable</S>
+                <S>Set-WordTableAutoFit</S>
+                <S>Set-WordTableBorder</S>
+                <S>Set-WordTableCell</S>
+                <S>Set-WordTableCellFillColor</S>
+                <S>Set-WordTableCellShadingColor</S>
+                <S>Set-WordTableColumnWidth</S>
+                <S>Set-WordTableColumnWidthByIndex</S>
+                <S>Set-WordTableDesign</S>
+                <S>Set-WordTableDirection</S>
+                <S>Set-WordTablePageBreak</S>
+                <S>Set-WordTableRowMergeCells</S>
+                <S>Add-WordTOC</S>
+                <S>Add-WordTocItem</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2011-2019 Przemyslaw Klys. All rights reserved.</S>
+          <S N="description">Simple project to create Microsoft Word in PowerShell without having Office installed.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">17</S>
+          <S N="downloadCount">7415</S>
+          <S N="packageSize">146016</S>
+          <S N="published">18/11/2019 07:49:19 +00:00</S>
+          <S N="created">18/11/2019 07:49:19 +00:00</S>
+          <S N="lastUpdated">18/11/2019 21:16:22 +00:00</S>
+          <S N="tags">word docx write PSWord office windows doc PSModule PSFunction_New-WordBlock PSCommand_New-WordBlock PSFunction_New-WordBlockList PSCommand_New-WordBlockList PSFunction_New-WordBlockPageBreak PSCommand_New-WordBlockPageBreak PSFunction_New-WordBlockParagraph PSCommand_New-WordBlockParagraph PSFunction_New-WordBlockTable PSCommand_New-WordBlockTable PSFunction_Add-WordBarChart PSCommand_Add-WordBarChart PSFunction_Add-WordChartSeries PSCommand_Add-WordChartSeries PSFunction_Add-WordLineChart PSCommand_Add-WordLineChart PSFunction_Add-WordPieChart PSCommand_Add-WordPieChart PSFunction_Add-WordFooter PSCommand_Add-WordFooter PSFunction_Add-WordHeader PSCommand_Add-WordHeader PSFunction_Get-WordFooter PSCommand_Get-WordFooter PSFunction_Get-WordHeader PSCommand_Get-WordHeader PSFunction_Add-WordHyperLink PSCommand_Add-WordHyperLink PSFunction_Add-WordList PSCommand_Add-WordList PSFunction_Add-WordListItem PSCommand_Add-WordListItem PSFunction_Convert-ListToHeadings PSCommand_Convert-ListToHeadings PSFunction_New-WordList PSCommand_New-WordList PSFunction_New-WordListItem PSCommand_New-WordListItem PSFunction_New-WordListItemInternal PSCommand_New-WordListItemInternal PSFunction_Set-WordList PSCommand_Set-WordList PSFunction_Get-WordDocument PSCommand_Get-WordDocument PSFunction_Merge-WordDocument PSCommand_Merge-WordDocument PSFunction_New-WordDocument PSCommand_New-WordDocument PSFunction_Save-WordDocument PSCommand_Save-WordDocument PSFunction_Add-WordCustomProperty PSCommand_Add-WordCustomProperty PSFunction_Add-WordEquation PSCommand_Add-WordEquation PSFunction_Add-WordLine PSCommand_Add-WordLine PSFunction_Add-WordPageCount PSCommand_Add-WordPageCount PSFunction_Add-WordProtection PSCommand_Add-WordProtection PSFunction_Add-WordSection PSCommand_Add-WordSection PSFunction_Add-WordTabStopPosition PSCommand_Add-WordTabStopPosition PSFunction_Get-WordCustomProperty PSCommand_Get-WordCustomProperty PSFunction_Get-WordPageSettings PSCommand_Get-WordPageSettings PSFunction_Get-WordSection PSCommand_Get-WordSection PSFunction_Set-WordMargins PSCommand_Set-WordMargins PSFunction_Set-WordOrientation PSCommand_Set-WordOrientation PSFunction_Set-WordPageSettings PSCommand_Set-WordPageSettings PSFunction_Set-WordPageSize PSCommand_Set-WordPageSize PSFunction_Add-WordPageBreak PSCommand_Add-WordPageBreak PSFunction_Add-WordParagraph PSCommand_Add-WordParagraph PSFunction_Add-WordText PSCommand_Add-WordText PSFunction_Get-WordListItemParagraph PSCommand_Get-WordListItemParagraph PSFunction_Get-WordParagraphs PSCommand_Get-WordParagraphs PSFunction_Get-WordParagraphForList PSCommand_Get-WordParagraphForList PSFunction_Remove-WordParagraph PSCommand_Remove-WordParagraph PSFunction_Remove-WordText PSCommand_Remove-WordText PSFunction_Set-WordParagraph PSCommand_Set-WordParagraph PSFunction_Set-WordText PSCommand_Set-WordText PSFunction_Set-WordTextAlignment PSCommand_Set-WordTextAlignment PSFunction_Set-WordTextBold PSCommand_Set-WordTextBold PSFunction_Set-WordTextCapsStyle PSCommand_Set-WordTextCapsStyle PSFunction_Set-WordTextColor PSCommand_Set-WordTextColor PSFunction_Set-WordTextDirection PSCommand_Set-WordTextDirection PSFunction_Set-WordTextFontFamily PSCommand_Set-WordTextFontFamily PSFunction_Set-WordTextFontSize PSCommand_Set-WordTextFontSize PSFunction_Set-WordTextHeadingType PSCommand_Set-WordTextHeadingType PSFunction_Set-WordTextHidden PSCommand_Set-WordTextHidden PSFunction_Set-WordTextHighlight PSCommand_Set-WordTextHighlight PSFunction_Set-WordTextIndentationFirstLine PSCommand_Set-WordTextIndentationFirstLine PSFunction_Set-WordTextIndentationHanging PSCommand_Set-WordTextIndentationHanging PSFunction_Set-WordTextItalic PSCommand_Set-WordTextItalic PSFunction_Set-WordTextKerning PSCommand_Set-WordTextKerning PSFunction_Set-WordTextLanguage PSCommand_Set-WordTextLanguage PSFunction_Set-WordTextMisc PSCommand_Set-WordTextMisc PSFunction_Set-WordTextPercentageScale PSCommand_Set-WordTextPercentageScale PSFunction_Set-WordTextPosition PSCommand_Set-WordTextPosition PSFunction_Set-WordTextScript PSCommand_Set-WordTextScript PSFunction_Set-WordTextShadingType PSCommand_Set-WordTextShadingType PSFunction_Set-WordTextSpacing PSCommand_Set-WordTextSpacing PSFunction_Set-WordTextSpacingAfter PSCommand_Set-WordTextSpacingAfter PSFunction_Set-WordTextSpacingBefore PSCommand_Set-WordTextSpacingBefore PSFunction_Set-WordTextStrikeThrough PSCommand_Set-WordTextStrikeThrough PSFunction_Set-WordTextUnderlineColor PSCommand_Set-WordTextUnderlineColor PSFunction_Set-WordTextUnderlineStyle PSCommand_Set-WordTextUnderlineStyle PSFunction_Add-WordPicture PSCommand_Add-WordPicture PSFunction_Get-WordPicture PSCommand_Get-WordPicture PSFunction_Remove-WordPicture PSCommand_Remove-WordPicture PSFunction_Set-WordPicture PSCommand_Set-WordPicture PSFunction_Add-WordTable PSCommand_Add-WordTable PSFunction_Add-WordTableCellValue PSCommand_Add-WordTableCellValue PSFunction_Add-WordTableColumn PSCommand_Add-WordTableColumn PSFunction_Add-WordTableRow PSCommand_Add-WordTableRow PSFunction_Add-WordTableTitle PSCommand_Add-WordTableTitle PSFunction_Copy-WordTableRow PSCommand_Copy-WordTableRow PSFunction_Get-WordTable PSCommand_Get-WordTable PSFunction_Get-WordTableRow PSCommand_Get-WordTableRow PSFunction_New-WordTable PSCommand_New-WordTable PSFunction_New-WordTableBorder PSCommand_New-WordTableBorder PSFunction_Remove-WordTable PSCommand_Remove-WordTable PSFunction_Remove-WordTableColumn PSCommand_Remove-WordTableColumn PSFunction_Remove-WordTableRow PSCommand_Remove-WordTableRow PSFunction_Set-WordTable PSCommand_Set-WordTable PSFunction_Set-WordTableAutoFit PSCommand_Set-WordTableAutoFit PSFunction_Set-WordTableBorder PSCommand_Set-WordTableBorder PSFunction_Set-WordTableCell PSCommand_Set-WordTableCell PSFunction_Set-WordTableCellFillColor PSCommand_Set-WordTableCellFillColor PSFunction_Set-WordTableCellShadingColor PSCommand_Set-WordTableCellShadingColor PSFunction_Set-WordTableColumnWidth PSCommand_Set-WordTableColumnWidth PSFunction_Set-WordTableColumnWidthByIndex PSCommand_Set-WordTableColumnWidthByIndex PSFunction_Set-WordTableDesign PSCommand_Set-WordTableDesign PSFunction_Set-WordTableDirection PSCommand_Set-WordTableDirection PSFunction_Set-WordTablePageBreak PSCommand_Set-WordTablePageBreak PSFunction_Set-WordTableRowMergeCells PSCommand_Set-WordTableRowMergeCells PSFunction_Add-WordTOC PSCommand_Add-WordTOC PSFunction_Add-WordTocItem PSCommand_Add-WordTocItem PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2019-11-18T21:16:22Z</S>
+          <S N="NormalizedVersion">1.1.1</S>
+          <S N="Authors">Przemyslaw Klys</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSWriteWord.nuspec|PSWriteWord.psd1|PSWriteWord.psm1|Lib\License.md|Lib\Default\Xceed.Document.NET.dll|Lib\Default\Xceed.Words.NET.dll</S>
+          <S N="GUID">6314c78a-d011-4489-b462-91b05ec6a5c4</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Evotec</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\charl\Documents\PowerShell\Modules\PSWriteWord\1.1.1</S>
+    </MS>
+  </Obj>
+</Objs>

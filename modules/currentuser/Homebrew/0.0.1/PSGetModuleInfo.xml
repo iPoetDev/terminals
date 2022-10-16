@@ -1,0 +1,166 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Homebrew</S>
+      <Version N="Version">0.0.1</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Package Management (OneGet) provider that facilitates installing Homebrew packages from any NuGet repository.</S>
+      <S N="Author">Ethan Bergstrom</S>
+      <S N="CompanyName">ethanbergstrom</S>
+      <Nil N="Copyright" />
+      <DT N="PublishedDate">2022-07-02T18:33:24+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-16T10:16:39.61565+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/ethanbergstrom/Homebrew/blob/current/LICENSE.txt</URI>
+      <URI N="ProjectUri">https://github.com/ethanbergstrom/Homebrew</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PackageManagement</S>
+          <S>Provider</S>
+          <S>Homebrew</S>
+          <S>PSEdition_Core</S>
+          <S>MacOS</S>
+          <S>Linux</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">Please see https://github.com/ethanbergstrom/Homebrew/blob/master/CHANGELOG.md for release notes</S>
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="7">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">PackageManagement</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.1.7.2</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:PackageManagement/1.1.7.2</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="8">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Croze</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">0.0.4</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Croze/0.0.4</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="description">Package Management (OneGet) provider that facilitates installing Homebrew packages from any NuGet repository.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">Please see https://github.com/ethanbergstrom/Homebrew/blob/master/CHANGELOG.md for release notes</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">224</S>
+          <S N="downloadCount">224</S>
+          <S N="packageSize">13199</S>
+          <S N="published">02/07/2022 18:33:24 +01:00</S>
+          <S N="created">02/07/2022 18:33:24 +01:00</S>
+          <S N="lastUpdated">16/09/2022 04:03:46 +01:00</S>
+          <S N="tags">PackageManagement Provider Homebrew PSEdition_Core MacOS Linux PSModule</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-16T04:03:46Z</S>
+          <S N="NormalizedVersion">0.0.1</S>
+          <S N="Authors">Ethan Bergstrom</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Homebrew.nuspec|Homebrew.psm1|public\BaseFunctions.ps1|Homebrew.psd1|public\Find-Package.ps1|Homebrew.Resource.psd1|public\Add-PackageSource.ps1|private\Find-HomebrewPackage.ps1|public\Remove-PackageSource.ps1|private\Test-PackageVersion.ps1|public\Resolve-PackageSource.ps1|private\ConvertTo-SoftwareIdentity.ps1|public\Uninstall-Package.ps1|private\MiscHelpers.ps1|public\Install-Package.ps1|public\Get-InstalledPackage.ps1</S>
+          <S N="GUID">59259a02-2afd-4016-ab22-9afd91fdc6ea</S>
+          <S N="PowerShellVersion">7.0.1</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\Homebrew\0.0.1</S>
+    </MS>
+  </Obj>
+</Objs>

@@ -1,0 +1,140 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSWsusSpringClean</S>
+      <Version N="Version">0.6.2</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Give your WSUS server a thorough spring cleaning</S>
+      <S N="Author">Samuel Leslie</S>
+      <S N="CompanyName">ralish</S>
+      <S N="Copyright">(c) Samuel Leslie. All rights reserved.</S>
+      <DT N="PublishedDate">2022-08-29T03:27:26+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-25T21:14:53.5099378+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/ralish/PSWsusSpringClean/blob/stable/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/ralish/PSWsusSpringClean</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>wsus</S>
+          <S>Windows</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>ConvertTo-WsusSpringCleanCatalogue</S>
+                <S>Invoke-WsusSpringClean</S>
+                <S>Test-WsusSpringCleanCatalogue</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>ConvertTo-WsusSpringCleanCatalogue</S>
+                <S>Invoke-WsusSpringClean</S>
+                <S>Test-WsusSpringCleanCatalogue</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/ralish/PSWsusSpringClean/blob/stable/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Samuel Leslie. All rights reserved.</S>
+          <S N="description">Give your WSUS server a thorough spring cleaning</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/ralish/PSWsusSpringClean/blob/stable/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">27</S>
+          <S N="downloadCount">3412</S>
+          <S N="packageSize">20371</S>
+          <S N="published">29/08/2022 03:27:26 +01:00</S>
+          <S N="created">29/08/2022 03:27:26 +01:00</S>
+          <S N="lastUpdated">25/09/2022 10:39:33 +01:00</S>
+          <S N="tags">wsus Windows PSEdition_Desktop PSModule PSFunction_ConvertTo-WsusSpringCleanCatalogue PSCommand_ConvertTo-WsusSpringCleanCatalogue PSFunction_Invoke-WsusSpringClean PSCommand_Invoke-WsusSpringClean PSFunction_Test-WsusSpringCleanCatalogue PSCommand_Test-WsusSpringCleanCatalogue PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-25T10:39:33Z</S>
+          <S N="NormalizedVersion">0.6.2</S>
+          <S N="Authors">Samuel Leslie</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSWsusSpringClean.nuspec|CHANGELOG.md|PSWsusSpringClean.csv|PSWsusSpringClean.psd1|PSWsusSpringClean.psm1|PSWsusSpringClean.xml|README.md</S>
+          <S N="GUID">9d236d1d-cdd1-4b30-9d91-f7df7acdbf63</S>
+          <S N="PowerShellVersion">3.0</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\PSWsusSpringClean\0.6.2</S>
+    </MS>
+  </Obj>
+</Objs>

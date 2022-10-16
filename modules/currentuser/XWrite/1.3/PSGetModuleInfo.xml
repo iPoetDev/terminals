@@ -1,0 +1,159 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">XWrite</S>
+      <Version N="Version">1.3</Version>
+      <S N="Type">Module</S>
+      <S N="Description">PowerShell module that focuses on enhancing the experience and output of tracing. Enhances the output of Write-Host, Write-Debug, Write-Verbose, Write-Information and  Write-Warning. Enables global tracing levels and can roll the setting back.</S>
+      <S N="Author">Alex Sarafian</S>
+      <S N="CompanyName">dev1978</S>
+      <S N="Copyright">(c) 2017 Alex Sarafian. All rights reserved.</S>
+      <DT N="PublishedDate">2019-04-06T16:17:49+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-26T21:03:18.6147819+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/Sarafian/XWrite/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/Sarafian/XWrite/</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Disable-XWrite</S>
+                <S>Disable-XWriteProgress</S>
+                <S>Enable-XWrite</S>
+                <S>Enable-XWriteProgress</S>
+                <S>Set-XGlobalTrace</S>
+                <S>Undo-XGlobalTrace</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Disable-XWrite</S>
+                <S>Disable-XWriteProgress</S>
+                <S>Enable-XWrite</S>
+                <S>Enable-XWriteProgress</S>
+                <S>Set-XGlobalTrace</S>
+                <S>Undo-XGlobalTrace</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Disable-XWrite</S>
+                <S>Disable-XWriteProgress</S>
+                <S>Enable-XWrite</S>
+                <S>Enable-XWriteProgress</S>
+                <S>Set-XGlobalTrace</S>
+                <S>Undo-XGlobalTrace</S>
+                <S>Disable-XWrite</S>
+                <S>Disable-XWriteProgress</S>
+                <S>Enable-XWrite</S>
+                <S>Enable-XWriteProgress</S>
+                <S>Set-XGlobalTrace</S>
+                <S>Undo-XGlobalTrace</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/Sarafian/XWrite/blob/master/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="9">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2017 Alex Sarafian. All rights reserved.</S>
+          <S N="description">PowerShell module that focuses on enhancing the experience and output of tracing. Enhances the output of Write-Host, Write-Debug, Write-Verbose, Write-Information and  Write-Warning. Enables global tracing levels and can roll the setting back.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/Sarafian/XWrite/blob/master/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1883</S>
+          <S N="downloadCount">2154</S>
+          <S N="packageSize">12489</S>
+          <S N="published">06/04/2019 16:17:49 +01:00</S>
+          <S N="created">06/04/2019 16:17:49 +01:00</S>
+          <S N="lastUpdated">26/09/2022 02:51:58 +01:00</S>
+          <S N="tags">PSModule PSCmdlet_Disable-XWrite PSCommand_Disable-XWrite PSCmdlet_Disable-XWriteProgress PSCommand_Disable-XWriteProgress PSCmdlet_Enable-XWrite PSCommand_Enable-XWrite PSCmdlet_Enable-XWriteProgress PSCommand_Enable-XWriteProgress PSCmdlet_Set-XGlobalTrace PSCommand_Set-XGlobalTrace PSCmdlet_Undo-XGlobalTrace PSCommand_Undo-XGlobalTrace PSIncludes_Cmdlet PSFunction_Disable-XWrite PSCommand_Disable-XWrite PSFunction_Disable-XWriteProgress PSCommand_Disable-XWriteProgress PSFunction_Enable-XWrite PSCommand_Enable-XWrite PSFunction_Enable-XWriteProgress PSCommand_Enable-XWriteProgress PSFunction_Set-XGlobalTrace PSCommand_Set-XGlobalTrace PSFunction_Undo-XGlobalTrace PSCommand_Undo-XGlobalTrace PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-26T02:51:58Z</S>
+          <S N="NormalizedVersion">1.3.0</S>
+          <S N="Authors">Alex Sarafian</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">XWrite.nuspec|XWrite.psd1|XWrite.psm1|Private\Get-XCommandSource.ps1|Private\Get-XPrefix.ps1|Private\Get-XProgressRender.ps1|Public\Disable-XWrite.ps1|Public\Disable-XWriteProgress.ps1|Public\Enable-XWrite.ps1|Public\Enable-XWriteProgress.ps1|Public\Set-XGlobalTrace.ps1|Public\Undo-XGlobalTrace.ps1</S>
+          <S N="GUID">3e84f03d-f88a-408c-a465-bc58a3268e4d</S>
+          <S N="CompanyName">Unknown</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\XWrite\1.3</S>
+    </MS>
+  </Obj>
+</Objs>

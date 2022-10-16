@@ -1,0 +1,135 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">MsrcSecurityUpdates</S>
+      <Version N="Version">1.7.2</Version>
+      <S N="Type">Module</S>
+      <S N="Description">The Microsoft Security Response Center module gets Microsoft Security Update details_x000D__x000A_and CVRF (Common Vulnerability Reporting Format) documents in either JSON or XML._x000D__x000A__x000D__x000A_This module calls the MSRC API (api.msrc.microsoft.com) which requires an API key from:_x000D__x000A_https://portal.msrc.microsoft.com</S>
+      <S N="Author">Microsoft Corporation</S>
+      <Obj N="CompanyName" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>cmart</S>
+          <S>mdressman</S>
+        </LST>
+      </Obj>
+      <S N="Copyright">(c) 2017 Microsoft Corporation. All rights reserved.</S>
+      <DT N="PublishedDate">2017-06-05T20:09:35+01:00</DT>
+      <Obj N="InstalledDate" RefId="2">
+        <DT>2019-11-18T22:44:02.8840192+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="3">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/Microsoft/MSRC-Microsoft-Security-Updates-API/blob/master/LICENSE.md</URI>
+      <URI N="ProjectUri">https://github.com/Microsoft/MSRC-Microsoft-Security-Updates-API</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="4">
+        <TNRef RefId="1" />
+        <LST>
+          <S>MSRC</S>
+          <S>Security</S>
+          <S>Updates</S>
+          <S>Microsoft</S>
+          <S>CVRF</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="5">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">February 9, 2017 - Initial release to https://github.com/Microsoft/MSRC-Microsoft-Security-Updates-API_x000D__x000A_March 8, 2017 - Refactored into a script module and added basic Pester tests_x000D__x000A_March 14, 2017 - Added some error handling for when fields are not in the returned CVRF api reply_x000D__x000A_March 28, 2017 - Added Get-MsrcVulnerabilityReportHtml_x000D__x000A_March 30, 2017 - PR from MVP (https://github.com/p0w3rsh3ll) Split module into public and private functions, etc _x000D__x000A_April 5, 2017 - Added ability to use Azure AD tokens, the module now supports calling the APIs with an API key or AAD token_x000D__x000A_April 18, 2017 - Small HTML change to Get-MsrcSecurityBulletinHtml.ps1_x000D__x000A_April 28, 2017 - Bug fixes and some refactoring_x000D__x000A_May 3, 2017 - Added Proxy support, Updates to Get-MsrcVulnerabilityReportHtml_x000D__x000A_May 5, 2017 - Further updates to Get-MsrcVulnerabilityReportHtml_x000D__x000A_May 9, 2017 - Changed the string from "unknown" to "N/A" when a cvss score is null from the cvrf response_x000D__x000A_May 10, 2017 - fixed a typo that was causing FAQ to not display correctly_x000D__x000A_May 30, 2017 - Added tags to the table of contents, as well as changing the KB article text to be hyperlinked, and show the subtype if possible._x000D__x000A_May 31, 2017 - Removed padding between table of contents cells to reduce wasted space_x000D__x000A_June 2, 2017 - Added a fix to allow for multiline KB articles</S>
+      <Obj N="Dependencies" RefId="7">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2017 Microsoft Corporation. All rights reserved.</S>
+          <S N="description">The Microsoft Security Response Center module gets Microsoft Security Update details_x000D__x000A_and CVRF (Common Vulnerability Reporting Format) documents in either JSON or XML._x000D__x000A__x000D__x000A_This module calls the MSRC API (api.msrc.microsoft.com) which requires an API key from:_x000D__x000A_https://portal.msrc.microsoft.com</S>
+          <S N="requireLicenseAcceptance">True</S>
+          <S N="releaseNotes">February 9, 2017 - Initial release to https://github.com/Microsoft/MSRC-Microsoft-Security-Updates-API_x000D__x000A_March 8, 2017 - Refactored into a script module and added basic Pester tests_x000D__x000A_March 14, 2017 - Added some error handling for when fields are not in the returned CVRF api reply_x000D__x000A_March 28, 2017 - Added Get-MsrcVulnerabilityReportHtml_x000D__x000A_March 30, 2017 - PR from MVP (https://github.com/p0w3rsh3ll) Split module into public and private functions, etc _x000D__x000A_April 5, 2017 - Added ability to use Azure AD tokens, the module now supports calling the APIs with an API key or AAD token_x000D__x000A_April 18, 2017 - Small HTML change to Get-MsrcSecurityBulletinHtml.ps1_x000D__x000A_April 28, 2017 - Bug fixes and some refactoring_x000D__x000A_May 3, 2017 - Added Proxy support, Updates to Get-MsrcVulnerabilityReportHtml_x000D__x000A_May 5, 2017 - Further updates to Get-MsrcVulnerabilityReportHtml_x000D__x000A_May 9, 2017 - Changed the string from "unknown" to "N/A" when a cvss score is null from the cvrf response_x000D__x000A_May 10, 2017 - fixed a typo that was causing FAQ to not display correctly_x000D__x000A_May 30, 2017 - Added tags to the table of contents, as well as changing the KB article text to be hyperlinked, and show the subtype if possible._x000D__x000A_May 31, 2017 - Removed padding between table of contents cells to reduce wasted space_x000D__x000A_June 2, 2017 - Added a fix to allow for multiline KB articles</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">16467</S>
+          <S N="downloadCount">18232</S>
+          <S N="packageSize">253932</S>
+          <S N="published">05/06/2017 20:09:35 +01:00</S>
+          <S N="created">05/06/2017 20:09:35 +01:00</S>
+          <S N="lastUpdated">18/11/2019 22:06:22 +00:00</S>
+          <S N="tags">MSRC Security Updates Microsoft CVRF PSModule</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2019-11-18T22:06:22Z</S>
+          <S N="NormalizedVersion">1.7.2</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">MsrcSecurityUpdates.nuspec|Microsoft.IdentityModel.Clients.ActiveDirectory.dll|Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.dll|MsrcSecurityUpdates.psd1|MsrcSecurityUpdates.psm1|MsrcSecurityUpdates.tests.ps1|Private\Get-CVRFID.ps1|Private\Get-KBDownloadUrl.ps1|Private\Get-MsrcCvrfProductVulnerability.ps1|Private\Get-MsrcThreatExploitStatus.ps1|Private\Test-CVRFID.ps1|Public\Get-MsrcCvrfAffectedSoftware.ps1|Public\Get-MsrcCvrfCVESummary.ps1|Public\Get-MsrcCvrfDocument.ps1|Public\Get-MsrcCvrfExploitabilityIndex.ps1|Public\Get-MsrcSecurityBulletinHtml.ps1|Public\Get-MsrcSecurityUpdate.ps1|Public\Get-MsrcVulnerabilityReportHtml.ps1|Public\Set-MsrcAdalAccessToken.ps1|Public\Set-MSRCApiKey.ps1</S>
+          <S N="GUID">4b781977-6369-41c9-97ea-6801229d08da</S>
+          <S N="PowerShellVersion">3.0</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\charl\Documents\PowerShell\Modules\MsrcSecurityUpdates\1.7.2</S>
+    </MS>
+  </Obj>
+</Objs>

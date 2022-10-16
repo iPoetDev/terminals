@@ -1,0 +1,207 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSPackageProject</S>
+      <Version N="Version">0.1.18</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Module to help with building and publishing PowerShell packages</S>
+      <S N="Author">Microsoft Corporation</S>
+      <Obj N="CompanyName" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Travis</S>
+          <S>TravisEz13-MSFT</S>
+        </LST>
+      </Obj>
+      <S N="Copyright">(c) Microsoft Corporation. All rights reserved</S>
+      <DT N="PublishedDate">2020-09-17T23:17:37+01:00</DT>
+      <Obj N="InstalledDate" RefId="2">
+        <DT>2022-09-16T09:50:06.4788794+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="3">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/TravisEz13/PsAzDevOpsExt/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/TravisEz13/PsAzDevOpsExt</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="4">
+        <TNRef RefId="1" />
+        <LST>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="5">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Initialize-PSPackageProject</S>
+                <S>Invoke-PSPackageProjectTest</S>
+                <S>Add-PSPackageProjectCmdletHelp</S>
+                <S>Export-PSPackageProjectHelp</S>
+                <S>New-PSPackageProjectHelp</S>
+                <S>Invoke-PSPackageProjectBuild</S>
+                <S>Invoke-PSPackageProjectPublish</S>
+                <S>Get-PSPackageProjectConfiguration</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="7" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Initialize-PSPackageProject</S>
+                <S>Invoke-PSPackageProjectTest</S>
+                <S>Add-PSPackageProjectCmdletHelp</S>
+                <S>Export-PSPackageProjectHelp</S>
+                <S>New-PSPackageProjectHelp</S>
+                <S>Invoke-PSPackageProjectBuild</S>
+                <S>Invoke-PSPackageProjectPublish</S>
+                <S>Get-PSPackageProjectConfiguration</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="9">
+        <TNRef RefId="1" />
+        <LST>
+          <Obj RefId="10">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">platyPS</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">0.14.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:platyPS/0.14.0</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="11">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">Pester</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">4.8.1</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:Pester/4.8.1</S>
+              </En>
+            </DCT>
+          </Obj>
+          <Obj RefId="12">
+            <TNRef RefId="4" />
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">PSScriptAnalyzer</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">1.18.0</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:PSScriptAnalyzer/1.18.0</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="13">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Microsoft Corporation. All rights reserved</S>
+          <S N="description">Module to help with building and publishing PowerShell packages</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">18876</S>
+          <S N="downloadCount">21280</S>
+          <S N="packageSize">17704</S>
+          <S N="published">17/09/2020 23:17:37 +01:00</S>
+          <S N="created">17/09/2020 23:17:37 +01:00</S>
+          <S N="lastUpdated">15/09/2022 09:33:37 +01:00</S>
+          <S N="tags">PSModule PSFunction_Initialize-PSPackageProject PSCommand_Initialize-PSPackageProject PSFunction_Invoke-PSPackageProjectTest PSCommand_Invoke-PSPackageProjectTest PSFunction_Add-PSPackageProjectCmdletHelp PSCommand_Add-PSPackageProjectCmdletHelp PSFunction_Export-PSPackageProjectHelp PSCommand_Export-PSPackageProjectHelp PSFunction_New-PSPackageProjectHelp PSCommand_New-PSPackageProjectHelp PSFunction_Invoke-PSPackageProjectBuild PSCommand_Invoke-PSPackageProjectBuild PSFunction_Invoke-PSPackageProjectPublish PSCommand_Invoke-PSPackageProjectPublish PSFunction_Get-PSPackageProjectConfiguration PSCommand_Get-PSPackageProjectConfiguration PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-15T09:33:37Z</S>
+          <S N="NormalizedVersion">0.1.18</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSPackageProject.nuspec|dobuild.psm1|dobuild_for_init.ps1|gitignore_for_init|PSPackageProject.psd1|PSPackageProject.psm1|WHAT_TO_DO_NEXT.md|yml\ci_for_init.yml|yml\release_for_init.yml|yml\test_for_init.yml</S>
+          <S N="GUID">4f81cc13-43e7-4108-9429-040c23764412</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\PSPackageProject\0.1.18</S>
+    </MS>
+  </Obj>
+</Objs>

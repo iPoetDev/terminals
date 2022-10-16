@@ -1,0 +1,125 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">SecretManagement.JustinGrote.CredMan</S>
+      <Version N="Version">1.0.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">This PowerShell module is an extension vault module for the PowerShell SecretManagement module._x000D__x000A_    As an extension vault, this module uses Windows Credential Manager to store secrets to the local machine based on the current interactive user account context._x000D__x000A_    This extension vault module will run only on Windows platforms.</S>
+      <S N="Author">Justin Grote</S>
+      <S N="CompanyName">JustinGrote</S>
+      <S N="Copyright">(c) Justin Grote. All rights reserved.</S>
+      <DT N="PublishedDate">2020-09-22T03:08:33+01:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-27T09:34:44.8033316+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>PSModule</S>
+          <S>PSEdition_Core</S>
+          <S>PSEdition_Desktop</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="6">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="7">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) Justin Grote. All rights reserved.</S>
+          <S N="description">This PowerShell module is an extension vault module for the PowerShell SecretManagement module._x000D__x000A_    As an extension vault, this module uses Windows Credential Manager to store secrets to the local machine based on the current interactive user account context._x000D__x000A_    This extension vault module will run only on Windows platforms.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">2695</S>
+          <S N="downloadCount">2695</S>
+          <S N="packageSize">14580</S>
+          <S N="published">22/09/2020 03:08:33 +01:00</S>
+          <S N="created">22/09/2020 03:08:33 +01:00</S>
+          <S N="lastUpdated">26/09/2022 17:02:05 +01:00</S>
+          <S N="tags">PSModule PSEdition_Core PSEdition_Desktop</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-26T17:02:05Z</S>
+          <S N="NormalizedVersion">1.0.0</S>
+          <S N="Authors">Justin Grote</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">SecretManagement.JustinGrote.CredMan.nuspec|LICENSE|README.md|SecretManagement.JustinGrote.CredMan.psd1|SecretManagement.JustinGrote.CredMan.Extension\SecretManagement.JustinGrote.CredMan.Extension.dll|SecretManagement.JustinGrote.CredMan.Extension\SecretManagement.JustinGrote.CredMan.Extension.psd1</S>
+          <S N="GUID">4b4bc3ec-190a-493f-a869-5ebdb2398acd</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Justin Grote</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\SecretManagement.JustinGrote.CredMan\1.0.0</S>
+    </MS>
+  </Obj>
+</Objs>

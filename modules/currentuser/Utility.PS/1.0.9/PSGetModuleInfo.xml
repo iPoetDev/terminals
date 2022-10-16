@@ -1,0 +1,198 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Utility.PS</S>
+      <Version N="Version">1.0.9</Version>
+      <S N="Type">Module</S>
+      <S N="Description">This module contains cmdlets that extend the basic features of PowerShell.</S>
+      <S N="Author">Jason Thompson</S>
+      <S N="CompanyName">jasoth</S>
+      <S N="Copyright">(c) 2020 Jason Thompson. All rights reserved.</S>
+      <DT N="PublishedDate">2021-01-14T05:52:55+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-26T19:23:00.7833133+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://raw.githubusercontent.com/jasoth/Utility.PS/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/jasoth/Utility.PS</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Microsoft</S>
+          <S>PowerShell</S>
+          <S>Utility</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+          <S>Windows</S>
+          <S>Linux</S>
+          <S>MacOS</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Compress-Data</S>
+                <S>ConvertFrom-Base64String</S>
+                <S>ConvertFrom-HexString</S>
+                <S>ConvertFrom-HtmlString</S>
+                <S>ConvertFrom-QueryString</S>
+                <S>ConvertFrom-SecureString</S>
+                <S>ConvertFrom-SecureStringAsPlainText</S>
+                <S>ConvertFrom-UrlString</S>
+                <S>ConvertTo-Base64String</S>
+                <S>ConvertTo-Csv</S>
+                <S>ConvertTo-Dictionary</S>
+                <S>ConvertTo-HexString</S>
+                <S>ConvertTo-HtmlString</S>
+                <S>ConvertTo-PsParameterString</S>
+                <S>ConvertTo-PsString</S>
+                <S>ConvertTo-QueryString</S>
+                <S>ConvertTo-UrlString</S>
+                <S>Expand-Data</S>
+                <S>Get-RelativePath</S>
+                <S>Get-X509Certificate</S>
+                <S>Invoke-CommandAsSystem</S>
+                <S>New-SecureStringKey</S>
+                <S>Remove-Diacritics</S>
+                <S>Remove-InvalidFileNameCharacters</S>
+                <S>Remove-SensitiveData</S>
+                <S>Select-PsBoundParameters</S>
+                <S>Test-IpAddressInSubnet</S>
+                <S>Use-Progress</S>
+                <S>Write-HostPrompt</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Compress-Data</S>
+                <S>ConvertFrom-Base64String</S>
+                <S>ConvertFrom-HexString</S>
+                <S>ConvertFrom-HtmlString</S>
+                <S>ConvertFrom-QueryString</S>
+                <S>ConvertFrom-SecureString</S>
+                <S>ConvertFrom-SecureStringAsPlainText</S>
+                <S>ConvertFrom-UrlString</S>
+                <S>ConvertTo-Base64String</S>
+                <S>ConvertTo-Csv</S>
+                <S>ConvertTo-Dictionary</S>
+                <S>ConvertTo-HexString</S>
+                <S>ConvertTo-HtmlString</S>
+                <S>ConvertTo-PsParameterString</S>
+                <S>ConvertTo-PsString</S>
+                <S>ConvertTo-QueryString</S>
+                <S>ConvertTo-UrlString</S>
+                <S>Expand-Data</S>
+                <S>Get-RelativePath</S>
+                <S>Get-X509Certificate</S>
+                <S>Invoke-CommandAsSystem</S>
+                <S>New-SecureStringKey</S>
+                <S>Remove-Diacritics</S>
+                <S>Remove-InvalidFileNameCharacters</S>
+                <S>Remove-SensitiveData</S>
+                <S>Select-PsBoundParameters</S>
+                <S>Test-IpAddressInSubnet</S>
+                <S>Use-Progress</S>
+                <S>Write-HostPrompt</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2020 Jason Thompson. All rights reserved.</S>
+          <S N="description">This module contains cmdlets that extend the basic features of PowerShell.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">740</S>
+          <S N="downloadCount">1050</S>
+          <S N="packageSize">210211</S>
+          <S N="published">14/01/2021 05:52:55 +00:00</S>
+          <S N="created">14/01/2021 05:52:55 +00:00</S>
+          <S N="lastUpdated">26/09/2022 18:22:06 +01:00</S>
+          <S N="tags">Microsoft PowerShell Utility PSEdition_Desktop PSEdition_Core Windows Linux MacOS PSModule</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-26T18:22:06Z</S>
+          <S N="NormalizedVersion">1.0.9</S>
+          <S N="Authors">Jason Thompson</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Utility.PS.nuspec|Compress-Data.ps1|ConvertFrom-Base64String.ps1|ConvertFrom-HexString.ps1|ConvertFrom-HtmlString.ps1|ConvertFrom-QueryString.ps1|ConvertFrom-SecureString.ps1|ConvertFrom-SecureStringAsPlainText.ps1|ConvertFrom-UrlString.ps1|ConvertTo-Base64String.ps1|ConvertTo-Csv.ps1|ConvertTo-Dictionary.ps1|ConvertTo-HexString.ps1|ConvertTo-HtmlString.ps1|ConvertTo-PsParameterString.ps1|ConvertTo-PsString.ps1|ConvertTo-QueryString.ps1|ConvertTo-UrlString.ps1|Expand-Data.ps1|Get-RelativePath.ps1|Get-X509Certificate.ps1|Invoke-CommandAsSystem.ps1|License.txt|New-SecureStringKey.ps1|Remove-Diacritics.ps1|Remove-InvalidFileNameCharacters.ps1|Remove-SensitiveData.ps1|Select-PsBoundParameters.ps1|Test-IpAddressInSubnet.ps1|Use-Progress.ps1|Utility.PS-Help.xml|Utility.PS.psd1|Utility.PS.psm1|Write-HostPrompt.ps1</S>
+          <S N="Functions">Compress-Data ConvertFrom-Base64String ConvertFrom-HexString ConvertFrom-HtmlString ConvertFrom-QueryString ConvertFrom-SecureString ConvertFrom-SecureStringAsPlainText ConvertFrom-UrlString ConvertTo-Base64String ConvertTo-Csv ConvertTo-Dictionary ConvertTo-HexString ConvertTo-HtmlString ConvertTo-PsParameterString ConvertTo-PsString ConvertTo-QueryString ConvertTo-UrlString Expand-Data Get-RelativePath Get-X509Certificate Invoke-CommandAsSystem New-SecureStringKey Remove-Diacritics Remove-InvalidFileNameCharacters Remove-SensitiveData Select-PsBoundParameters Test-IpAddressInSubnet Use-Progress Write-HostPrompt</S>
+          <S N="GUID">e6c8b1d2-a261-4a57-80a7-ea8080132c86</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\Utility.PS\1.0.9</S>
+    </MS>
+  </Obj>
+</Objs>

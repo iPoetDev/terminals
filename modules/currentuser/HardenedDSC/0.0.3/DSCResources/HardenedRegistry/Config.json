@@ -1,0 +1,318 @@
+[
+    {
+        "Name"       : "RDP_DisablePasswordSaving",
+        "Description": "Do not allow passwords to be saved",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "DisablePasswordSaving",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_PromptForPassword",
+        "Description": "Windows Remote Desktop Configured to Always Prompt for Password",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "fPromptForPassword",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_EncryptRPCTraffic",
+        "Description": "Require secure RPC Communication",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "fEncryptRPCTraffic",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_MinEncryptionLevel",
+        "Description": "Strong Encryption for Windows Remote Desktop Required",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "MinEncryptionLevel",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"High Level",
+                "Value":"3"
+            },
+            {
+                "Name":"Low Level",
+                "Value":"1"
+            },
+            {
+                "Name":"Client Compatible",
+                "Value":"2"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_MaxDisconnectionTime",
+        "Description": "Set time limit for disconnected sessions",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "MaxDisconnectionTime",
+        "ValueType"  : "dword",
+        "ValueData" : []
+    },
+    {
+        "Name"       : "RDP_MaxIdleTime",
+        "Description": "Set time limit for active but idle Remote Desktop",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "MaxIdleTime",
+        "ValueType"  : "dword",
+        "ValueData" : []
+    },
+    {
+        "Name"       : "RDP_DisableRedirectCOM",
+        "Description": "Do not allow COM port redirection",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "fDisableCcm",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_DisableRedirectDrive",
+        "Description": "Do not allow Drive redirection",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "fDisableCdm",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_DisableRedirectLPT",
+        "Description": "Do not allow LPT port redirection",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "fDisableLPT",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_DisableRedirectPNP",
+        "Description": "Do not allow supported Plug and Play device redirection",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "fDisablePNPRedir",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_DisableRestrictedAdmin",
+        "Description": "Disable server side",
+        "Key"        : "HKEY_LOCAL_MACHINE\\System\\CurrentControlSet\\Control\\Lsa",
+        "ValueName"  : "DisableRestrictedAdmin",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_EnforceRestrictedAdmin",
+        "Description": "Enforce client side",
+        "Key"        : "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CredentialsDelegation",
+        "ValueName"  : "RestrictedRemoteAdministration",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"Require Restricted Admin",
+                "Value":"1"
+            },
+            {
+                "Name":"Require Remote Credential Guard",
+                "Value":"2"
+            },
+            {
+                "Name":"Restrict credential delegation",
+                "Value":"3"
+            },
+            {
+                "Name":"Default ",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_PerSessionTempDir",
+        "Description": "Do not use temporary folders per session",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "PerSessionTempDir",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "RDP_DeleteTempDirsOnExit",
+        "Description": "Do not delete temp folders upon exit",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "DeleteTempDirsOnExit",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "STORE_DisableStoreApps",
+        "Description": "Disable all apps from Windows Store",
+        "Key"        : "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsStore",
+        "ValueName"  : "DisableStoreApps",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"0"
+            },
+            {
+                "Name":"False",
+                "Value":"1"
+            }
+        ]
+    },
+    {
+        "Name"       : "STORE_DisableAutoDownload",
+        "Description": "Do not delete temp folders upon exit",
+        "Key"        : "HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsStore",
+        "ValueName"  : "AutoDownload",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"2"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "STORE_DisableOSUpgrade",
+        "Description": "Turn off the offer to update to the latest version of Windows",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "DisableOSUpgrade",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    },
+    {
+        "Name"       : "STORE_RemoveWindowsStore",
+        "Description": "Turn off the Store application",
+        "Key"        : "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+        "ValueName"  : "RemoveWindowsStore",
+        "ValueType"  : "dword",
+        "ValueData" : [
+            {
+                "Name":"True",
+                "Value":"1"
+            },
+            {
+                "Name":"False",
+                "Value":"0"
+            }
+        ]
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

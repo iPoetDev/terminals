@@ -1,0 +1,204 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSWriteExcel</S>
+      <Version N="Version">0.1.4</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Little project to create Excel files without Microsoft Excel being installed.</S>
+      <S N="Author">Przemyslaw Klys</S>
+      <S N="CompanyName">Przemyslaw.Klys</S>
+      <S N="Copyright">(c) 2011-2018 Przemyslaw Klys. All rights reserved.</S>
+      <DT N="PublishedDate">2019-11-17T13:51:31+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2019-11-18T22:23:11.5473329+00:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <Nil N="LicenseUri" />
+      <URI N="ProjectUri">https://github.com/EvotecIT/PSWriteExcel</URI>
+      <URI N="IconUri">https://evotec.xyz/wp-content/uploads/2018/10/PSWriteExcel.png</URI>
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Excel</S>
+          <S>ConvertTo-Excel</S>
+          <S>ExportExcel</S>
+          <S>macOS</S>
+          <S>linux</S>
+          <S>windows</S>
+          <S>PSModule</S>
+          <S>PSEdition_Desktop</S>
+          <S>PSEdition_Core</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-ExcelWorkSheet</S>
+                <S>Add-ExcelWorkSheetCell</S>
+                <S>Add-ExcelWorksheetData</S>
+                <S>ConvertFrom-Excel</S>
+                <S>ConvertTo-Excel</S>
+                <S>Find-ExcelDocumentText</S>
+                <S>Get-ExcelDocument</S>
+                <S>Get-ExcelProperties</S>
+                <S>Get-ExcelTranslateFromR1C1</S>
+                <S>Get-ExcelTranslateToR1C1</S>
+                <S>Get-ExcelWorkSheet</S>
+                <S>Get-ExcelWorkSheetCell</S>
+                <S>Get-ExcelWorkSheetData</S>
+                <S>New-ExcelDocument</S>
+                <S>Remove-ExcelWorksheet</S>
+                <S>Save-ExcelDocument</S>
+                <S>Set-ExcelProperties</S>
+                <S>Set-ExcelWorksheetAutoFilter</S>
+                <S>Set-ExcelWorksheetAutoFit</S>
+                <S>Set-ExcelWorkSheetCellStyleFont</S>
+                <S>Set-ExcelWorkSheetFreezePane</S>
+                <S>Set-ExcelWorkSheetTableStyle</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Add-ExcelWorkSheet</S>
+                <S>Add-ExcelWorkSheetCell</S>
+                <S>Add-ExcelWorksheetData</S>
+                <S>ConvertFrom-Excel</S>
+                <S>ConvertTo-Excel</S>
+                <S>Find-ExcelDocumentText</S>
+                <S>Get-ExcelDocument</S>
+                <S>Get-ExcelProperties</S>
+                <S>Get-ExcelTranslateFromR1C1</S>
+                <S>Get-ExcelTranslateToR1C1</S>
+                <S>Get-ExcelWorkSheet</S>
+                <S>Get-ExcelWorkSheetCell</S>
+                <S>Get-ExcelWorkSheetData</S>
+                <S>New-ExcelDocument</S>
+                <S>Remove-ExcelWorksheet</S>
+                <S>Save-ExcelDocument</S>
+                <S>Set-ExcelProperties</S>
+                <S>Set-ExcelWorksheetAutoFilter</S>
+                <S>Set-ExcelWorksheetAutoFit</S>
+                <S>Set-ExcelWorkSheetCellStyleFont</S>
+                <S>Set-ExcelWorkSheetFreezePane</S>
+                <S>Set-ExcelWorkSheetTableStyle</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <Nil N="ReleaseNotes" />
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST>
+          <Obj RefId="9">
+            <TN RefId="4">
+              <T>System.Collections.Specialized.OrderedDictionary</T>
+              <T>System.Object</T>
+            </TN>
+            <DCT>
+              <En>
+                <S N="Key">Name</S>
+                <S N="Value">PSSharedGoods</S>
+              </En>
+              <En>
+                <S N="Key">MinimumVersion</S>
+                <S N="Value">0.0.107</S>
+              </En>
+              <En>
+                <S N="Key">CanonicalId</S>
+                <S N="Value">nuget:PSSharedGoods/0.0.107</S>
+              </En>
+            </DCT>
+          </Obj>
+        </LST>
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="10">
+        <TN RefId="5">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2011-2018 Przemyslaw Klys. All rights reserved.</S>
+          <S N="description">Little project to create Excel files without Microsoft Excel being installed.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">36</S>
+          <S N="downloadCount">11201</S>
+          <S N="packageSize">1011471</S>
+          <S N="published">17/11/2019 13:51:31 +00:00</S>
+          <S N="created">17/11/2019 13:51:31 +00:00</S>
+          <S N="lastUpdated">18/11/2019 21:51:22 +00:00</S>
+          <S N="tags">Excel ConvertTo-Excel ExportExcel macOS linux windows PSModule PSEdition_Desktop PSEdition_Core PSFunction_Add-ExcelWorkSheet PSCommand_Add-ExcelWorkSheet PSFunction_Add-ExcelWorkSheetCell PSCommand_Add-ExcelWorkSheetCell PSFunction_Add-ExcelWorksheetData PSCommand_Add-ExcelWorksheetData PSFunction_ConvertFrom-Excel PSCommand_ConvertFrom-Excel PSFunction_ConvertTo-Excel PSCommand_ConvertTo-Excel PSFunction_Find-ExcelDocumentText PSCommand_Find-ExcelDocumentText PSFunction_Get-ExcelDocument PSCommand_Get-ExcelDocument PSFunction_Get-ExcelProperties PSCommand_Get-ExcelProperties PSFunction_Get-ExcelTranslateFromR1C1 PSCommand_Get-ExcelTranslateFromR1C1 PSFunction_Get-ExcelTranslateToR1C1 PSCommand_Get-ExcelTranslateToR1C1 PSFunction_Get-ExcelWorkSheet PSCommand_Get-ExcelWorkSheet PSFunction_Get-ExcelWorkSheetCell PSCommand_Get-ExcelWorkSheetCell PSFunction_Get-ExcelWorkSheetData PSCommand_Get-ExcelWorkSheetData PSFunction_New-ExcelDocument PSCommand_New-ExcelDocument PSFunction_Remove-ExcelWorksheet PSCommand_Remove-ExcelWorksheet PSFunction_Save-ExcelDocument PSCommand_Save-ExcelDocument PSFunction_Set-ExcelProperties PSCommand_Set-ExcelProperties PSFunction_Set-ExcelWorksheetAutoFilter PSCommand_Set-ExcelWorksheetAutoFilter PSFunction_Set-ExcelWorksheetAutoFit PSCommand_Set-ExcelWorksheetAutoFit PSFunction_Set-ExcelWorkSheetCellStyleFont PSCommand_Set-ExcelWorkSheetCellStyleFont PSFunction_Set-ExcelWorkSheetFreezePane PSCommand_Set-ExcelWorkSheetFreezePane PSFunction_Set-ExcelWorkSheetTableStyle PSCommand_Set-ExcelWorkSheetTableStyle PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2019-11-18T21:51:22Z</S>
+          <S N="NormalizedVersion">0.1.4</S>
+          <S N="Authors">Przemyslaw Klys</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSWriteExcel.nuspec|PSWriteExcel.psd1|PSWriteExcel.psm1|Lib\README.md|Lib\Core\EPPlus.NetCORE.dll|Lib\Core\Microsoft.Extensions.Configuration.Abstractions.dll|Lib\Core\Microsoft.Extensions.Configuration.dll|Lib\Core\Microsoft.Extensions.Configuration.FileExtensions.dll|Lib\Core\Microsoft.Extensions.Configuration.Json.dll|Lib\Core\Microsoft.Extensions.FileProviders.Abstractions.dll|Lib\Core\Microsoft.Extensions.FileProviders.Physical.dll|Lib\Core\Microsoft.Extensions.Primitives.dll|Lib\Default\EPPlus.Net40.dll</S>
+          <S N="GUID">82232c6a-27f1-435d-a496-929f7221334b</S>
+          <S N="PowerShellVersion">5.1</S>
+          <S N="CompanyName">Evotec</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\Users\charl\Documents\PowerShell\Modules\PSWriteExcel\0.1.4</S>
+    </MS>
+  </Obj>
+</Objs>

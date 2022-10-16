@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Metadata.xsd">
+    <!-- An optional friendly name for the component -->
+    <FriendlyName></FriendlyName>
+
+    <!--
+        Optional path relative to the component directory to use as the source path
+
+        When not specified the component directory is treated as the base path. By configuring this
+        option you can treat a subdirectory of the component directory as the source path from which
+        all symlinks should be generated from.
+    -->
+    <BasePath></BasePath>
+
+    <!-- Optional configuration to customise component detection -->
+    <Detection>
+        <!--
+            Specifies the method used to detect the availability of the component
+
+            Can be one of:
+            - Automatic:   The default method when none is specified. Attempts to automatically
+                           detect the component by retrieving the list of installed programs from
+                           the Windows Registry. Installed app packages are also retrieved via the
+                           Appx PowerShell module on supported systems. A case insensitive search on
+                           the results for any application name containing the component name is
+                           then performed. The matching logic can be customised via the optional
+                           <MatchRegEx>, <MatchCase> and <MatchPattern> elements.
+            - FindInPath:  Determines the availability based on the presence of a nominated binary
+                           located in a directory found in the system's PATH. Defaults to searching
+                           for a binary with the same name as the component directory but this can
+                           be customised via the <FindInPath> element.
+            - PathExists:  Determines the availability based on the existence of a nominated path
+                           specified in the <TestPath> element. The path must be absolute and would
+                           typically test that a file or directory exists. However, any absolute
+                           path that corresponds to an available PowerShell provider is valid (see
+                           Get-PSProvider for more details). As such, testing against a Registry
+                           path or more esoteric data stores is valid (e.g. the Certificate store).
+            - Static:      Use the availability state provided in the <Availability> element.
+        -->
+        <Method></Method>
+
+        <!--
+            Automatic Method
+
+            Selects either wildcard (default) or regular expression matching.
+        -->
+        <MatchRegEx>false</MatchRegEx>
+
+        <!--
+            Automatic Method
+
+            Selects either case insensitive (default) or case sensitive matching.
+        -->
+        <MatchCase>false</MatchCase>
+
+        <!--
+            Automatic Method
+
+            The pattern used for matching against the list of retrieved programs. If undefined or
+            blank we'll match against any program name where the component name is a substring.
+        -->
+        <MatchPattern></MatchPattern>
+
+        <!--
+            FindInPath Method
+
+            Name of the binary to search for in the system's PATH with optional file extension.
+        -->
+        <FindInPath></FindInPath>
+
+        <!--
+            PathExists Method
+
+            Absolute path to test the existence of (can be for any valid PowerShell provider).
+        -->
+        <PathExists></PathExists>
+
+        <!--
+            Static Method
+
+            Availability state to always return for this component per the below options.
+
+            Can be one of:
+            - Available:           The component was detected
+            - Unavailable:         The component was not detected
+            - Ignored:             The component will be ignored. This is distinct from the
+                                   "Unavailable" state as it indicates the component is not
+                                   available for the platform.
+            - AlwaysInstall:       The component will always be installed
+            - NeverInstall:        The component will never be installed
+            - DetectionFailure:    A failure occurred during component detection
+            - NoLogic:             No detection logic was available
+        -->
+        <Availability></Availability>
+    </Detection>
+
+    <!-- Optional configuration to customise component installation path -->
+    <InstallPath>
+        <!--
+            Specifies a special folder from the Environment.SpecialFolder enumeration
+
+            This setting can be used in two ways to modify the destination for symlinking:
+            - If no <Destination> is specified the component will be symlinked directly into the
+              specified special folder.
+            - If a <Destination> is specified it will be used as a *suffix* to the nominated special
+              folder. That is, the <Destination> path is relative to the special folder.
+
+            The default behaviour is particularly important to note:
+            - If not specified the default is to use the "UserProfile" special folder ($HOME).
+            - If a <Destination> folder is specified without a <SpecialFolder> then *no* special
+              folder is used and <Destination> is considered to be an absolute path.
+
+            See: https://docs.microsoft.com/en-us/dotnet/api/system.environment.specialfolder
+        -->
+        <SpecialFolder></SpecialFolder>
+
+        <!--
+            Specifies an absolute or relative destination path subject to <SpecialFolder>
+
+            This setting specifies an absolute or relative filesystem path as the destination for
+            component symlinking. The path is considered absolute *only if* no <SpecialFolder> is
+            specified. Otherwise, this path is considered to be relative to the special folder.
+
+            If no <Destination> is specified then only the <SpecialFolder> path will be used.
+        -->
+        <Destination></Destination>
+
+        <!--
+            Specifies whether component symlinks should be hidden by setting the "Hidden" and
+            "System" file attributes. The default is not to hide newly created symbolic links.
+        -->
+        <HideSymlinks>false</HideSymlinks>
+    </InstallPath>
+
+    <!--
+        Optional configuration of relative paths which should be ignored
+
+        If <BasePath> is set these paths are relative to the specified base path.
+    -->
+    <IgnorePaths>
+        <!-- Each relative path to ignore should be placed in a <IgnorePath> element -->
+        <IgnorePath></IgnorePath>
+    </IgnorePaths>
+
+    <!--
+        Optional configuration of relative source paths which should have additional symlinks
+        created under a different path than a straight mapping of the relative source path.
+
+        Currently only file paths are supported. Directory paths will not be processed.
+
+        If <BasePath> is set these paths are relative to the specified base path.
+
+        If a matching <IgnorePaths> element is present it will take precedence.
+    -->
+    <AdditionalPaths>
+        <AdditionalPath source="">
+            <TargetPath symlink="" />
+        </AdditionalPath>
+    </AdditionalPaths>
+
+    <!--
+        Optional configuration of relative source paths which should have their target symlink
+        created under a different path than a straight mapping of the relative source path.
+
+        Currently only file paths are supported. Directory paths will not be processed.
+
+        If <BasePath> is set these paths are relative to the specified base path.
+
+        If a matching <IgnorePaths> element is present it will take precedence.
+    -->
+    <RenamePaths>
+        <RenamePath source="" symlink="" />
+    </RenamePaths>
+</Component>

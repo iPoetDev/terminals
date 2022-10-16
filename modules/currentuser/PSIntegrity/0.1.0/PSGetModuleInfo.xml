@@ -1,0 +1,140 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">PSIntegrity</S>
+      <Version N="Version">0.1.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Adds cmdlets to add/get/remote/set the mandatory integrity level on an object._x000A_See https://github.com/jborean93/PSIntegrity for more info</S>
+      <S N="Author">Jordan Borean</S>
+      <S N="CompanyName">jborean93</S>
+      <S N="Copyright">Copyright (c) 2018 by Jordan Borean, Red Hat, licensed under MIT.</S>
+      <DT N="PublishedDate">2019-01-10T01:43:55+00:00</DT>
+      <Obj N="InstalledDate" RefId="1">
+        <DT>2022-09-26T19:50:38.7799236+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="2">
+            <TN RefId="1">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">https://github.com/jborean93/PSIntegrity/blob/master/LICENSE</URI>
+      <URI N="ProjectUri">https://github.com/jborean93/PSIntegrity</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="3">
+        <TN RefId="2">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>DevOps</S>
+          <S>Security</S>
+          <S>Windows</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="4">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-IntegrityLabel</S>
+                <S>Remove-IntegrityLabel</S>
+                <S>Set-IntegrityLabel</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="2" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="2" />
+              <LST>
+                <S>Get-IntegrityLabel</S>
+                <S>Remove-IntegrityLabel</S>
+                <S>Set-IntegrityLabel</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">See https://github.com/jborean93/PSIntegrity/blob/master/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="8">
+        <TNRef RefId="2" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="9">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Copyright (c) 2018 by Jordan Borean, Red Hat, licensed under MIT.</S>
+          <S N="description">Adds cmdlets to add/get/remote/set the mandatory integrity level on an object._x000A_See https://github.com/jborean93/PSIntegrity for more info</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">See https://github.com/jborean93/PSIntegrity/blob/master/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">399</S>
+          <S N="downloadCount">399</S>
+          <S N="packageSize">11023</S>
+          <S N="published">10/01/2019 01:43:55 +00:00</S>
+          <S N="created">10/01/2019 01:43:55 +00:00</S>
+          <S N="lastUpdated">24/09/2022 01:29:28 +01:00</S>
+          <S N="tags">DevOps Security Windows PSModule PSFunction_Get-IntegrityLabel PSCommand_Get-IntegrityLabel PSFunction_Remove-IntegrityLabel PSCommand_Remove-IntegrityLabel PSFunction_Set-IntegrityLabel PSCommand_Set-IntegrityLabel PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-24T01:29:28Z</S>
+          <S N="NormalizedVersion">0.1.0</S>
+          <S N="Authors">Jordan Borean</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">PSIntegrity.nuspec|PSIntegrity.psd1|PSIntegrity.psm1</S>
+          <S N="GUID">e8c605f2-c571-4022-92f9-696cb36f36e5</S>
+          <S N="PowerShellVersion">3.0</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\PSIntegrity\0.1.0</S>
+    </MS>
+  </Obj>
+</Objs>

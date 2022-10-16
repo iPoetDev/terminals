@@ -1,0 +1,620 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">Carbon</S>
+      <Version N="Version">2.12.0</Version>
+      <S N="Type">Module</S>
+      <S N="Description">Carbon is a PowerShell module for automating the configuration Windows 7, 8, 2008, and 2012 and automation the installation and configuration of Windows applications, websites, and services. It can configure and manage:_x000D__x000A__x000D__x000A_ * Local users and groups_x000D__x000A_ * IIS websites, virtual directories, and applications_x000D__x000A_ * File system, registry, and certificate permissions_x000D__x000A_ * Certificates_x000D__x000A_ * Privileges_x000D__x000A_ * Services_x000D__x000A_ * Encryption_x000D__x000A_ * Junctions_x000D__x000A_ * Hosts file_x000D__x000A_ * INI files_x000D__x000A_ * Performance counters_x000D__x000A_ * Shares_x000D__x000A_ * .NET connection strings and app settings_x000D__x000A_ * And much more!_x000D__x000A__x000D__x000A_All functions are idempotent: when run multiple times with the same arguments, your system will be in the same state without failing or producing errors.</S>
+      <S N="Author">Aaron Jensen</S>
+      <Obj N="CompanyName" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>pshdo</S>
+          <S>webmd-health-services</S>
+          <S>DecoyJoe</S>
+        </LST>
+      </Obj>
+      <S N="Copyright">Aaron Jensen and WebMD Health Services</S>
+      <DT N="PublishedDate">2022-08-10T16:55:40+01:00</DT>
+      <Obj N="InstalledDate" RefId="2">
+        <DT>2022-09-25T21:11:40.6466179+01:00</DT>
+        <MS>
+          <Obj N="DisplayHint" RefId="3">
+            <TN RefId="2">
+              <T>Microsoft.PowerShell.Commands.DisplayHintType</T>
+              <T>System.Enum</T>
+              <T>System.ValueType</T>
+              <T>System.Object</T>
+            </TN>
+            <ToString>DateTime</ToString>
+            <I32>2</I32>
+          </Obj>
+        </MS>
+      </Obj>
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">http://www.apache.org/licenses/LICENSE-2.0</URI>
+      <URI N="ProjectUri">http://get-carbon.org/</URI>
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="4">
+        <TNRef RefId="1" />
+        <LST>
+          <S>.net</S>
+          <S>acl</S>
+          <S>active-directory</S>
+          <S>certificates</S>
+          <S>com</S>
+          <S>compression</S>
+          <S>computer</S>
+          <S>credential</S>
+          <S>cryptography</S>
+          <S>directory</S>
+          <S>dsc</S>
+          <S>dsc-resources</S>
+          <S>encryption</S>
+          <S>environment</S>
+          <S>file-system</S>
+          <S>firewall</S>
+          <S>groups</S>
+          <S>hosts-file</S>
+          <S>http</S>
+          <S>identity</S>
+          <S>iis</S>
+          <S>ini</S>
+          <S>installers</S>
+          <S>internet-explorer</S>
+          <S>ip</S>
+          <S>junctions</S>
+          <S>msi</S>
+          <S>msmq</S>
+          <S>netsh</S>
+          <S>networking</S>
+          <S>ntfs</S>
+          <S>operating-system</S>
+          <S>os</S>
+          <S>path</S>
+          <S>performance-counters</S>
+          <S>powershell</S>
+          <S>principal</S>
+          <S>privileges</S>
+          <S>programs</S>
+          <S>registry</S>
+          <S>rsa</S>
+          <S>scheduled-tasks</S>
+          <S>security</S>
+          <S>service</S>
+          <S>shares</S>
+          <S>sid</S>
+          <S>smb</S>
+          <S>ssl</S>
+          <S>text</S>
+          <S>trusted-host</S>
+          <S>users</S>
+          <S>wcf</S>
+          <S>windows</S>
+          <S>windows-features</S>
+          <S>xml</S>
+          <S>zip</S>
+          <S>PSModule</S>
+          <S>DscResources</S>
+          <S>setup</S>
+          <S>automation</S>
+          <S>admin</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="5">
+        <TN RefId="3">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="7">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-CGroupMember</S>
+                <S>Add-CIisDefaultDocument</S>
+                <S>Add-CTrustedHost</S>
+                <S>Assert-CAdminPrivilege</S>
+                <S>Assert-CFirewallConfigurable</S>
+                <S>Assert-CService</S>
+                <S>Clear-CDscLocalResourceCache</S>
+                <S>Clear-CMofAuthoringMetadata</S>
+                <S>Clear-CTrustedHost</S>
+                <S>Complete-CJob</S>
+                <S>Compress-CItem</S>
+                <S>ConvertFrom-CBase64</S>
+                <S>Convert-CSecureStringToString</S>
+                <S>ConvertTo-CBase64</S>
+                <S>ConvertTo-CContainerInheritanceFlags</S>
+                <S>ConvertTo-CInheritanceFlag</S>
+                <S>ConvertTo-CPropagationFlag</S>
+                <S>ConvertTo-CSecurityIdentifier</S>
+                <S>Convert-CXmlFile</S>
+                <S>Copy-CDscResource</S>
+                <S>Disable-CAclInheritance</S>
+                <S>Disable-CFirewallStatefulFtp</S>
+                <S>Disable-CIEEnhancedSecurityConfiguration</S>
+                <S>Disable-CIisSecurityAuthentication</S>
+                <S>Disable-CNtfsCompression</S>
+                <S>Enable-CAclInheritance</S>
+                <S>Enable-CFirewallStatefulFtp</S>
+                <S>Enable-CIEActivationPermission</S>
+                <S>Enable-CIisDirectoryBrowsing</S>
+                <S>Enable-CIisSecurityAuthentication</S>
+                <S>Enable-CIisSsl</S>
+                <S>Enable-CNtfsCompression</S>
+                <S>Expand-CItem</S>
+                <S>Find-CADUser</S>
+                <S>Format-CADSearchFilterValue</S>
+                <S>Get-CADDomainController</S>
+                <S>Get-CCertificate</S>
+                <S>Get-CCertificateStore</S>
+                <S>Get-CComPermission</S>
+                <S>Get-CComSecurityDescriptor</S>
+                <S>Get-CDscError</S>
+                <S>Get-CDscWinEvent</S>
+                <S>Get-CFileShare</S>
+                <S>Get-CFileSharePermission</S>
+                <S>Get-CFirewallRule</S>
+                <S>Get-CGroup</S>
+                <S>Get-CHttpUrlAcl</S>
+                <S>Get-CIisApplication</S>
+                <S>Get-CIisAppPool</S>
+                <S>Get-CIisConfigurationSection</S>
+                <S>Get-CIisHttpHeader</S>
+                <S>Get-CIisHttpRedirect</S>
+                <S>Get-CIisMimeMap</S>
+                <S>Get-CIisSecurityAuthentication</S>
+                <S>Get-CIisVersion</S>
+                <S>Get-CIisWebsite</S>
+                <S>Get-CIPAddress</S>
+                <S>Get-CMsi</S>
+                <S>Get-CMsmqMessageQueue</S>
+                <S>Get-CMsmqMessageQueuePath</S>
+                <S>Get-CPathProvider</S>
+                <S>Get-CPathToHostsFile</S>
+                <S>Get-CPerformanceCounter</S>
+                <S>Get-CPermission</S>
+                <S>Get-CPowerShellModuleInstallPath</S>
+                <S>Get-CPowershellPath</S>
+                <S>Get-CPrivilege</S>
+                <S>Get-CProgramInstallInfo</S>
+                <S>Get-CRegistryKeyValue</S>
+                <S>Get-CScheduledTask</S>
+                <S>Get-CServiceAcl</S>
+                <S>Get-CServiceConfiguration</S>
+                <S>Get-CServicePermission</S>
+                <S>Get-CServiceSecurityDescriptor</S>
+                <S>Get-CSslCertificateBinding</S>
+                <S>Get-CTrustedHost</S>
+                <S>Get-CUser</S>
+                <S>Get-CWindowsFeature</S>
+                <S>Get-CWmiLocalUserAccount</S>
+                <S>Grant-CComPermission</S>
+                <S>Grant-CHttpUrlPermission</S>
+                <S>Grant-CMsmqMessageQueuePermission</S>
+                <S>Grant-CPermission</S>
+                <S>Grant-CPrivilege</S>
+                <S>Grant-CServiceControlPermission</S>
+                <S>Grant-CServicePermission</S>
+                <S>Initialize-CLcm</S>
+                <S>Install-CCertificate</S>
+                <S>Install-CDirectory</S>
+                <S>Install-CFileShare</S>
+                <S>Install-CGroup</S>
+                <S>Install-CIisApplication</S>
+                <S>Install-CIisAppPool</S>
+                <S>Install-CIisVirtualDirectory</S>
+                <S>Install-CIisWebsite</S>
+                <S>Install-CJunction</S>
+                <S>Install-CMsi</S>
+                <S>Install-CMsmq</S>
+                <S>Install-CMsmqMessageQueue</S>
+                <S>Install-CPerformanceCounter</S>
+                <S>Install-CRegistryKey</S>
+                <S>Install-CScheduledTask</S>
+                <S>Install-CService</S>
+                <S>Install-CUser</S>
+                <S>Install-CWindowsFeature</S>
+                <S>Invoke-CAppCmd</S>
+                <S>Invoke-CPowerShell</S>
+                <S>Join-CIisVirtualPath</S>
+                <S>Lock-CIisConfigurationSection</S>
+                <S>New-CCredential</S>
+                <S>New-CJunction</S>
+                <S>New-CRsaKeyPair</S>
+                <S>New-CTempDirectory</S>
+                <S>Protect-CString</S>
+                <S>Read-CFile</S>
+                <S>Remove-CDotNetAppSetting</S>
+                <S>Remove-CEnvironmentVariable</S>
+                <S>Remove-CGroupMember</S>
+                <S>Remove-CHostsEntry</S>
+                <S>Remove-CIisMimeMap</S>
+                <S>Remove-CIniEntry</S>
+                <S>Remove-CJunction</S>
+                <S>Remove-CRegistryKeyValue</S>
+                <S>Remove-CSslCertificateBinding</S>
+                <S>Reset-CHostsFile</S>
+                <S>Reset-CMsmqQueueManagerID</S>
+                <S>Resolve-CFullPath</S>
+                <S>Resolve-CIdentity</S>
+                <S>Resolve-CIdentityName</S>
+                <S>Resolve-CNetPath</S>
+                <S>Resolve-CPathCase</S>
+                <S>Resolve-CRelativePath</S>
+                <S>Restart-CRemoteService</S>
+                <S>Revoke-CComPermission</S>
+                <S>Revoke-CHttpUrlPermission</S>
+                <S>Revoke-CPermission</S>
+                <S>Revoke-CPrivilege</S>
+                <S>Revoke-CServicePermission</S>
+                <S>Set-CDotNetAppSetting</S>
+                <S>Set-CDotNetConnectionString</S>
+                <S>Set-CEnvironmentVariable</S>
+                <S>Set-CHostsEntry</S>
+                <S>Set-CIisHttpHeader</S>
+                <S>Set-CIisHttpRedirect</S>
+                <S>Set-CIisMimeMap</S>
+                <S>Set-CIisWebsiteID</S>
+                <S>Set-CIisWebsiteSslCertificate</S>
+                <S>Set-CIisWindowsAuthentication</S>
+                <S>Set-CIniEntry</S>
+                <S>Set-CRegistryKeyValue</S>
+                <S>Set-CServiceAcl</S>
+                <S>Set-CSslCertificateBinding</S>
+                <S>Set-CTrustedHost</S>
+                <S>Split-CIni</S>
+                <S>Start-CDscPullConfiguration</S>
+                <S>Test-CAdminPrivilege</S>
+                <S>Test-CDotNet</S>
+                <S>Test-CDscTargetResource</S>
+                <S>Test-CFileShare</S>
+                <S>Test-CFirewallStatefulFtp</S>
+                <S>Test-CGroup</S>
+                <S>Test-CGroupMember</S>
+                <S>Test-CIdentity</S>
+                <S>Test-CIisAppPool</S>
+                <S>Test-CIisConfigurationSection</S>
+                <S>Test-CIisSecurityAuthentication</S>
+                <S>Test-CIisWebsite</S>
+                <S>Test-CIPAddress</S>
+                <S>Test-CMsmqMessageQueue</S>
+                <S>Test-CNtfsCompression</S>
+                <S>Test-COSIs32Bit</S>
+                <S>Test-COSIs64Bit</S>
+                <S>Test-CPathIsJunction</S>
+                <S>Test-CPerformanceCounter</S>
+                <S>Test-CPerformanceCounterCategory</S>
+                <S>Test-CPermission</S>
+                <S>Test-CPowerShellIs32Bit</S>
+                <S>Test-CPowerShellIs64Bit</S>
+                <S>Test-CPrivilege</S>
+                <S>Test-CRegistryKeyValue</S>
+                <S>Test-CScheduledTask</S>
+                <S>Test-CService</S>
+                <S>Test-CSslCertificateBinding</S>
+                <S>Test-CTypeDataMember</S>
+                <S>Test-CUncPath</S>
+                <S>Test-CUser</S>
+                <S>Test-CWindowsFeature</S>
+                <S>Test-CZipFile</S>
+                <S>Uninstall-CCertificate</S>
+                <S>Uninstall-CDirectory</S>
+                <S>Uninstall-CFileShare</S>
+                <S>Uninstall-CGroup</S>
+                <S>Uninstall-CIisAppPool</S>
+                <S>Uninstall-CIisWebsite</S>
+                <S>Uninstall-CJunction</S>
+                <S>Uninstall-CMsmqMessageQueue</S>
+                <S>Uninstall-CPerformanceCounterCategory</S>
+                <S>Uninstall-CScheduledTask</S>
+                <S>Uninstall-CService</S>
+                <S>Uninstall-CUser</S>
+                <S>Uninstall-CWindowsFeature</S>
+                <S>Unlock-CIisConfigurationSection</S>
+                <S>Unprotect-CString</S>
+                <S>Write-CDscError</S>
+                <S>Write-CFile</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Ref N="Value" RefId="6" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Obj N="Value" RefId="8">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Carbon_EnvironmentVariable</S>
+                <S>Carbon_FirewallRule</S>
+                <S>Carbon_Group</S>
+                <S>Carbon_IniFile</S>
+                <S>Carbon_Permission</S>
+                <S>Carbon_Privilege</S>
+                <S>Carbon_ScheduledTask</S>
+                <S>Carbon_Service</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="9">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Add-CGroupMember</S>
+                <S>Add-CIisDefaultDocument</S>
+                <S>Add-CTrustedHost</S>
+                <S>Assert-CAdminPrivilege</S>
+                <S>Assert-CFirewallConfigurable</S>
+                <S>Assert-CService</S>
+                <S>Clear-CDscLocalResourceCache</S>
+                <S>Clear-CMofAuthoringMetadata</S>
+                <S>Clear-CTrustedHost</S>
+                <S>Complete-CJob</S>
+                <S>Compress-CItem</S>
+                <S>ConvertFrom-CBase64</S>
+                <S>Convert-CSecureStringToString</S>
+                <S>ConvertTo-CBase64</S>
+                <S>ConvertTo-CContainerInheritanceFlags</S>
+                <S>ConvertTo-CInheritanceFlag</S>
+                <S>ConvertTo-CPropagationFlag</S>
+                <S>ConvertTo-CSecurityIdentifier</S>
+                <S>Convert-CXmlFile</S>
+                <S>Copy-CDscResource</S>
+                <S>Disable-CAclInheritance</S>
+                <S>Disable-CFirewallStatefulFtp</S>
+                <S>Disable-CIEEnhancedSecurityConfiguration</S>
+                <S>Disable-CIisSecurityAuthentication</S>
+                <S>Disable-CNtfsCompression</S>
+                <S>Enable-CAclInheritance</S>
+                <S>Enable-CFirewallStatefulFtp</S>
+                <S>Enable-CIEActivationPermission</S>
+                <S>Enable-CIisDirectoryBrowsing</S>
+                <S>Enable-CIisSecurityAuthentication</S>
+                <S>Enable-CIisSsl</S>
+                <S>Enable-CNtfsCompression</S>
+                <S>Expand-CItem</S>
+                <S>Find-CADUser</S>
+                <S>Format-CADSearchFilterValue</S>
+                <S>Get-CADDomainController</S>
+                <S>Get-CCertificate</S>
+                <S>Get-CCertificateStore</S>
+                <S>Get-CComPermission</S>
+                <S>Get-CComSecurityDescriptor</S>
+                <S>Get-CDscError</S>
+                <S>Get-CDscWinEvent</S>
+                <S>Get-CFileShare</S>
+                <S>Get-CFileSharePermission</S>
+                <S>Get-CFirewallRule</S>
+                <S>Get-CGroup</S>
+                <S>Get-CHttpUrlAcl</S>
+                <S>Get-CIisApplication</S>
+                <S>Get-CIisAppPool</S>
+                <S>Get-CIisConfigurationSection</S>
+                <S>Get-CIisHttpHeader</S>
+                <S>Get-CIisHttpRedirect</S>
+                <S>Get-CIisMimeMap</S>
+                <S>Get-CIisSecurityAuthentication</S>
+                <S>Get-CIisVersion</S>
+                <S>Get-CIisWebsite</S>
+                <S>Get-CIPAddress</S>
+                <S>Get-CMsi</S>
+                <S>Get-CMsmqMessageQueue</S>
+                <S>Get-CMsmqMessageQueuePath</S>
+                <S>Get-CPathProvider</S>
+                <S>Get-CPathToHostsFile</S>
+                <S>Get-CPerformanceCounter</S>
+                <S>Get-CPermission</S>
+                <S>Get-CPowerShellModuleInstallPath</S>
+                <S>Get-CPowershellPath</S>
+                <S>Get-CPrivilege</S>
+                <S>Get-CProgramInstallInfo</S>
+                <S>Get-CRegistryKeyValue</S>
+                <S>Get-CScheduledTask</S>
+                <S>Get-CServiceAcl</S>
+                <S>Get-CServiceConfiguration</S>
+                <S>Get-CServicePermission</S>
+                <S>Get-CServiceSecurityDescriptor</S>
+                <S>Get-CSslCertificateBinding</S>
+                <S>Get-CTrustedHost</S>
+                <S>Get-CUser</S>
+                <S>Get-CWindowsFeature</S>
+                <S>Get-CWmiLocalUserAccount</S>
+                <S>Grant-CComPermission</S>
+                <S>Grant-CHttpUrlPermission</S>
+                <S>Grant-CMsmqMessageQueuePermission</S>
+                <S>Grant-CPermission</S>
+                <S>Grant-CPrivilege</S>
+                <S>Grant-CServiceControlPermission</S>
+                <S>Grant-CServicePermission</S>
+                <S>Initialize-CLcm</S>
+                <S>Install-CCertificate</S>
+                <S>Install-CDirectory</S>
+                <S>Install-CFileShare</S>
+                <S>Install-CGroup</S>
+                <S>Install-CIisApplication</S>
+                <S>Install-CIisAppPool</S>
+                <S>Install-CIisVirtualDirectory</S>
+                <S>Install-CIisWebsite</S>
+                <S>Install-CJunction</S>
+                <S>Install-CMsi</S>
+                <S>Install-CMsmq</S>
+                <S>Install-CMsmqMessageQueue</S>
+                <S>Install-CPerformanceCounter</S>
+                <S>Install-CRegistryKey</S>
+                <S>Install-CScheduledTask</S>
+                <S>Install-CService</S>
+                <S>Install-CUser</S>
+                <S>Install-CWindowsFeature</S>
+                <S>Invoke-CAppCmd</S>
+                <S>Invoke-CPowerShell</S>
+                <S>Join-CIisVirtualPath</S>
+                <S>Lock-CIisConfigurationSection</S>
+                <S>New-CCredential</S>
+                <S>New-CJunction</S>
+                <S>New-CRsaKeyPair</S>
+                <S>New-CTempDirectory</S>
+                <S>Protect-CString</S>
+                <S>Read-CFile</S>
+                <S>Remove-CDotNetAppSetting</S>
+                <S>Remove-CEnvironmentVariable</S>
+                <S>Remove-CGroupMember</S>
+                <S>Remove-CHostsEntry</S>
+                <S>Remove-CIisMimeMap</S>
+                <S>Remove-CIniEntry</S>
+                <S>Remove-CJunction</S>
+                <S>Remove-CRegistryKeyValue</S>
+                <S>Remove-CSslCertificateBinding</S>
+                <S>Reset-CHostsFile</S>
+                <S>Reset-CMsmqQueueManagerID</S>
+                <S>Resolve-CFullPath</S>
+                <S>Resolve-CIdentity</S>
+                <S>Resolve-CIdentityName</S>
+                <S>Resolve-CNetPath</S>
+                <S>Resolve-CPathCase</S>
+                <S>Resolve-CRelativePath</S>
+                <S>Restart-CRemoteService</S>
+                <S>Revoke-CComPermission</S>
+                <S>Revoke-CHttpUrlPermission</S>
+                <S>Revoke-CPermission</S>
+                <S>Revoke-CPrivilege</S>
+                <S>Revoke-CServicePermission</S>
+                <S>Set-CDotNetAppSetting</S>
+                <S>Set-CDotNetConnectionString</S>
+                <S>Set-CEnvironmentVariable</S>
+                <S>Set-CHostsEntry</S>
+                <S>Set-CIisHttpHeader</S>
+                <S>Set-CIisHttpRedirect</S>
+                <S>Set-CIisMimeMap</S>
+                <S>Set-CIisWebsiteID</S>
+                <S>Set-CIisWebsiteSslCertificate</S>
+                <S>Set-CIisWindowsAuthentication</S>
+                <S>Set-CIniEntry</S>
+                <S>Set-CRegistryKeyValue</S>
+                <S>Set-CServiceAcl</S>
+                <S>Set-CSslCertificateBinding</S>
+                <S>Set-CTrustedHost</S>
+                <S>Split-CIni</S>
+                <S>Start-CDscPullConfiguration</S>
+                <S>Test-CAdminPrivilege</S>
+                <S>Test-CDotNet</S>
+                <S>Test-CDscTargetResource</S>
+                <S>Test-CFileShare</S>
+                <S>Test-CFirewallStatefulFtp</S>
+                <S>Test-CGroup</S>
+                <S>Test-CGroupMember</S>
+                <S>Test-CIdentity</S>
+                <S>Test-CIisAppPool</S>
+                <S>Test-CIisConfigurationSection</S>
+                <S>Test-CIisSecurityAuthentication</S>
+                <S>Test-CIisWebsite</S>
+                <S>Test-CIPAddress</S>
+                <S>Test-CMsmqMessageQueue</S>
+                <S>Test-CNtfsCompression</S>
+                <S>Test-COSIs32Bit</S>
+                <S>Test-COSIs64Bit</S>
+                <S>Test-CPathIsJunction</S>
+                <S>Test-CPerformanceCounter</S>
+                <S>Test-CPerformanceCounterCategory</S>
+                <S>Test-CPermission</S>
+                <S>Test-CPowerShellIs32Bit</S>
+                <S>Test-CPowerShellIs64Bit</S>
+                <S>Test-CPrivilege</S>
+                <S>Test-CRegistryKeyValue</S>
+                <S>Test-CScheduledTask</S>
+                <S>Test-CService</S>
+                <S>Test-CSslCertificateBinding</S>
+                <S>Test-CTypeDataMember</S>
+                <S>Test-CUncPath</S>
+                <S>Test-CUser</S>
+                <S>Test-CWindowsFeature</S>
+                <S>Test-CZipFile</S>
+                <S>Uninstall-CCertificate</S>
+                <S>Uninstall-CDirectory</S>
+                <S>Uninstall-CFileShare</S>
+                <S>Uninstall-CGroup</S>
+                <S>Uninstall-CIisAppPool</S>
+                <S>Uninstall-CIisWebsite</S>
+                <S>Uninstall-CJunction</S>
+                <S>Uninstall-CMsmqMessageQueue</S>
+                <S>Uninstall-CPerformanceCounterCategory</S>
+                <S>Uninstall-CScheduledTask</S>
+                <S>Uninstall-CService</S>
+                <S>Uninstall-CUser</S>
+                <S>Uninstall-CWindowsFeature</S>
+                <S>Unlock-CIisConfigurationSection</S>
+                <S>Unprotect-CString</S>
+                <S>Write-CDscError</S>
+                <S>Write-CFile</S>
+              </LST>
+            </Obj>
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">https://github.com/webmd-health-services/Carbon/blob/master/CHANGELOG.md</S>
+      <Obj N="Dependencies" RefId="10">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="11">
+        <TN RefId="4">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">Aaron Jensen and WebMD Health Services</S>
+          <S N="description">Carbon is a PowerShell module for automating the configuration Windows 7, 8, 2008, and 2012 and automation the installation and configuration of Windows applications, websites, and services. It can configure and manage:_x000D__x000A__x000D__x000A_ * Local users and groups_x000D__x000A_ * IIS websites, virtual directories, and applications_x000D__x000A_ * File system, registry, and certificate permissions_x000D__x000A_ * Certificates_x000D__x000A_ * Privileges_x000D__x000A_ * Services_x000D__x000A_ * Encryption_x000D__x000A_ * Junctions_x000D__x000A_ * Hosts file_x000D__x000A_ * INI files_x000D__x000A_ * Performance counters_x000D__x000A_ * Shares_x000D__x000A_ * .NET connection strings and app settings_x000D__x000A_ * And much more!_x000D__x000A__x000D__x000A_All functions are idempotent: when run multiple times with the same arguments, your system will be in the same state without failing or producing errors.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">https://github.com/webmd-health-services/Carbon/blob/master/CHANGELOG.md</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">True</S>
+          <S N="versionDownloadCount">1556305</S>
+          <S N="downloadCount">53152310</S>
+          <S N="packageSize">802105</S>
+          <S N="published">10/08/2022 16:55:40 +01:00</S>
+          <S N="created">10/08/2022 16:55:40 +01:00</S>
+          <S N="lastUpdated">25/09/2022 20:06:57 +01:00</S>
+          <S N="tags">.net acl active-directory certificates com compression computer credential cryptography directory dsc dsc-resources encryption environment file-system firewall groups hosts-file http identity iis ini installers internet-explorer ip junctions msi msmq netsh networking ntfs operating-system os path performance-counters powershell principal privileges programs registry rsa scheduled-tasks security service shares sid smb ssl text trusted-host users wcf windows windows-features xml zip PSModule DscResources setup automation admin PSFunction_Add-CGroupMember PSCommand_Add-CGroupMember PSFunction_Add-CIisDefaultDocument PSCommand_Add-CIisDefaultDocument PSFunction_Add-CTrustedHost PSCommand_Add-CTrustedHost PSFunction_Assert-CAdminPrivilege PSCommand_Assert-CAdminPrivilege PSFunction_Assert-CFirewallConfigurable PSCommand_Assert-CFirewallConfigurable PSFunction_Assert-CService PSCommand_Assert-CService PSFunction_Clear-CDscLocalResourceCache PSCommand_Clear-CDscLocalResourceCache PSFunction_Clear-CMofAuthoringMetadata PSCommand_Clear-CMofAuthoringMetadata PSFunction_Clear-CTrustedHost PSCommand_Clear-CTrustedHost PSFunction_Complete-CJob PSCommand_Complete-CJob PSFunction_Compress-CItem PSCommand_Compress-CItem PSFunction_ConvertFrom-CBase64 PSCommand_ConvertFrom-CBase64 PSFunction_Convert-CSecureStringToString PSCommand_Convert-CSecureStringToString PSFunction_ConvertTo-CBase64 PSCommand_ConvertTo-CBase64 PSFunction_ConvertTo-CContainerInheritanceFlags PSCommand_ConvertTo-CContainerInheritanceFlags PSFunction_ConvertTo-CInheritanceFlag PSCommand_ConvertTo-CInheritanceFlag PSFunction_ConvertTo-CPropagationFlag PSCommand_ConvertTo-CPropagationFlag PSFunction_ConvertTo-CSecurityIdentifier PSCommand_ConvertTo-CSecurityIdentifier PSFunction_Convert-CXmlFile PSCommand_Convert-CXmlFile PSFunction_Copy-CDscResource PSCommand_Copy-CDscResource PSFunction_Disable-CAclInheritance PSCommand_Disable-CAclInheritance PSFunction_Disable-CFirewallStatefulFtp PSCommand_Disable-CFirewallStatefulFtp PSFunction_Disable-CIEEnhancedSecurityConfiguration PSCommand_Disable-CIEEnhancedSecurityConfiguration PSFunction_Disable-CIisSecurityAuthentication PSCommand_Disable-CIisSecurityAuthentication PSFunction_Disable-CNtfsCompression PSCommand_Disable-CNtfsCompression PSFunction_Enable-CAclInheritance PSCommand_Enable-CAclInheritance PSFunction_Enable-CFirewallStatefulFtp PSCommand_Enable-CFirewallStatefulFtp PSFunction_Enable-CIEActivationPermission PSCommand_Enable-CIEActivationPermission PSFunction_Enable-CIisDirectoryBrowsing PSCommand_Enable-CIisDirectoryBrowsing PSFunction_Enable-CIisSecurityAuthentication PSCommand_Enable-CIisSecurityAuthentication PSFunction_Enable-CIisSsl PSCommand_Enable-CIisSsl PSFunction_Enable-CNtfsCompression PSCommand_Enable-CNtfsCompression PSFunction_Expand-CItem PSCommand_Expand-CItem PSFunction_Find-CADUser PSCommand_Find-CADUser PSFunction_Format-CADSearchFilterValue PSCommand_Format-CADSearchFilterValue PSFunction_Get-CADDomainController PSCommand_Get-CADDomainController PSFunction_Get-CCertificate PSCommand_Get-CCertificate PSFunction_Get-CCertificateStore PSCommand_Get-CCertificateStore PSFunction_Get-CComPermission PSCommand_Get-CComPermission PSFunction_Get-CComSecurityDescriptor PSCommand_Get-CComSecurityDescriptor PSFunction_Get-CDscError PSCommand_Get-CDscError PSFunction_Get-CDscWinEvent PSCommand_Get-CDscWinEvent PSFunction_Get-CFileShare PSCommand_Get-CFileShare PSFunction_Get-CFileSharePermission PSCommand_Get-CFileSharePermission PSFunction_Get-CFirewallRule PSCommand_Get-CFirewallRule PSFunction_Get-CGroup PSCommand_Get-CGroup PSFunction_Get-CHttpUrlAcl PSCommand_Get-CHttpUrlAcl PSFunction_Get-CIisApplication PSCommand_Get-CIisApplication PSFunction_Get-CIisAppPool PSCommand_Get-CIisAppPool PSFunction_Get-CIisConfigurationSection PSCommand_Get-CIisConfigurationSection PSFunction_Get-CIisHttpHeader PSCommand_Get-CIisHttpHeader PSFunction_Get-CIisHttpRedirect PSCommand_Get-CIisHttpRedirect PSFunction_Get-CIisMimeMap PSCommand_Get-CIisMimeMap PSFunction_Get-CIisSecurityAuthentication PSCommand_Get-CIisSecurityAuthentication PSFunction_Get-CIisVersion PSCommand_Get-CIisVersion PSFunction_Get-CIisWebsite PSCommand_Get-CIisWebsite PSFunction_Get-CIPAddress PSCommand_Get-CIPAddress PSFunction_Get-CMsi PSCommand_Get-CMsi PSFunction_Get-CMsmqMessageQueue PSCommand_Get-CMsmqMessageQueue PSFunction_Get-CMsmqMessageQueuePath PSCommand_Get-CMsmqMessageQueuePath PSFunction_Get-CPathProvider PSCommand_Get-CPathProvider PSFunction_Get-CPathToHostsFile PSCommand_Get-CPathToHostsFile PSFunction_Get-CPerformanceCounter PSCommand_Get-CPerformanceCounter PSFunction_Get-CPermission PSCommand_Get-CPermission PSFunction_Get-CPowerShellModuleInstallPath PSCommand_Get-CPowerShellModuleInstallPath PSFunction_Get-CPowershellPath PSCommand_Get-CPowershellPath PSFunction_Get-CPrivilege PSCommand_Get-CPrivilege PSFunction_Get-CProgramInstallInfo PSCommand_Get-CProgramInstallInfo PSFunction_Get-CRegistryKeyValue PSCommand_Get-CRegistryKeyValue PSFunction_Get-CScheduledTask PSCommand_Get-CScheduledTask PSFunction_Get-CServiceAcl PSCommand_Get-CServiceAcl PSFunction_Get-CServiceConfiguration PSCommand_Get-CServiceConfiguration PSFunction_Get-CServicePermission PSCommand_Get-CServicePermission PSFunction_Get-CServiceSecurityDescriptor PSCommand_Get-CServiceSecurityDescriptor PSFunction_Get-CSslCertificateBinding PSCommand_Get-CSslCertificateBinding PSFunction_Get-CTrustedHost PSCommand_Get-CTrustedHost PSFunction_Get-CUser PSCommand_Get-CUser PSFunction_Get-CWindowsFeature PSCommand_Get-CWindowsFeature PSFunction_Get-CWmiLocalUserAccount PSCommand_Get-CWmiLocalUserAccount PSFunction_Grant-CComPermission PSCommand_Grant-CComPermission PSFunction_Grant-CHttpUrlPermission PSCommand_Grant-CHttpUrlPermission PSFunction_Grant-CMsmqMessageQueuePermission PSCommand_Grant-CMsmqMessageQueuePermission PSFunction_Grant-CPermission PSCommand_Grant-CPermission PSFunction_Grant-CPrivilege PSCommand_Grant-CPrivilege PSFunction_Grant-CServiceControlPermission PSCommand_Grant-CServiceControlPermission PSFunction_Grant-CServicePermission PSCommand_Grant-CServicePermission PSFunction_Initialize-CLcm PSCommand_Initialize-CLcm PSFunction_Install-CCertificate PSCommand_Install-CCertificate PSFunction_Install-CDirectory PSCommand_Install-CDirectory PSFunction_Install-CFileShare PSCommand_Install-CFileShare PSFunction_Install-CGroup PSCommand_Install-CGroup PSFunction_Install-CIisApplication PSCommand_Install-CIisApplication PSFunction_Install-CIisAppPool PSCommand_Install-CIisAppPool PSFunction_Install-CIisVirtualDirectory PSCommand_Install-CIisVirtualDirectory PSFunction_Install-CIisWebsite PSCommand_Install-CIisWebsite PSFunction_Install-CJunction PSCommand_Install-CJunction PSFunction_Install-CMsi PSCommand_Install-CMsi PSFunction_Install-CMsmq PSCommand_Install-CMsmq PSFunction_Install-CMsmqMessageQueue PSCommand_Install-CMsmqMessageQueue PSFunction_Install-CPerformanceCounter PSCommand_Install-CPerformanceCounter PSFunction_Install-CRegistryKey PSCommand_Install-CRegistryKey PSFunction_Install-CScheduledTask PSCommand_Install-CScheduledTask PSFunction_Install-CService PSCommand_Install-CService PSFunction_Install-CUser PSCommand_Install-CUser PSFunction_Install-CWindowsFeature PSCommand_Install-CWindowsFeature PSFunction_Invoke-CAppCmd PSCommand_Invoke-CAppCmd PSFunction_Invoke-CPowerShell PSCommand_Invoke-CPowerShell PSFunction_Join-CIisVirtualPath PSCommand_Join-CIisVirtualPath PSFunction_Lock-CIisConfigurationSection PSCommand_Lock-CIisConfigurationSection PSFunction_New-CCredential PSCommand_New-CCredential PSFunction_New-CJunction PSCommand_New-CJunction PSFunction_New-CRsaKeyPair PSCommand_New-CRsaKeyPair PSFunction_New-CTempDirectory PSCommand_New-CTempDirectory PSFunction_Protect-CString PSCommand_Protect-CString PSFunction_Read-CFile PSCommand_Read-CFile PSFunction_Remove-CDotNetAppSetting PSCommand_Remove-CDotNetAppSetting PSFunction_Remove-CEnvironmentVariable PSCommand_Remove-CEnvironmentVariable PSFunction_Remove-CGroupMember PSCommand_Remove-CGroupMember PSFunction_Remove-CHostsEntry PSCommand_Remove-CHostsEntry PSFunction_Remove-CIisMimeMap PSCommand_Remove-CIisMimeMap PSFunction_Remove-CIniEntry PSCommand_Remove-CIniEntry PSFunction_Remove-CJunction PSCommand_Remove-CJunction PSFunction_Remove-CRegistryKeyValue PSCommand_Remove-CRegistryKeyValue PSFunction_Remove-CSslCertificateBinding PSCommand_Remove-CSslCertificateBinding PSFunction_Reset-CHostsFile PSCommand_Reset-CHostsFile PSFunction_Reset-CMsmqQueueManagerID PSCommand_Reset-CMsmqQueueManagerID PSFunction_Resolve-CFullPath PSCommand_Resolve-CFullPath PSFunction_Resolve-CIdentity PSCommand_Resolve-CIdentity PSFunction_Resolve-CIdentityName PSCommand_Resolve-CIdentityName PSFunction_Resolve-CNetPath PSCommand_Resolve-CNetPath PSFunction_Resolve-CPathCase PSCommand_Resolve-CPathCase PSFunction_Resolve-CRelativePath PSCommand_Resolve-CRelativePath PSFunction_Restart-CRemoteService PSCommand_Restart-CRemoteService PSFunction_Revoke-CComPermission PSCommand_Revoke-CComPermission PSFunction_Revoke-CHttpUrlPermission PSCommand_Revoke-CHttpUrlPermission PSFunction_Revoke-CPermission PSCommand_Revoke-CPermission PSFunction_Revoke-CPrivilege PSCommand_Revoke-CPrivilege PSFunction_Revoke-CServicePermission PSCommand_Revoke-CServicePermission PSFunction_Set-CDotNetAppSetting PSCommand_Set-CDotNetAppSetting PSFunction_Set-CDotNetConnectionString PSCommand_Set-CDotNetConnectionString PSFunction_Set-CEnvironmentVariable PSCommand_Set-CEnvironmentVariable PSFunction_Set-CHostsEntry PSCommand_Set-CHostsEntry PSFunction_Set-CIisHttpHeader PSCommand_Set-CIisHttpHeader PSFunction_Set-CIisHttpRedirect PSCommand_Set-CIisHttpRedirect PSFunction_Set-CIisMimeMap PSCommand_Set-CIisMimeMap PSFunction_Set-CIisWebsiteID PSCommand_Set-CIisWebsiteID PSFunction_Set-CIisWebsiteSslCertificate PSCommand_Set-CIisWebsiteSslCertificate PSFunction_Set-CIisWindowsAuthentication PSCommand_Set-CIisWindowsAuthentication PSFunction_Set-CIniEntry PSCommand_Set-CIniEntry PSFunction_Set-CRegistryKeyValue PSCommand_Set-CRegistryKeyValue PSFunction_Set-CServiceAcl PSCommand_Set-CServiceAcl PSFunction_Set-CSslCertificateBinding PSCommand_Set-CSslCertificateBinding PSFunction_Set-CTrustedHost PSCommand_Set-CTrustedHost PSFunction_Split-CIni PSCommand_Split-CIni PSFunction_Start-CDscPullConfiguration PSCommand_Start-CDscPullConfiguration PSFunction_Test-CAdminPrivilege PSCommand_Test-CAdminPrivilege PSFunction_Test-CDotNet PSCommand_Test-CDotNet PSFunction_Test-CDscTargetResource PSCommand_Test-CDscTargetResource PSFunction_Test-CFileShare PSCommand_Test-CFileShare PSFunction_Test-CFirewallStatefulFtp PSCommand_Test-CFirewallStatefulFtp PSFunction_Test-CGroup PSCommand_Test-CGroup PSFunction_Test-CGroupMember PSCommand_Test-CGroupMember PSFunction_Test-CIdentity PSCommand_Test-CIdentity PSFunction_Test-CIisAppPool PSCommand_Test-CIisAppPool PSFunction_Test-CIisConfigurationSection PSCommand_Test-CIisConfigurationSection PSFunction_Test-CIisSecurityAuthentication PSCommand_Test-CIisSecurityAuthentication PSFunction_Test-CIisWebsite PSCommand_Test-CIisWebsite PSFunction_Test-CIPAddress PSCommand_Test-CIPAddress PSFunction_Test-CMsmqMessageQueue PSCommand_Test-CMsmqMessageQueue PSFunction_Test-CNtfsCompression PSCommand_Test-CNtfsCompression PSFunction_Test-COSIs32Bit PSCommand_Test-COSIs32Bit PSFunction_Test-COSIs64Bit PSCommand_Test-COSIs64Bit PSFunction_Test-CPathIsJunction PSCommand_Test-CPathIsJunction PSFunction_Test-CPerformanceCounter PSCommand_Test-CPerformanceCounter PSFunction_Test-CPerformanceCounterCategory PSCommand_Test-CPerformanceCounterCategory PSFunction_Test-CPermission PSCommand_Test-CPermission PSFunction_Test-CPowerShellIs32Bit PSCommand_Test-CPowerShellIs32Bit PSFunction_Test-CPowerShellIs64Bit PSCommand_Test-CPowerShellIs64Bit PSFunction_Test-CPrivilege PSCommand_Test-CPrivilege PSFunction_Test-CRegistryKeyValue PSCommand_Test-CRegistryKeyValue PSFunction_Test-CScheduledTask PSCommand_Test-CScheduledTask PSFunction_Test-CService PSCommand_Test-CService PSFunction_Test-CSslCertificateBinding PSCommand_Test-CSslCertificateBinding PSFunction_Test-CTypeDataMember PSCommand_Test-CTypeDataMember PSFunction_Test-CUncPath PSCommand_Test-CUncPath PSFunction_Test-CUser PSCommand_Test-CUser PSFunction_Test-CWindowsFeature PSCommand_Test-CWindowsFeature PSFunction_Test-CZipFile PSCommand_Test-CZipFile PSFunction_Uninstall-CCertificate PSCommand_Uninstall-CCertificate PSFunction_Uninstall-CDirectory PSCommand_Uninstall-CDirectory PSFunction_Uninstall-CFileShare PSCommand_Uninstall-CFileShare PSFunction_Uninstall-CGroup PSCommand_Uninstall-CGroup PSFunction_Uninstall-CIisAppPool PSCommand_Uninstall-CIisAppPool PSFunction_Uninstall-CIisWebsite PSCommand_Uninstall-CIisWebsite PSFunction_Uninstall-CJunction PSCommand_Uninstall-CJunction PSFunction_Uninstall-CMsmqMessageQueue PSCommand_Uninstall-CMsmqMessageQueue PSFunction_Uninstall-CPerformanceCounterCategory PSCommand_Uninstall-CPerformanceCounterCategory PSFunction_Uninstall-CScheduledTask PSCommand_Uninstall-CScheduledTask PSFunction_Uninstall-CService PSCommand_Uninstall-CService PSFunction_Uninstall-CUser PSCommand_Uninstall-CUser PSFunction_Uninstall-CWindowsFeature PSCommand_Uninstall-CWindowsFeature PSFunction_Unlock-CIisConfigurationSection PSCommand_Unlock-CIisConfigurationSection PSFunction_Unprotect-CString PSCommand_Unprotect-CString PSFunction_Write-CDscError PSCommand_Write-CDscError PSFunction_Write-CFile PSCommand_Write-CFile PSIncludes_Function PSDscResource_Carbon_EnvironmentVariable PSDscResource_Carbon_FirewallRule PSDscResource_Carbon_Group PSDscResource_Carbon_IniFile PSDscResource_Carbon_Permission PSDscResource_Carbon_Privilege PSDscResource_Carbon_ScheduledTask PSDscResource_Carbon_Service PSIncludes_DscResource</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2022-09-25T20:06:57Z</S>
+          <S N="NormalizedVersion">2.12.0</S>
+          <S N="Authors">Aaron Jensen</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">Carbon.nuspec|Carbon.format.ps1xml|bin\fullclr\Carbon.Xdt.pdb|bin\fullclr\Microsoft.Web.XmlTransform.dll|Carbon.psd1|DscResources\Initialize-CarbonDscResource.ps1|Carbon.psm1|DscResources\Carbon_EnvironmentVariable\Carbon_EnvironmentVariable.psm1|CHANGELOG.md|DscResources\Carbon_EnvironmentVariable\Carbon_EnvironmentVariable.schema.mof|Import-Carbon.ps1|DscResources\Carbon_FirewallRule\Carbon_FirewallRule.psm1|LICENSE.txt|DscResources\Carbon_FirewallRule\Carbon_FirewallRule.schema.mof|NOTICE.txt|DscResources\Carbon_Group\Carbon_Group.psm1|README.md|DscResources\Carbon_Group\Carbon_Group.schema.mof|bin\Ionic.Zip.dll|DscResources\Carbon_IniFile\Carbon_IniFile.psm1|bin\Protect-String.ps1|DscResources\Carbon_IniFile\Carbon_IniFile.schema.mof|bin\Remove-DotNetAppSetting.ps1|DscResources\Carbon_Permission\Carbon_Permission.psm1|bin\Remove-EnvironmentVariable.ps1|DscResources\Carbon_Permission\Carbon_Permission.schema.mof|bin\Set-DotNetAppSetting.ps1|DscResources\Carbon_Privilege\Carbon_Privilege.psm1|bin\Set-DotNetConnectionString.ps1|DscResources\Carbon_Privilege\Carbon_Privilege.schema.mof|bin\Set-EnvironmentVariable.ps1|DscResources\Carbon_ScheduledTask\Carbon_ScheduledTask.psm1|bin\Use-CarbonPrefix.ps1|DscResources\Carbon_ScheduledTask\Carbon_ScheduledTask.schema.mof|bin\coreclr\Carbon.dll|DscResources\Carbon_Service\Carbon_Service.psm1|bin\coreclr\Carbon.Iis.dll|DscResources\Carbon_Service\Carbon_Service.schema.mof|bin\coreclr\Carbon.Iis.pdb|en-US\about_Carbon.help.txt|bin\coreclr\Carbon.pdb|en-US\about_Carbon_2.0.help.txt|bin\coreclr\Carbon.Xdt.dll|en-US\about_Carbon_Contributing.help.txt|bin\coreclr\Carbon.Xdt.pdb|en-US\about_Carbon_Extended_Type_Data.help.txt|bin\coreclr\Microsoft.Web.Administration.dll|en-US\about_Carbon_Installation.help.txt|bin\coreclr\Microsoft.Web.XmlTransform.dll|en-US\about_Carbon_Support.help.txt|bin\fullclr\Carbon.dll|Formats\Carbon.Security.HttpUrlAcl.format.ps1xml|bin\fullclr\Carbon.Iis.dll|Formats\Schedule.Service.RegisteredTask.format.ps1xml|bin\fullclr\Carbon.Iis.pdb|Functions\Iis.ps1|bin\fullclr\Carbon.pdb|Functions\Initialize-Lcm.ps1|bin\fullclr\Carbon.Xdt.dll|Functions\Use-CallerPreference.ps1</S>
+          <S N="GUID">075d9444-c01b-48c3-889a-0b3490716fa2</S>
+          <S N="PowerShellVersion">4.0</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">D:\OneDrive\Documents\PowerShell\Modules\Carbon\2.12.0</S>
+    </MS>
+  </Obj>
+</Objs>

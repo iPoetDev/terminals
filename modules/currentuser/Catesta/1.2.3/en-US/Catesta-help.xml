@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-PowerShellProject</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>PowerShellProject</command:noun>
+      <maml:description>
+        <maml:para>Scaffolds a PowerShell module project for use with desired CICD platform for easy cross platform PowerShell development.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Leverages plaster to scaffold a PowerShell module that adheres to community best practices. Based on selections made this cmdlet will generate the necessary files for a variety of CICD platforms. Selections can also determine what CICD builds should be run enabling easy cross-platform verification (Windows/Linux/MacOS). InvokeBuild tasks will be created for validation / analysis / test / build automation. Additional selections can generate other helpful files such as GitHub community files and VSCode project files.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-PowerShellProject</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>CICDChoice</maml:name>
+          <maml:Description>
+            <maml:para>CICD Platform Choice AWS - AWS CodeBuild GitHubActions - GitHub Actions Workflows Azure - Azure DevOps Pipelines AppVeyor - AppVeyor Projects ModuleOnly - Just a Vanilla PowerShell module scaffold</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>DestinationPath</maml:name>
+          <maml:Description>
+            <maml:para>File path where PowerShell Module project will be created</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:Description>
+            <maml:para>Skip Confirmation</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>CICDChoice</maml:name>
+        <maml:Description>
+          <maml:para>CICD Platform Choice AWS - AWS CodeBuild GitHubActions - GitHub Actions Workflows Azure - Azure DevOps Pipelines AppVeyor - AppVeyor Projects ModuleOnly - Just a Vanilla PowerShell module scaffold</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>DestinationPath</maml:name>
+        <maml:Description>
+          <maml:para>File path where PowerShell Module project will be created</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Force</maml:name>
+        <maml:Description>
+          <maml:para>Skip Confirmation</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSCustomObject</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>Author: Jake Morrison - @jakemorrison - https://www.techthoughts.info/</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>New-PowerShellProject -CICDChoice 'AWS' -DestinationPath c:\path\AWSProject</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a PowerShell module project for integration with AWS CodeBuild.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>New-PowerShellProject -CICDChoice 'GitHubActions' -DestinationPath c:\path\GitHubActions</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a PowerShell module project for integration with GitHub Actions Workflows.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <dev:code>New-PowerShellProject -CICDChoice 'Azure' -DestinationPath c:\path\AzurePipeline</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a PowerShell module project for integration with Azure DevOps Pipelines.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
+        <dev:code>New-PowerShellProject -CICDChoice 'AppVeyor' -DestinationPath c:\path\AppVeyor</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a PowerShell module project for integration with AppVeyor Projects.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
+        <dev:code>New-PowerShellProject -CICDChoice 'ModuleOnly' -DestinationPath c:\path\ModuleOnly</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a basic PowerShell module project with no additional extras. You just get a basic PowerShell module construct.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/techthoughts2/Catesta/blob/main/docs/New-PowerShellProject.md</maml:linkText>
+        <maml:uri>https://github.com/techthoughts2/Catesta/blob/main/docs/New-PowerShellProject.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://docs.microsoft.com/powershell/scripting/developer/module/writing-a-windows-powershell-module</maml:linkText>
+        <maml:uri>https://docs.microsoft.com/powershell/scripting/developer/module/writing-a-windows-powershell-module</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://aws.amazon.com/codebuild/</maml:linkText>
+        <maml:uri>https://aws.amazon.com/codebuild/</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://help.github.com/actions</maml:linkText>
+        <maml:uri>https://help.github.com/actions</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://azure.microsoft.com/services/devops/</maml:linkText>
+        <maml:uri>https://azure.microsoft.com/services/devops/</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://www.appveyor.com/</maml:linkText>
+        <maml:uri>https://www.appveyor.com/</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-VaultProject</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>VaultProject</command:noun>
+      <maml:description>
+        <maml:para>Scaffolds a PowerShell SecretManagement vault module project for use with desired CICD platform for easy cross platform PowerShell development.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Leverages plaster to scaffold a PowerShell SecretManagement vault module project that adheres to community best practices. Based on selections made this cmdlet will generate the necessary files for a variety of CICD platforms. Selections can also determine what CICD builds should be run enabling easy cross-platform verification (Windows/Linux/MacOS). InvokeBuild tasks will be created for validation / analysis / test / build automation. Additional selections can generate other helpful files such as GitHub community files and VSCode project files.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-VaultProject</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+          <maml:name>CICDChoice</maml:name>
+          <maml:Description>
+            <maml:para>CICD Platform Choice AWS - AWS CodeBuild GitHubActions - GitHub Actions Workflows Azure - Azure DevOps Pipelines AppVeyor - AppVeyor Projects ModuleOnly - Just a Vanilla PowerShell module scaffold</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+          <maml:name>DestinationPath</maml:name>
+          <maml:Description>
+            <maml:para>File path where PowerShell SecretManagement vault module project will be created</maml:para>
+          </maml:Description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Force</maml:name>
+          <maml:Description>
+            <maml:para>Skip Confirmation</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+          <maml:name>WhatIf</maml:name>
+          <maml:Description>
+            <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+          <maml:name>Confirm</maml:name>
+          <maml:Description>
+            <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+          </maml:Description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="1" aliases="none">
+        <maml:name>CICDChoice</maml:name>
+        <maml:Description>
+          <maml:para>CICD Platform Choice AWS - AWS CodeBuild GitHubActions - GitHub Actions Workflows Azure - Azure DevOps Pipelines AppVeyor - AppVeyor Projects ModuleOnly - Just a Vanilla PowerShell module scaffold</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="2" aliases="none">
+        <maml:name>DestinationPath</maml:name>
+        <maml:Description>
+          <maml:para>File path where PowerShell SecretManagement vault module project will be created</maml:para>
+        </maml:Description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Force</maml:name>
+        <maml:Description>
+          <maml:para>Skip Confirmation</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi">
+        <maml:name>WhatIf</maml:name>
+        <maml:Description>
+          <maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf">
+        <maml:name>Confirm</maml:name>
+        <maml:Description>
+          <maml:para>Prompts you for confirmation before running the cmdlet.</maml:para>
+        </maml:Description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes />
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Management.Automation.PSCustomObject</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para>Author: Jake Morrison - @jakemorrison - https://www.techthoughts.info/</maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+        <dev:code>New-VaultProject -CICDChoice 'AWS' -DestinationPath c:\path\AWSProject</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a PowerShell SecretManagement vault module project for integration with AWS CodeBuild.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 2 --------------------------</maml:title>
+        <dev:code>New-VaultProject -CICDChoice 'GitHubActions' -DestinationPath c:\path\GitHubActions</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a PowerShell SecretManagement vault module project for integration with GitHub Actions Workflows.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 3 --------------------------</maml:title>
+        <dev:code>New-VaultProject -CICDChoice 'Azure' -DestinationPath c:\path\AzurePipeline</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a PowerShell SecretManagement vault module project for integration with Azure DevOps Pipelines.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 4 --------------------------</maml:title>
+        <dev:code>New-VaultProject -CICDChoice 'AppVeyor' -DestinationPath c:\path\AppVeyor</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a PowerShell SecretManagement vault module project for integration with AppVeyor Projects.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- EXAMPLE 5 --------------------------</maml:title>
+        <dev:code>New-VaultProject -CICDChoice 'ModuleOnly' -DestinationPath c:\path\ModuleOnly</dev:code>
+        <dev:remarks>
+          <maml:para>Scaffolds a basic PowerShell SecretManagement vault module project with no additional extras. You just get a basic PowerShell module construct.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/techthoughts2/Catesta/blob/main/docs/Catesta-Vault-Extension.md</maml:linkText>
+        <maml:uri>https://github.com/techthoughts2/Catesta/blob/main/docs/Catesta-Vault-Extension.md</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://github.com/PowerShell/SecretManagement</maml:linkText>
+        <maml:uri>https://github.com/PowerShell/SecretManagement</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://aws.amazon.com/codebuild/</maml:linkText>
+        <maml:uri>https://aws.amazon.com/codebuild/</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://help.github.com/actions</maml:linkText>
+        <maml:uri>https://help.github.com/actions</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://azure.microsoft.com/services/devops/</maml:linkText>
+        <maml:uri>https://azure.microsoft.com/services/devops/</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>https://www.appveyor.com/</maml:linkText>
+        <maml:uri>https://www.appveyor.com/</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>
