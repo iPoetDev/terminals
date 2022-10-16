@@ -336,7 +336,7 @@ Search functions
 ================
 
 | Key      |Function                |Description                                                                      |
-| :---------------------------------------------------------------------------------------------------------------- |
+| :--------|------------------------|-------------------------------------------------------------------------------- |
 | ---      |--------                |-----------                                                                      |
 | F3       |CharacterSearch         |Read a character and move the cursor to the next occurence of that character     |
 | Shift+F3 |CharacterSearchBackward |Read a character and move the cursor to the previous occurence of that character |
@@ -345,7 +345,7 @@ User defined functions
 ======================
 
 | Key      |Function                |Description         |
-| :--------------------------------------------------- |
+| :--------|------------------------|------------------- |
 | ---      |--------                |-----------         |
 | Enter    |OhMyPoshEnterKeyHandler |User defined action |
 | Spacebar |OhMyPoshSpaceKeyHandler |User defined action |
